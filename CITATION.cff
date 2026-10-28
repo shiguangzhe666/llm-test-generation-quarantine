@@ -9,7 +9,7 @@ authors:
 version: "1.0.0"
 date-released: "2026-10-28"
 license: MIT
-repository-code: "https://github.com/REPLACE-WITH-YOUR-ACCOUNT/llm-test-generation-quarantine"
+repository-code: "https://github.com/shiguangzhe666/llm-test-generation-quarantine"
 abstract: >
   Replication package for the manuscript "Quarantining Environmentally Fragile
   LLM-Generated Tests: A Project-Level Empirical Study on SWE-bench Verified".
