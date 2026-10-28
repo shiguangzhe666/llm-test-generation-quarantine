@@ -1,0 +1,71 @@
+{
+  "audit_timestamp": "2026-09-20T20:28:34.120195",
+  "all_repos_clean": true,
+  "repos": {
+    "psf__requests": {
+      "exists": true,
+      "path": "F:\\论文\\llm-test-stability\\data\\repos\\psf__requests",
+      "is_clean": true,
+      "git_success": true,
+      "head_sha": "091991be0da19de9108dbe5e3752917fea3d7fdc",
+      "branch_name": "HEAD",
+      "status_porcelain": "",
+      "diff_stat": "",
+      "diff_cached_stat": "",
+      "untracked_files": [],
+      "errors": []
+    },
+    "pallets__flask": {
+      "exists": true,
+      "path": "F:\\论文\\llm-test-stability\\data\\repos\\pallets__flask",
+      "is_clean": true,
+      "git_success": true,
+      "head_sha": "7ee9ceb71e868944a46e1ff00b506772a53a4f1d",
+      "branch_name": "HEAD",
+      "status_porcelain": "",
+      "diff_stat": "",
+      "diff_cached_stat": "",
+      "untracked_files": [],
+      "errors": []
+    },
+    "pytest-dev__pytest": {
+      "exists": true,
+      "path": "F:\\论文\\llm-test-stability\\data\\repos\\pytest-dev__pytest",
+      "is_clean": true,
+      "git_success": true,
+      "head_sha": "41d211c24a6781843b174379d6d6538f5c17adb9",
+      "branch_name": "HEAD",
+      "status_porcelain": "",
+      "diff_stat": "",
+      "diff_cached_stat": "",
+      "untracked_files": [],
+      "errors": []
+    },
+    "sympy__sympy": {
+      "exists": true,
+      "path": "F:\\论文\\llm-test-stability\\data\\repos\\sympy__sympy",
+      "is_clean": true,
+      "git_success": true,
+      "head_sha": "1d3327b8e90a186df6972991963a5ae87053259d",
+      "branch_name": "HEAD",
+      "status_porcelain": "",
+      "diff_stat": "",
+      "diff_cached_stat": "",
+      "untracked_files": [],
+      "errors": []
+    },
+    "pydata__xarray": {
+      "exists": true,
+      "path": "F:\\论文\\llm-test-stability\\data\\repos\\pydata__xarray",
+      "is_clean": true,
+      "git_success": true,
+      "head_sha": "8de862c29544c2fb1957ce20985745952bc81de7",
+      "branch_name": "main",
+      "status_porcelain": "",
+      "diff_stat": "",
+      "diff_cached_stat": "",
+      "untracked_files": [],
+      "errors": []
+    }
+  }
+}

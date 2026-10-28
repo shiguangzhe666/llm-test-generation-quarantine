@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-20T12:27:14.981972",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "G:\\Python311\\python.exe",
+  "cwd": "F:\\\u8bba\u6587\\llm-test-stability",
+  "git_project_head": "Non-git directory (tracked via SHA-256 snapshots manifest)",
+  "snapshot_manifests": [
+    "F:\\\u8bba\u6587\\llm-test-stability\\snapshots\\snapshot_pre_fix_20260920\\manifest.json",
+    "F:\\\u8bba\u6587\\llm-test-stability\\snapshots\\snapshot_supplement_20260920\\manifest.json"
+  ],
+  "git_project_status": "Protected via Phase I Dual Snapshots (189 files tracked by SHA-256)"
+}

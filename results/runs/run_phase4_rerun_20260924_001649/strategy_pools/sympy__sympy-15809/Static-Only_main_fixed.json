@@ -1,0 +1,265 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_min_zero_arguments",
+    "test_gen_00.py::test_min_positive_cases",
+    "test_gen_00.py::test_min_mixed_signs",
+    "test_gen_00.py::test_min_empty_list",
+    "test_gen_00.py::test_max_zero_arguments",
+    "test_gen_00.py::test_max_positive_cases",
+    "test_gen_00.py::test_max_mixed_signs",
+    "test_gen_00.py::test_max_empty_list",
+    "test_gen_01.py::test_min_zero_args",
+    "test_gen_01.py::test_min_positive_case",
+    "test_gen_01.py::test_min_negative_case",
+    "test_gen_01.py::test_min_mixed_case",
+    "test_gen_01.py::test_min_large_numbers",
+    "test_gen_01.py::test_max_zero_args",
+    "test_gen_01.py::test_max_positive_case",
+    "test_gen_01.py::test_max_negative_case",
+    "test_gen_01.py::test_max_mixed_case",
+    "test_gen_01.py::test_max_large_numbers",
+    "test_gen_01.py::test_min_invalid_input",
+    "test_gen_01.py::test_max_invalid_input",
+    "test_gen_02.py::test_min_no_arguments",
+    "test_gen_02.py::test_min_positive_case",
+    "test_gen_02.py::test_min_negative_case",
+    "test_gen_02.py::test_min_mixed_case",
+    "test_gen_02.py::test_min_nan",
+    "test_gen_02.py::test_max_no_arguments",
+    "test_gen_02.py::test_max_positive_case",
+    "test_gen_02.py::test_max_negative_case",
+    "test_gen_02.py::test_max_mixed_case",
+    "test_gen_02.py::test_max_nan",
+    "test_gen_02.py::test_max_mixed_with_nan",
+    "test_gen_02.py::test_max_only_nan"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_min_zero_arguments": {
+      "nodeid": "test_gen_00.py::test_min_zero_arguments",
+      "outcome": "PASSED",
+      "duration": 0.00042499999835854396,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_min_positive_cases": {
+      "nodeid": "test_gen_00.py::test_min_positive_cases",
+      "outcome": "PASSED",
+      "duration": 0.0012471999980334658,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_min_mixed_signs": {
+      "nodeid": "test_gen_00.py::test_min_mixed_signs",
+      "outcome": "PASSED",
+      "duration": 0.0007104999967850745,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_min_empty_list": {
+      "nodeid": "test_gen_00.py::test_min_empty_list",
+      "outcome": "EXCEPTION",
+      "duration": 0.00045339999996940605,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:25: in test_min_empty_list\n    Min([])\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument '[]' is not comparable."
+    },
+    "test_gen_00.py::test_max_zero_arguments": {
+      "nodeid": "test_gen_00.py::test_max_zero_arguments",
+      "outcome": "PASSED",
+      "duration": 0.00041230000351788476,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_max_positive_cases": {
+      "nodeid": "test_gen_00.py::test_max_positive_cases",
+      "outcome": "PASSED",
+      "duration": 0.0012303000039537437,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_max_mixed_signs": {
+      "nodeid": "test_gen_00.py::test_max_mixed_signs",
+      "outcome": "PASSED",
+      "duration": 0.000700299995514797,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_max_empty_list": {
+      "nodeid": "test_gen_00.py::test_max_empty_list",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004324999972595833,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:47: in test_max_empty_list\n    Max([])\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument '[]' is not comparable."
+    },
+    "test_gen_01.py::test_min_zero_args": {
+      "nodeid": "test_gen_01.py::test_min_zero_args",
+      "outcome": "PASSED",
+      "duration": 0.00036919999911333434,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_positive_case": {
+      "nodeid": "test_gen_01.py::test_min_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0006140999976196326,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_negative_case": {
+      "nodeid": "test_gen_01.py::test_min_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.00043480000385898165,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_mixed_case": {
+      "nodeid": "test_gen_01.py::test_min_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.00042640000174287707,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_large_numbers": {
+      "nodeid": "test_gen_01.py::test_min_large_numbers",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0006290999954217114,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:23: in test_min_large_numbers\n    assert result == -1000000, f\"Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got {result}\"\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError: Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got -2000000"
+    },
+    "test_gen_01.py::test_max_zero_args": {
+      "nodeid": "test_gen_01.py::test_max_zero_args",
+      "outcome": "PASSED",
+      "duration": 0.00037539999902946874,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_positive_case": {
+      "nodeid": "test_gen_01.py::test_max_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.00042160000157309696,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_negative_case": {
+      "nodeid": "test_gen_01.py::test_max_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.0004662000028474722,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_mixed_case": {
+      "nodeid": "test_gen_01.py::test_max_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0004616999976860825,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_large_numbers": {
+      "nodeid": "test_gen_01.py::test_max_large_numbers",
+      "outcome": "PASSED",
+      "duration": 0.00046600000132457353,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_invalid_input": {
+      "nodeid": "test_gen_01.py::test_min_invalid_input",
+      "outcome": "EXCEPTION",
+      "duration": 0.005166399998415727,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:46: in test_min_invalid_input\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_01.py::test_max_invalid_input": {
+      "nodeid": "test_gen_01.py::test_max_invalid_input",
+      "outcome": "EXCEPTION",
+      "duration": 0.0013671999986399896,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:50: in test_max_invalid_input\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_02.py::test_min_no_arguments": {
+      "nodeid": "test_gen_02.py::test_min_no_arguments",
+      "outcome": "PASSED",
+      "duration": 0.0003307000042696018,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_positive_case": {
+      "nodeid": "test_gen_02.py::test_min_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0006050000010873191,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_negative_case": {
+      "nodeid": "test_gen_02.py::test_min_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.000489399997604778,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_mixed_case": {
+      "nodeid": "test_gen_02.py::test_min_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0005439000015030615,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_nan": {
+      "nodeid": "test_gen_02.py::test_min_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004650999981095083,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:23: in test_min_nan\n    result = Min(nan, 1, 2)\n             ^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_no_arguments": {
+      "nodeid": "test_gen_02.py::test_max_no_arguments",
+      "outcome": "PASSED",
+      "duration": 0.00040810000064084306,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_positive_case": {
+      "nodeid": "test_gen_02.py::test_max_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0004917000005661976,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_negative_case": {
+      "nodeid": "test_gen_02.py::test_max_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.0004895000020042062,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_mixed_case": {
+      "nodeid": "test_gen_02.py::test_max_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0005062999989604577,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_nan": {
+      "nodeid": "test_gen_02.py::test_max_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.00047420000191777945,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:44: in test_max_nan\n    result = Max(nan, 1, 2)\n             ^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_mixed_with_nan": {
+      "nodeid": "test_gen_02.py::test_max_mixed_with_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003887999992002733,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:48: in test_max_mixed_with_nan\n    result = Max(1, nan)\n             ^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_only_nan": {
+      "nodeid": "test_gen_02.py::test_max_only_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004613999990397133,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:52: in test_max_only_nan\n    result = Max(nan, nan)\n             ^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:348: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:521: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    }
+  }
+}

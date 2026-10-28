@@ -1,0 +1,249 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_01.py::test_annihilate_boson_dagger",
+    "test_gen_01.py::test_annihilate_boson_state_property",
+    "test_gen_01.py::test_annihilate_boson_is_symbolic",
+    "test_gen_01.py::test_annihilate_boson_apply_operator",
+    "test_gen_01.py::test_create_boson_dagger",
+    "test_gen_01.py::test_create_boson_state_property",
+    "test_gen_01.py::test_create_boson_is_symbolic",
+    "test_gen_01.py::test_create_boson_apply_operator",
+    "test_gen_01.py::test_fock_state_ket_occupation",
+    "test_gen_01.py::test_apply_operators",
+    "test_gen_01.py::test_inner_product",
+    "test_gen_01.py::test_matrix_rep",
+    "test_gen_01.py::test_contraction",
+    "test_gen_01.py::test_wicks",
+    "test_gen_01.py::test_no",
+    "test_gen_01.py::test_evaluate_deltas",
+    "test_gen_01.py::test_substitute_dummies",
+    "test_gen_01.py::test_permutation_operator",
+    "test_gen_01.py::test_simplify_index_permutations",
+    "test_gen_02.py::test_dagger_number",
+    "test_gen_02.py::test_dagger_annihilate_boson",
+    "test_gen_02.py::test_dagger_create_boson",
+    "test_gen_02.py::test_dagger_expression",
+    "test_gen_02.py::test_antisymmetric_tensor_sorting",
+    "test_gen_02.py::test_antisymmetric_tensor_latex",
+    "test_gen_02.py::test_annihilate_boson_state",
+    "test_gen_02.py::test_annihilate_boson_is_symbolic",
+    "test_gen_02.py::test_annihilate_boson_apply",
+    "test_gen_02.py::test_create_boson_apply",
+    "test_gen_02.py::test_create_boson_is_symbolic"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_01.py::test_annihilate_boson_dagger": {
+      "nodeid": "test_gen_01.py::test_annihilate_boson_dagger",
+      "outcome": "PASSED",
+      "duration": 0.0004346000000623462,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_annihilate_boson_state_property": {
+      "nodeid": "test_gen_01.py::test_annihilate_boson_state_property",
+      "outcome": "PASSED",
+      "duration": 0.00033119999989139615,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_annihilate_boson_is_symbolic": {
+      "nodeid": "test_gen_01.py::test_annihilate_boson_is_symbolic",
+      "outcome": "PASSED",
+      "duration": 0.00030030000016267877,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_annihilate_boson_apply_operator": {
+      "nodeid": "test_gen_01.py::test_annihilate_boson_apply_operator",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0005680999997821345,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:26: in test_annihilate_boson_apply_operator\n    assert result == Symbol('sqrt(2)') * FockStateBosonKet((1,))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_create_boson_dagger": {
+      "nodeid": "test_gen_01.py::test_create_boson_dagger",
+      "outcome": "PASSED",
+      "duration": 0.0003338000001349428,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_create_boson_state_property": {
+      "nodeid": "test_gen_01.py::test_create_boson_state_property",
+      "outcome": "PASSED",
+      "duration": 0.0003019000000676897,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_create_boson_is_symbolic": {
+      "nodeid": "test_gen_01.py::test_create_boson_is_symbolic",
+      "outcome": "PASSED",
+      "duration": 0.00029169999970690697,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_create_boson_apply_operator": {
+      "nodeid": "test_gen_01.py::test_create_boson_apply_operator",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0004959000007147552,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:46: in test_create_boson_apply_operator\n    assert result == Symbol('sqrt(1)') * FockStateBosonKet((2,))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_fock_state_ket_occupation": {
+      "nodeid": "test_gen_01.py::test_fock_state_ket_occupation",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003098999995927443,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:50: in test_fock_state_ket_occupation\n    assert state.occupation == 1\n           ^^^^^^^^^^^^^^^^\nE   AttributeError: 'FockStateBosonKet' object has no attribute 'occupation'"
+    },
+    "test_gen_01.py::test_apply_operators": {
+      "nodeid": "test_gen_01.py::test_apply_operators",
+      "outcome": "PASSED",
+      "duration": 0.0002861000002667424,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_inner_product": {
+      "nodeid": "test_gen_01.py::test_inner_product",
+      "outcome": "PASSED",
+      "duration": 0.0002812000002450077,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_matrix_rep": {
+      "nodeid": "test_gen_01.py::test_matrix_rep",
+      "outcome": "PASSED",
+      "duration": 0.0002712000000428816,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_contraction": {
+      "nodeid": "test_gen_01.py::test_contraction",
+      "outcome": "PASSED",
+      "duration": 0.00026950000028591603,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_wicks": {
+      "nodeid": "test_gen_01.py::test_wicks",
+      "outcome": "PASSED",
+      "duration": 0.00029190000032031094,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_no": {
+      "nodeid": "test_gen_01.py::test_no",
+      "outcome": "PASSED",
+      "duration": 0.0002782999995361024,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_evaluate_deltas": {
+      "nodeid": "test_gen_01.py::test_evaluate_deltas",
+      "outcome": "PASSED",
+      "duration": 0.00027090000003227033,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_substitute_dummies": {
+      "nodeid": "test_gen_01.py::test_substitute_dummies",
+      "outcome": "PASSED",
+      "duration": 0.00027799999952549115,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_permutation_operator": {
+      "nodeid": "test_gen_01.py::test_permutation_operator",
+      "outcome": "PASSED",
+      "duration": 0.0002696999999898253,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_simplify_index_permutations": {
+      "nodeid": "test_gen_01.py::test_simplify_index_permutations",
+      "outcome": "PASSED",
+      "duration": 0.00027270000009593787,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_dagger_number": {
+      "nodeid": "test_gen_02.py::test_dagger_number",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00030310000056488207,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:10: in test_dagger_number\n    assert Dagger(5).doit() == -5\n           ^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_dagger_annihilate_boson": {
+      "nodeid": "test_gen_02.py::test_dagger_annihilate_boson",
+      "outcome": "PASSED",
+      "duration": 0.0002922999997281295,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_dagger_create_boson": {
+      "nodeid": "test_gen_02.py::test_dagger_create_boson",
+      "outcome": "PASSED",
+      "duration": 0.0002866999998332176,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_dagger_expression": {
+      "nodeid": "test_gen_02.py::test_dagger_expression",
+      "outcome": "PASSED",
+      "duration": 0.000398000000132015,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_antisymmetric_tensor_sorting": {
+      "nodeid": "test_gen_02.py::test_antisymmetric_tensor_sorting",
+      "outcome": "EXCEPTION",
+      "duration": 0.00037070000007588533,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:27: in test_antisymmetric_tensor_sorting\n    a = AntiSymmetricTensor(0, 1, 2)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\physics\\secondquant.py:177: in __new__\n    upper, signu = _sort_anticommuting_fermions(\nsympy\\physics\\secondquant.py:2247: in _sort_anticommuting_fermions\n    rng = list(range(len(string1) - 1))\n                     ^^^^^^^^^^^^\nE   TypeError: object of type 'int' has no len()"
+    },
+    "test_gen_02.py::test_antisymmetric_tensor_latex": {
+      "nodeid": "test_gen_02.py::test_antisymmetric_tensor_latex",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003606000000218046,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:35: in test_antisymmetric_tensor_latex\n    a = AntiSymmetricTensor(0, 1, 2)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\physics\\secondquant.py:177: in __new__\n    upper, signu = _sort_anticommuting_fermions(\nsympy\\physics\\secondquant.py:2247: in _sort_anticommuting_fermions\n    rng = list(range(len(string1) - 1))\n                     ^^^^^^^^^^^^\nE   TypeError: object of type 'int' has no len()"
+    },
+    "test_gen_02.py::test_annihilate_boson_state": {
+      "nodeid": "test_gen_02.py::test_annihilate_boson_state",
+      "outcome": "PASSED",
+      "duration": 0.00033340000027237693,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_annihilate_boson_is_symbolic": {
+      "nodeid": "test_gen_02.py::test_annihilate_boson_is_symbolic",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003139000000373926,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:44: in test_annihilate_boson_is_symbolic\n    assert b.is_symbolic() is True\n           ^^^^^^^^^^^^^^^\nE   TypeError: 'bool' object is not callable"
+    },
+    "test_gen_02.py::test_annihilate_boson_apply": {
+      "nodeid": "test_gen_02.py::test_annihilate_boson_apply",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0009261999998670944,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:52: in test_annihilate_boson_apply\n    assert result == sqrt(x) * FockStateBosonKet((x - 1,))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_create_boson_apply": {
+      "nodeid": "test_gen_02.py::test_create_boson_apply",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00042099999973288504,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:58: in test_create_boson_apply\n    assert result == sqrt(x) * FockStateBosonKet((x + 1,))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_create_boson_is_symbolic": {
+      "nodeid": "test_gen_02.py::test_create_boson_is_symbolic",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00032620000001770677,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:62: in test_create_boson_is_symbolic\n    assert b.is_symbolic() is True\n           ^^^^^^^^^^^^^^^\nE   TypeError: 'bool' object is not callable"
+    }
+  }
+}

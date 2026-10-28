@@ -1,0 +1,38 @@
+[
+  {
+    "run_index": 0,
+    "file": "test_gen_00.py",
+    "sha256": "8fa2eda57bed1431473d570ee75ff00ac2c6dfd855ea8c7dda85e086bbd0a4d7",
+    "model": "qwen3:8b",
+    "template": "basic",
+    "temperature": 0.7,
+    "generation_time_seconds": 89.21,
+    "test_code_length": 1879,
+    "raw_response_length": 1889,
+    "timestamp": "2026-09-22T11:04:40.945342"
+  },
+  {
+    "run_index": 1,
+    "file": "test_gen_01.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model": "qwen3:8b",
+    "template": "basic",
+    "temperature": 0.7,
+    "generation_time_seconds": 89.05,
+    "test_code_length": 0,
+    "raw_response_length": 0,
+    "timestamp": "2026-09-22T11:06:10.008705"
+  },
+  {
+    "run_index": 2,
+    "file": "test_gen_02.py",
+    "sha256": "7ad05792f47ca0fc3062262b002d93cf423cb65152658b2cdb12c00342ef5685",
+    "model": "qwen3:8b",
+    "template": "basic",
+    "temperature": 0.7,
+    "generation_time_seconds": 49.12,
+    "test_code_length": 4646,
+    "raw_response_length": 4660,
+    "timestamp": "2026-09-22T11:06:59.124304"
+  }
+]

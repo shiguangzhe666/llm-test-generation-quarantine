@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the manuscript and the archived release."
+title: "Replication Package: Quarantining Environmentally Fragile LLM-Generated Tests"
+type: software
+authors:
+  - family-names: "Zhu"
+    given-names: "Chaoyi"
+    affiliation: "School of Information Science and Engineering, Qilu Normal University, Jinan, Shandong, China"
+version: "1.0.0"
+date-released: "2026-10-28"
+license: MIT
+repository-code: "https://github.com/REPLACE-WITH-YOUR-ACCOUNT/llm-test-generation-quarantine"
+abstract: >
+  Replication package for the manuscript "Quarantining Environmentally Fragile
+  LLM-Generated Tests: A Project-Level Empirical Study on SWE-bench Verified".
+  Contains the static AST risk screener, dynamic shuffle profiler, four-tier
+  triage implementation, socket-guard instrumentation for hermetic CI, experiment
+  drivers, and the archived formal run with a 363-file SHA-256 manifest.
+keywords:
+  - large language models
+  - unit test generation
+  - flaky tests
+  - continuous integration
+  - test quarantine
+  - SWE-bench Verified
+  - empirical software engineering

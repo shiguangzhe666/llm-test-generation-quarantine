@@ -1,0 +1,49 @@
+{
+  "SINGLE_TEST_ISOLATED": {
+    "total_tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "tests": {
+      "test_requests.py::RequestsTestCase::test_entry_points": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_entry_points",
+        "outcome": "PASSED",
+        "duration_seconds": 0.0148,
+        "error_type": null,
+        "error_message": null
+      }
+    }
+  },
+  "SUITE_IN_ORDER": {
+    "total_tests": 4,
+    "passed": 4,
+    "planned_order": [
+      "tests/test_control_cases.py::test_control_known_killable_and_surviving_mutants",
+      "tests/test_control_cases.py::test_control_baseline_failing_prevented_from_false_kill",
+      "tests/test_control_cases.py::test_control_runtime_exception_vs_assertion_failure",
+      "tests/test_control_cases.py::test_control_baseline_flakiness_disqualification"
+    ],
+    "actual_runtime_order": [
+      "tests/test_control_cases.py::test_control_known_killable_and_surviving_mutants",
+      "tests/test_control_cases.py::test_control_baseline_failing_prevented_from_false_kill",
+      "tests/test_control_cases.py::test_control_runtime_exception_vs_assertion_failure",
+      "tests/test_control_cases.py::test_control_baseline_flakiness_disqualification"
+    ]
+  },
+  "SUITE_RANDOM": {
+    "total_tests": 4,
+    "passed": 4,
+    "random_seed": 12345,
+    "planned_order": [
+      "tests/test_control_cases.py::test_control_baseline_failing_prevented_from_false_kill",
+      "tests/test_control_cases.py::test_control_known_killable_and_surviving_mutants",
+      "tests/test_control_cases.py::test_control_runtime_exception_vs_assertion_failure",
+      "tests/test_control_cases.py::test_control_baseline_flakiness_disqualification"
+    ],
+    "actual_runtime_order": [
+      "tests/test_control_cases.py::test_control_baseline_failing_prevented_from_false_kill",
+      "tests/test_control_cases.py::test_control_known_killable_and_surviving_mutants",
+      "tests/test_control_cases.py::test_control_runtime_exception_vs_assertion_failure",
+      "tests/test_control_cases.py::test_control_baseline_flakiness_disqualification"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\sympy__sympy
+EXIT_CODE: 1
+DURATION_SECONDS: 8.3722
+======================================== STDOUT ========================================
+Discovered 0 nodeids: []
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_c8aujl4z\\test_gen_00.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warnings.warn(f\"{name} is deprecated\", DeprecationWarning)\n\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\n  G:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4: DeprecationWarning: the rational private module is deprecated\n    warnings.warn(\"the rational private module is deprecated\",\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\nno tests collected in 0.52s"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_c8aujl4z\\test_gen_01.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warnings.warn(f\"{name} is deprecated\", DeprecationWarning)\n\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\n  G:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4: DeprecationWarning: the rational private module is deprecated\n    warnings.warn(\"the rational private module is deprecated\",\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\nno tests collected in 0.11s"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_c8aujl4z\\test_gen_02.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_02.py _______________________\ntest_gen_02.py:5: in <module>\n    print_ccode(expr, tau, standard='C89')\nE   TypeError: print_ccode() takes 1 positional argument but 2 were given\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warnings.warn(f\"{name} is deprecated\", DeprecationWarning)\n\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\n  G:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4: DeprecationWarning: the rational private module is deprecated\n    warnings.warn(\"the rational private module is deprecated\",\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warni"
+  }
+]

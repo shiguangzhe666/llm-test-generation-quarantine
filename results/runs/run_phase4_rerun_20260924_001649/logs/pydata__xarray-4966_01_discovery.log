@@ -1,0 +1,21 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\pydata__xarray
+EXIT_CODE: 0
+DURATION_SECONDS: 1.5692
+======================================== STDOUT ========================================
+Discovered 1 nodeids: ['test_gen_01.py::test_placeholder_pydata_xarray_4966']
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_0k6sb4rx\\test_gen_00.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_00.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_0k6sb4rx\\test_gen_00.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_00.py:8: in <module>\n    from ..core import dtypes, duck_array_ops, indexing\nE   ImportError: attempted relative import with no known parent package\n=========================== short test summary info ===========================\nERROR test_gen_00.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.38s"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_0k6sb4rx\\test_gen_02.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "no tests collected in 0.01s"
+  }
+]

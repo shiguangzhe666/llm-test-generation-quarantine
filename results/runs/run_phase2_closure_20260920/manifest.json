@@ -1,0 +1,34 @@
+{
+  "run_id": "run_phase2_closure_20260920",
+  "instance_id": "psf__requests-1921",
+  "start_time_utc": "2026-09-20T12:27:14.981972",
+  "end_time_utc": "2026-09-20T12:28:35.176555",
+  "duration_seconds": 80.19,
+  "status": "COMPLETED_AND_VERIFIED",
+  "verification_checks": {
+    "pre_run_repos_clean": true,
+    "swebench_ground_truth_reproduced": true,
+    "buggy_f2p_assertion_failed": true,
+    "fixed_f2p_passed": true,
+    "regression_ptp_passed": true,
+    "execution_modes_verified": [
+      "SINGLE_TEST_ISOLATED",
+      "SUITE_IN_ORDER",
+      "SUITE_RANDOM"
+    ],
+    "mutation_baseline_precheck_verified": true,
+    "triage_executable_retention_separated": true,
+    "post_run_repos_clean": true,
+    "repos_head_hashes_identical": true
+  },
+  "artifacts_generated": [
+    "environment_metadata.json",
+    "pre_run_repos_audit.json",
+    "reproduction_evidence.json",
+    "execution_modes_evidence.json",
+    "mutation_eval_evidence.json",
+    "triage_benchmark_results.json",
+    "post_run_repos_audit.json",
+    "manifest.json"
+  ]
+}

@@ -1,0 +1,8 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\sympy__sympy
+EXIT_CODE: 0
+DURATION_SECONDS: 8.1415
+======================================== STDOUT ========================================
+Discovered 32 nodeids: ['test_gen_00.py::test_min_zero_arguments', 'test_gen_00.py::test_min_positive_cases', 'test_gen_00.py::test_min_mixed_signs', 'test_gen_00.py::test_min_empty_list', 'test_gen_00.py::test_max_zero_arguments', 'test_gen_00.py::test_max_positive_cases', 'test_gen_00.py::test_max_mixed_signs', 'test_gen_00.py::test_max_empty_list', 'test_gen_01.py::test_min_zero_args', 'test_gen_01.py::test_min_positive_case', 'test_gen_01.py::test_min_negative_case', 'test_gen_01.py::test_min_mixed_case', 'test_gen_01.py::test_min_large_numbers', 'test_gen_01.py::test_max_zero_args', 'test_gen_01.py::test_max_positive_case', 'test_gen_01.py::test_max_negative_case', 'test_gen_01.py::test_max_mixed_case', 'test_gen_01.py::test_max_large_numbers', 'test_gen_01.py::test_min_invalid_input', 'test_gen_01.py::test_max_invalid_input', 'test_gen_02.py::test_min_no_arguments', 'test_gen_02.py::test_min_positive_case', 'test_gen_02.py::test_min_negative_case', 'test_gen_02.py::test_min_mixed_case', 'test_gen_02.py::test_min_nan', 'test_gen_02.py::test_max_no_arguments', 'test_gen_02.py::test_max_positive_case', 'test_gen_02.py::test_max_negative_case', 'test_gen_02.py::test_max_mixed_case', 'test_gen_02.py::test_max_nan', 'test_gen_02.py::test_max_mixed_with_nan', 'test_gen_02.py::test_max_only_nan']
+======================================== STDERR ========================================
+(empty)

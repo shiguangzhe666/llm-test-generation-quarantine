@@ -1,0 +1,13 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (1 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_zan6zraa
+EXIT_CODE: 1
+DURATION_SECONDS: 0.8308
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_01.py::test_placeholder_pydata_xarray_4966": "PASSED"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

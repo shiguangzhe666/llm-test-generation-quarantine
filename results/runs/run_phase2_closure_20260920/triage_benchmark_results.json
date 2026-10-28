@@ -1,0 +1,1002 @@
+{
+  "total_tests": 109,
+  "triage_distribution": {
+    "KEEP": 108,
+    "QUARANTINE_INSPECT": 0,
+    "OPTIONAL": 1,
+    "DISCARD": 0
+  },
+  "ground_truth_bug_detectors": 7,
+  "executable_retained_bug_detectors": 7,
+  "quarantined_bug_detectors": 0,
+  "discarded_bug_detectors": 0,
+  "executable_defect_retention_rate": 1.0,
+  "executable_defect_retention_rate_str": "100.0% (7/7)",
+  "quarantined_defect_rate": 0.0,
+  "quarantined_defect_rate_str": "0.0% (0/7)",
+  "combined_defect_retention_rate": 1.0,
+  "combined_defect_retention_rate_str": "100.0% (7/7)",
+  "decisions": [
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_none_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_only_none_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_request_overriding_session",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_session_overriding_request",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_empty_settings",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_non_dict_class",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_no_none_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_mixed_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_00.py::test_merge_setting_with_only_session_none",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_with_both_none",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_request_has_value",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_session_has_value",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_with_empty_dicts",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_with_mixed_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_with_nested_none",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_01.py::test_merge_setting_with_non_dict_class",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_none_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_both_none",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_request_setting_only",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_session_setting_only",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_empty_settings",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_mixed_none_and_non_none",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "psf__requests-1921::test_gen_02.py::TestMergeSetting::test_merge_setting_with_non_dict_class",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_preserves_newlines",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_carriage_return_only",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_line_feed_only",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_carriage_return_and_line_feed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_mixed_newlines",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_multiple_carriage_returns",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_multiple_line_feeds",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_combination_of_carriage_return_and_line_feed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_sys_capture_preserves_newlines",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_sys_capture_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_sys_capture_carriage_return",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_sys_capture_line_feed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_00.py::test_capture_sys_capture_carriage_return_and_line_feed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_preserves_newlines",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_with_carriage_return",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_with_crlf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_mixed_newlines",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_large_data",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_01.py::test_capture_multiple_newlines",
+      "action": "OPTIONAL",
+      "category": "TIER_3_SAFE_LOW",
+      "defect_score": 0.2,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_capture_preserves_newline",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_capture_preserves_carriage_return",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_capture_preserves_crlf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_capture_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_capture_mixed_line_endings",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_captureio_preserves_newline",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_captureio_preserves_carriage_return",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_captureio_preserves_crlf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_captureio_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_captureio_mixed_line_endings",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_syscapture_preserves_newline",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_syscapture_preserves_carriage_return",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_syscapture_preserves_crlf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_syscapture_empty_string",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "pytest-dev__pytest-7521::test_gen_02.py::test_syscapture_mixed_line_endings",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "Undefined (no execution data)",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_two_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_two_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_negative_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_negative_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_min_mixed_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_00.py::test_max_mixed_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_mixed_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_mixed_numbers",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_symbolic",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_symbolic",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_neg_inf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_pos_inf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_with_inf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_with_inf",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_neg_inf_2",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_neg_inf_2",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_boundary",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_boundary",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_min_with_symbols",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_01.py::test_max_with_symbols",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_zero_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": true
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_one_arg",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_two_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_two_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_negative",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_negative",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_mixed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_mixed",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_multiple_args",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_with_zero",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_with_zero",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_with_positive_and_negative",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_with_positive_and_negative",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_min_with_duplicate_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    },
+    {
+      "key": "sympy__sympy-15809::test_gen_02.py::test_max_with_duplicate_values",
+      "action": "KEEP",
+      "category": "TIER_1_SAFE_KEEP",
+      "defect_score": 0.7333,
+      "risk_score": 0.0,
+      "flakiness_observed": "0.0%",
+      "is_bug_detecting": false
+    }
+  ]
+}

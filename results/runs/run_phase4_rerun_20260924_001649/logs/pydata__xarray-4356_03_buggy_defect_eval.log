@@ -1,0 +1,37 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_g6puem9t
+EXIT_CODE: 1
+DURATION_SECONDS: 2.0402
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_00.py::test_replace_nan_with_values": "EXCEPTION",
+    "test_gen_00.py::test_replace_nan_no_values": "EXCEPTION",
+    "test_gen_00.py::test_replace_nan_int": "EXCEPTION",
+    "test_gen_00.py::test_maybe_null_out_min_count": "EXCEPTION",
+    "test_gen_00.py::test_maybe_null_out_axis_none": "EXCEPTION",
+    "test_gen_00.py::test_nanmin_all_nan": "EXCEPTION",
+    "test_gen_00.py::test_nanmin_with_values": "EXCEPTION",
+    "test_gen_00.py::test_nanmax_all_nan": "EXCEPTION",
+    "test_gen_00.py::test_nanmax_with_values": "EXCEPTION",
+    "test_gen_00.py::test_nansum_min_count": "EXCEPTION",
+    "test_gen_01.py::test_placeholder_pydata_xarray_4356": "PASSED",
+    "test_gen_02.py::test_replace_nan_with_nans": "EXCEPTION",
+    "test_gen_02.py::test_replace_nan_no_nans": "EXCEPTION",
+    "test_gen_02.py::test_replace_nan_object_type": "EXCEPTION",
+    "test_gen_02.py::test_maybe_null_out_min_count": "ASSERTION_FAILED",
+    "test_gen_02.py::test_maybe_null_out_no_min_count": "ASSERTION_FAILED",
+    "test_gen_02.py::test_nan_min_object_array": "EXCEPTION",
+    "test_gen_02.py::test_nan_max_object_array": "EXCEPTION",
+    "test_gen_02.py::test_nan_min_all_nan": "EXCEPTION",
+    "test_gen_02.py::test_nanmin_numeric_array": "EXCEPTION",
+    "test_gen_02.py::test_nanmin_object_array": "EXCEPTION",
+    "test_gen_02.py::test_nanmin_all_nan": "EXCEPTION",
+    "test_gen_02.py::test_nanmax_numeric_array": "EXCEPTION",
+    "test_gen_02.py::test_nanmax_object_array": "EXCEPTION",
+    "test_gen_02.py::test_nanmax_all_nan": "EXCEPTION"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

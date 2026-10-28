@@ -1,0 +1,219 @@
+{
+  "repos": {
+    "psf/requests": {
+      "count": 5,
+      "instances": [
+        {
+          "instance_id": "psf__requests-1724",
+          "base_commit": "1ba83c47ce7b",
+          "patch_lines": 23,
+          "f2p": 6,
+          "p2p": 79,
+          "difficulty": "<15 min fix",
+          "version": "2.0"
+        },
+        {
+          "instance_id": "psf__requests-1766",
+          "base_commit": "847735553aed",
+          "patch_lines": 22,
+          "f2p": 6,
+          "p2p": 79,
+          "difficulty": "<15 min fix",
+          "version": "2.0"
+        },
+        {
+          "instance_id": "psf__requests-1921",
+          "base_commit": "3c88e520da24",
+          "patch_lines": 13,
+          "f2p": 6,
+          "p2p": 107,
+          "difficulty": "<15 min fix",
+          "version": "2.3"
+        },
+        {
+          "instance_id": "psf__requests-2317",
+          "base_commit": "091991be0da1",
+          "patch_lines": 22,
+          "f2p": 8,
+          "p2p": 133,
+          "difficulty": "<15 min fix",
+          "version": "2.4"
+        },
+        {
+          "instance_id": "psf__requests-6028",
+          "base_commit": "0192aac24123",
+          "patch_lines": 15,
+          "f2p": 2,
+          "p2p": 185,
+          "difficulty": "15 min - 1 hour",
+          "version": "2.27"
+        }
+      ]
+    },
+    "pallets/flask": {
+      "count": 1,
+      "instances": [
+        {
+          "instance_id": "pallets__flask-5014",
+          "base_commit": "7ee9ceb71e86",
+          "patch_lines": 14,
+          "f2p": 1,
+          "p2p": 59,
+          "difficulty": "<15 min fix",
+          "version": "2.3"
+        }
+      ]
+    },
+    "pytest-dev/pytest": {
+      "count": 5,
+      "instances": [
+        {
+          "instance_id": "pytest-dev__pytest-7205",
+          "base_commit": "5e7f1ab4bf58",
+          "patch_lines": 19,
+          "f2p": 10,
+          "p2p": 16,
+          "difficulty": "<15 min fix",
+          "version": "5.4"
+        },
+        {
+          "instance_id": "pytest-dev__pytest-7324",
+          "base_commit": "19ad5889353c",
+          "patch_lines": 35,
+          "f2p": 3,
+          "p2p": 58,
+          "difficulty": "15 min - 1 hour",
+          "version": "5.4"
+        },
+        {
+          "instance_id": "pytest-dev__pytest-7490",
+          "base_commit": "7f7a36478abe",
+          "patch_lines": 46,
+          "f2p": 2,
+          "p2p": 78,
+          "difficulty": "15 min - 1 hour",
+          "version": "6.0"
+        },
+        {
+          "instance_id": "pytest-dev__pytest-7521",
+          "base_commit": "41d211c24a67",
+          "patch_lines": 12,
+          "f2p": 2,
+          "p2p": 125,
+          "difficulty": "<15 min fix",
+          "version": "6.0"
+        },
+        {
+          "instance_id": "pytest-dev__pytest-10051",
+          "base_commit": "aa55975c7d3f",
+          "patch_lines": 32,
+          "f2p": 1,
+          "p2p": 15,
+          "difficulty": "15 min - 1 hour",
+          "version": "7.2"
+        }
+      ]
+    },
+    "sympy/sympy": {
+      "count": 5,
+      "instances": [
+        {
+          "instance_id": "sympy__sympy-21930",
+          "base_commit": "de446c6d85f6",
+          "patch_lines": 31,
+          "f2p": 6,
+          "p2p": 45,
+          "difficulty": "15 min - 1 hour",
+          "version": "1.9"
+        },
+        {
+          "instance_id": "sympy__sympy-22080",
+          "base_commit": "3f8c8c2377cb",
+          "patch_lines": 40,
+          "f2p": 3,
+          "p2p": 91,
+          "difficulty": "15 min - 1 hour",
+          "version": "1.10"
+        },
+        {
+          "instance_id": "sympy__sympy-15809",
+          "base_commit": "28d913d3cead",
+          "patch_lines": 13,
+          "f2p": 2,
+          "p2p": 10,
+          "difficulty": "<15 min fix",
+          "version": "1.4"
+        },
+        {
+          "instance_id": "sympy__sympy-17139",
+          "base_commit": "1d3327b8e90a",
+          "patch_lines": 13,
+          "f2p": 2,
+          "p2p": 67,
+          "difficulty": "<15 min fix",
+          "version": "1.5"
+        },
+        {
+          "instance_id": "sympy__sympy-17630",
+          "base_commit": "58e78209c857",
+          "patch_lines": 13,
+          "f2p": 2,
+          "p2p": 19,
+          "difficulty": "1-4 hours",
+          "version": "1.5"
+        }
+      ]
+    },
+    "pydata/xarray": {
+      "count": 5,
+      "instances": [
+        {
+          "instance_id": "pydata__xarray-4356",
+          "base_commit": "e05fddea852d",
+          "patch_lines": 19,
+          "f2p": 8,
+          "p2p": 604,
+          "difficulty": "<15 min fix",
+          "version": "0.12"
+        },
+        {
+          "instance_id": "pydata__xarray-4966",
+          "base_commit": "37522e991a32",
+          "patch_lines": 19,
+          "f2p": 4,
+          "p2p": 21,
+          "difficulty": "15 min - 1 hour",
+          "version": "0.12"
+        },
+        {
+          "instance_id": "pydata__xarray-6744",
+          "base_commit": "7cc6cc991e58",
+          "patch_lines": 32,
+          "f2p": 3,
+          "p2p": 1815,
+          "difficulty": "15 min - 1 hour",
+          "version": "2022.06"
+        },
+        {
+          "instance_id": "pydata__xarray-4075",
+          "base_commit": "19b088636eb7",
+          "patch_lines": 20,
+          "f2p": 2,
+          "p2p": 958,
+          "difficulty": "<15 min fix",
+          "version": "0.12"
+        },
+        {
+          "instance_id": "pydata__xarray-6992",
+          "base_commit": "45c0a114e2b7",
+          "patch_lines": 203,
+          "f2p": 12,
+          "p2p": 945,
+          "difficulty": ">4 hours",
+          "version": "2022.06"
+        }
+      ]
+    }
+  },
+  "total_selected": 21
+}

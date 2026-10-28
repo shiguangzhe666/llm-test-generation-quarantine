@@ -1,0 +1,8 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\psf__requests
+EXIT_CODE: 0
+DURATION_SECONDS: 1.3764
+======================================== STDOUT ========================================
+Discovered 15 nodeids: ['test_gen_00.py::test_request_with_unicode_method', 'test_gen_00.py::test_request_with_non_ascii_method', 'test_gen_00.py::test_request_with_empty_method', 'test_gen_00.py::test_request_with_non_string_method', 'test_gen_00.py::test_request_with_unicode_url', 'test_gen_00.py::test_request_with_non_ascii_url', 'test_gen_00.py::test_request_with_empty_url', 'test_gen_00.py::test_request_with_non_string_url', 'test_gen_00.py::test_request_with_valid_method_and_invalid_url', 'test_gen_00.py::test_request_with_invalid_method_and_valid_url', 'test_gen_01.py::test_session_request_with_unicode_method', 'test_gen_02.py::test_request_with_unicode_method', 'test_gen_02.py::test_request_with_non_ascii_method', 'test_gen_02.py::test_request_with_unicode_url', 'test_gen_02.py::test_request_with_non_ascii_url']
+======================================== STDERR ========================================
+(empty)

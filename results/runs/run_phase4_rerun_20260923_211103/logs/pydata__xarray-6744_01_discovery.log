@@ -1,0 +1,8 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\pydata__xarray
+EXIT_CODE: 0
+DURATION_SECONDS: 3.2262
+======================================== STDOUT ========================================
+Discovered 13 nodeids: ['test_gen_00.py::test_dataarray_rolling_mean', 'test_gen_00.py::test_dataset_rolling_mean', 'test_gen_00.py::test_dataarray_rolling_construct', 'test_gen_00.py::test_dataset_rolling_construct', 'test_gen_01.py::test_rolling_mean', 'test_gen_01.py::test_dataset_rolling', 'test_gen_01.py::test_rolling_with_fillna', 'test_gen_02.py::test_dataarray_rolling', 'test_gen_02.py::test_dataset_rolling', 'test_gen_02.py::test_coarsen', 'test_gen_02.py::test_rolling_min_periods', 'test_gen_02.py::test_rolling_center', 'test_gen_02.py::test_attributes']
+======================================== STDERR ========================================
+(empty)

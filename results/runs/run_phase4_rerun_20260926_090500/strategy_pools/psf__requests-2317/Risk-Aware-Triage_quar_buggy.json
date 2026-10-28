@@ -1,0 +1,185 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_session_request_with_utf8_encoding",
+    "test_gen_00.py::test_session_request_with_empty_data",
+    "test_gen_00.py::test_session_request_with_None_data",
+    "test_gen_00.py::test_session_request_with_non_utf8_encoding",
+    "test_gen_00.py::test_session_request_with_invalid_url",
+    "test_gen_00.py::test_session_request_with_non_string_method",
+    "test_gen_01.py::test_request_with_utf8_encoding",
+    "test_gen_01.py::test_request_with_non_ascii_data",
+    "test_gen_01.py::test_request_with_empty_data",
+    "test_gen_01.py::test_request_with_null_data",
+    "test_gen_01.py::test_request_with_custom_encoding",
+    "test_gen_01.py::test_request_with_invalid_encoding",
+    "test_gen_01.py::test_request_with_missing_data",
+    "test_gen_02.py::test_request_with_utf8_encoding",
+    "test_gen_02.py::test_request_with_non_ascii_params",
+    "test_gen_02.py::test_request_with_non_ascii_url",
+    "test_gen_02.py::test_request_with_empty_string_encoding",
+    "test_gen_02.py::test_request_with_none_encoding",
+    "test_gen_02.py::test_request_with_invalid_encoding",
+    "test_gen_02.py::test_request_with_missing_content_type",
+    "test_gen_02.py::test_request_with_non_ascii_query_string",
+    "test_gen_02.py::test_request_with_non_ascii_path"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_session_request_with_utf8_encoding": {
+      "nodeid": "test_gen_00.py::test_session_request_with_utf8_encoding",
+      "outcome": "PASSED",
+      "duration": 0.3966786000000866,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_session_request_with_empty_data": {
+      "nodeid": "test_gen_00.py::test_session_request_with_empty_data",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.36935890000017935,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:24: in test_session_request_with_empty_data\n    assert response.status_code == 200  # Assuming the request is successful\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_session_request_with_None_data": {
+      "nodeid": "test_gen_00.py::test_session_request_with_None_data",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.37031790000014553,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:34: in test_session_request_with_None_data\n    assert response.status_code == 200  # Assuming the request is successful\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_session_request_with_non_utf8_encoding": {
+      "nodeid": "test_gen_00.py::test_session_request_with_non_utf8_encoding",
+      "outcome": "PASSED",
+      "duration": 0.3845409999998992,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_session_request_with_invalid_url": {
+      "nodeid": "test_gen_00.py::test_session_request_with_invalid_url",
+      "outcome": "PASSED",
+      "duration": 3.8423795000001064,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_session_request_with_non_string_method": {
+      "nodeid": "test_gen_00.py::test_session_request_with_non_string_method",
+      "outcome": "EXCEPTION",
+      "duration": 0.37728290000018205,
+      "error_type": "TypeError",
+      "error_message": "test_gen_00.py:74: in test_session_request_with_non_string_method\n    with pytest.raises(TypeError):  # Assuming the request will raise a TypeError for non-string method\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_01.py::test_request_with_utf8_encoding": {
+      "nodeid": "test_gen_01.py::test_request_with_utf8_encoding",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.09999089999996613,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:15: in test_request_with_utf8_encoding\n    assert response.encoding == 'utf-8'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_request_with_non_ascii_data": {
+      "nodeid": "test_gen_01.py::test_request_with_non_ascii_data",
+      "outcome": "EXCEPTION",
+      "duration": 0.0009460999999646447,
+      "error_type": "UnicodeEncodeError",
+      "error_message": "test_gen_01.py:24: in test_request_with_non_ascii_data\n    response = session.request(method, url, headers=headers, data=data)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:457: in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:569: in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\adapters.py:352: in send\n    resp = conn.urlopen(\nrequests\\packages\\urllib3\\connectionpool.py:514: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:308: in _make_request\n    conn.request(method, url, **httplib_request_kw)\nG:\\Python311\\Lib\\http\\client.py:1303: in request\n    self._send_request(method, url, body, headers, encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1348: in _send_request\n    body = _encode(body, 'body')\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\http\\client.py"
+    },
+    "test_gen_01.py::test_request_with_empty_data": {
+      "nodeid": "test_gen_01.py::test_request_with_empty_data",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.09573660000023665,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:39: in test_request_with_empty_data\n    assert response.encoding == 'utf-8'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_request_with_null_data": {
+      "nodeid": "test_gen_01.py::test_request_with_null_data",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.094820000000027,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:50: in test_request_with_null_data\n    assert response.encoding == 'utf-8'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_request_with_custom_encoding": {
+      "nodeid": "test_gen_01.py::test_request_with_custom_encoding",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003372999999555759,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:59: in test_request_with_custom_encoding\n    response = session.request(method, url, headers=headers, data=data, encoding='iso-8859-1')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Session.request() got an unexpected keyword argument 'encoding'"
+    },
+    "test_gen_01.py::test_request_with_invalid_encoding": {
+      "nodeid": "test_gen_01.py::test_request_with_invalid_encoding",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003249000001233071,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:72: in test_request_with_invalid_encoding\n    response = session.request(method, url, headers=headers, data=data, encoding='invalid-encoding')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Session.request() got an unexpected keyword argument 'encoding'"
+    },
+    "test_gen_01.py::test_request_with_missing_data": {
+      "nodeid": "test_gen_01.py::test_request_with_missing_data",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.09578410000017357,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:83: in test_request_with_missing_data\n    assert response.encoding == 'utf-8'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_request_with_utf8_encoding": {
+      "nodeid": "test_gen_02.py::test_request_with_utf8_encoding",
+      "outcome": "EXCEPTION",
+      "duration": 0.0007160000000112632,
+      "error_type": "UnicodeEncodeError",
+      "error_message": "test_gen_02.py:13: in test_request_with_utf8_encoding\n    response = session.request(method, url, params=params, headers=headers)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:457: in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:569: in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\adapters.py:352: in send\n    resp = conn.urlopen(\nrequests\\packages\\urllib3\\connectionpool.py:514: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:308: in _make_request\n    conn.request(method, url, **httplib_request_kw)\nG:\\Python311\\Lib\\http\\client.py:1303: in request\n    self._send_request(method, url, body, headers, encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1344: in _send_request\n    self.putheader(hdr, value)\nG:\\Python311\\Lib\\http\\client.py:1276: in putheader\n    valu"
+    },
+    "test_gen_02.py::test_request_with_non_ascii_params": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_params",
+      "outcome": "PASSED",
+      "duration": 0.10166929999991225,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_non_ascii_url": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_url",
+      "outcome": "PASSED",
+      "duration": 0.2157114999999976,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_empty_string_encoding": {
+      "nodeid": "test_gen_02.py::test_request_with_empty_string_encoding",
+      "outcome": "PASSED",
+      "duration": 0.10179940000011811,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_none_encoding": {
+      "nodeid": "test_gen_02.py::test_request_with_none_encoding",
+      "outcome": "PASSED",
+      "duration": 0.09744210000008025,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_invalid_encoding": {
+      "nodeid": "test_gen_02.py::test_request_with_invalid_encoding",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003730999999334017,
+      "error_type": "UnicodeDecodeError",
+      "error_message": "test_gen_02.py:63: in test_request_with_invalid_encoding\n    headers['Authorization'] = 'Bearer ' + '令牌'.encode('utf-16').decode('utf-8')  # Invalid encoding\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+    },
+    "test_gen_02.py::test_request_with_missing_content_type": {
+      "nodeid": "test_gen_02.py::test_request_with_missing_content_type",
+      "outcome": "PASSED",
+      "duration": 0.10041560000013305,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_non_ascii_query_string": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_query_string",
+      "outcome": "PASSED",
+      "duration": 0.09772659999998723,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_non_ascii_path": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_path",
+      "outcome": "PASSED",
+      "duration": 0.21623399999975845,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

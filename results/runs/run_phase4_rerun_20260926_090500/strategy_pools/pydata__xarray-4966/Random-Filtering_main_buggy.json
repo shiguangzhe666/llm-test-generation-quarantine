@@ -1,0 +1,17 @@
+{
+  "exitstatus": 0,
+  "runtime_order": [
+    "test_gen_01.py::test_placeholder_pydata_xarray_4966"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_01.py::test_placeholder_pydata_xarray_4966": {
+      "nodeid": "test_gen_01.py::test_placeholder_pydata_xarray_4966",
+      "outcome": "PASSED",
+      "duration": 0.0004834999995182443,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

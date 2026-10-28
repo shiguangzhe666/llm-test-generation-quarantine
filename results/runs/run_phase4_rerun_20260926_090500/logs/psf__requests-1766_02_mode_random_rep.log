@@ -1,0 +1,504 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt__nkhsvrc
+EXIT_CODE: 0
+DURATION_SECONDS: 38.9286
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_httpdigestauth_build_header": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpbasicauth_empty_password": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpbasicauth_empty_username": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpdigestauth_handle_401": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpbasicauth_non_ascii": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpdigestauth_call_registers_hook": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpbasicauth_both_empty": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_authbase_call_raises_notimplemented": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_httpbasicauth_sets_authorization_header": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_nonce": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_realm": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_handle_401": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_md5": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_algorithm": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_opaque": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_qop": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_uri": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_sha": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_basic_auth": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_invalid_algorithm": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_proxy_auth": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_special_characters": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header_with_multiple_qop_values": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_basic_auth_str": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_http_digest_auth_build_digest_header": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpproxyauth_empty_password": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpproxyauth_none_password": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpproxyauth_valid_credentials": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpproxyauth_empty_username": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_build_digest_header_md5_no_qop": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_handle_401_no_challenge": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_build_digest_header_md5": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpproxyauth_none_username": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpbasicauth_empty_username": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpbasicauth_empty_password": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_build_digest_header_sha": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_build_digest_header_with_realm": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpbasicauth_none_password": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpbasicauth_valid_credentials": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_httpbasicauth_none_username": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  }
+}
+======================================== STDERR ========================================
+(empty)

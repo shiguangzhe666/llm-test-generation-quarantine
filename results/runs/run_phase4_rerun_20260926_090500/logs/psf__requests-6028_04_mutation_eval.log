@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on requests/utils.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ttvp2jdp
+EXIT_CODE: 0
+DURATION_SECONDS: 16.7778
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/2)
+======================================== STDERR ========================================
+(empty)

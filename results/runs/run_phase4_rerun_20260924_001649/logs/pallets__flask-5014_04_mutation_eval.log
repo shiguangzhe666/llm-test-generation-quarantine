@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on src/flask/blueprints.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_9uq6lq0v
+EXIT_CODE: 0
+DURATION_SECONDS: 26.9397
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,81 @@
+COMMAND: run_instance_feasibility_pilot('psf__requests-1921')
+CWD: F:\论文\llm-test-stability\data\repos\psf__requests
+EXIT_CODE: 0
+DURATION_SECONDS: 505.2376
+======================================== STDOUT ========================================
+{
+  "instance_id": "psf__requests-1921",
+  "repo": "psf/requests",
+  "base_commit": "3c88e520da24ae6f736929a750876e7654accc3d",
+  "test_files_evaluated": [
+    "test_gen_00.py",
+    "test_gen_01.py",
+    "test_gen_02.py"
+  ],
+  "real_bugs_ground_truth_count": 1,
+  "reference_tests_evaluation": {
+    "buggy_f2p_outcomes": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET": "TIMEOUT",
+      "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES": "PASSED"
+    },
+    "fixed_f2p_outcomes": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET": "PASSED",
+      "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES": "PASSED"
+    },
+    "reproduction_verified": false
+  },
+  "generated_tests_evaluation": {
+    "total_generated_tests": 30,
+    "valid_ast_tests": 30,
+    "stable_pass_tests": 13,
+    "stable_fail_tests": 17,
+    "flaky_tests": 0,
+    "defect_detecting_tests": 4,
+    "defect_detecting_keys": [
+      "test_gen_00.py::test_merge_setting_with_all_none",
+      "test_gen_01.py::test_merge_setting_mixed_types",
+      "test_gen_01.py::test_merge_setting_request_override",
+      "test_gen_02.py::test_merge_setting_with_no_request_settings"
+    ],
+    "real_bugs_detected": 1
+  },
+  "mutation_testing": {
+    "valid_mutants": 5,
+    "killed_mutants": 3,
+    "survived_mutants": 2,
+    "mutation_score": 0.6,
+    "mutation_score_str": "60.0%",
+    "baseline_passing_tests_count": 2,
+    "false_kills_filtered": 20
+  },
+  "triage_evaluation": {
+    "tier_1_safe_keep_count": 28,
+    "tier_2_dual_purpose_count": 0,
+    "tier_3_safe_low_count": 2,
+    "tier_4_spurious_count": 0,
+    "executable_retention_rate": 0.9333,
+    "quarantine_rate": 0.0
+  },
+  "trade_off_analysis": {
+    "policy_keep_all": {
+      "defect_retention_rate": 1.0,
+      "flakiness_retention_rate": 0.0,
+      "description": "Retains all tests; preserves all defects but contaminates CI with 100% of flaky tests."
+    },
+    "policy_discard_all_flaky": {
+      "defects_lost_count": 0,
+      "defect_retention_rate": 1.0,
+      "flakiness_elimination_rate": 1.0,
+      "description": "Standard industry policy; completely eliminates flakiness but loses dual-purpose defect-detecting tests."
+    },
+    "policy_risk_aware_triage": {
+      "defects_preserved_executable": 4,
+      "defects_preserved_quarantine": 0,
+      "total_defects_preserved": 4,
+      "defect_retention_rate": 1.0,
+      "description": "Our proposed framework; keeps deterministic bug-detectors executable and isolates dual-purpose tests into quarantine pool."
+    }
+  }
+}
+======================================== STDERR ========================================
+(empty)

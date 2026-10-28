@@ -1,0 +1,339 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_rlvlpyyr
+EXIT_CODE: 0
+DURATION_SECONDS: 36.0120
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_merge_setting_with_none_values": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_with_all_none": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_with_conflicting_keys": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_with_empty_dict": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_with_invalid_input": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_positive_case": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_merge_setting_with_non_dict_class": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_non_dict_class": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_both_override": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_session_override": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_none_input": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_empty_session": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_mixed_types": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_none_request": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_empty_request": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_positive_case": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_request_override": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_merge_setting_none_both": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_no_request_settings": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_nested_dicts": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_default_dict_class": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_no_session_settings": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  }
+}
+======================================== STDERR ========================================
+(empty)

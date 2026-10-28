@@ -1,0 +1,49 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved",
+    "test_gen_00.py::TestRequoteUri::test_requote_uri",
+    "test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved",
+    "test_gen_02.py::TestRequoteUri::test_requote_uri",
+    "test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved": {
+      "nodeid": "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006328999988909345,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:67: in test_unquote_unreserved\n    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')\n                     ^^^^^^^^^^^^^^^^^^\nE   NameError: name 'unquote_unreserved' is not defined"
+    },
+    "test_gen_00.py::TestRequoteUri::test_requote_uri": {
+      "nodeid": "test_gen_00.py::TestRequoteUri::test_requote_uri",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005490000039571896,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:73: in test_requote_uri\n    self.assertEqual(requote_uri('http://example.com/path?query=1'), 'http://example.com/path?query=1')\n                     ^^^^^^^^^^^\nE   NameError: name 'requote_uri' is not defined"
+    },
+    "test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved": {
+      "nodeid": "test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0006303999980445951,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:57: in test_unquote_unreserved\n    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')\nE   AssertionError: 'http%3A%2F%2Fexample.com' != 'http://example.com'\nE   - http%3A%2F%2Fexample.com\nE   + http://example.com"
+    },
+    "test_gen_02.py::TestRequoteUri::test_requote_uri": {
+      "nodeid": "test_gen_02.py::TestRequoteUri::test_requote_uri",
+      "outcome": "PASSED",
+      "duration": 0.0004476999965845607,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies": {
+      "nodeid": "test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0009570999973220751,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:112: in test_get_environ_proxies\n    self.assertEqual(get_environ_proxies('http://proxy:8080'), {})\nE   AssertionError: {'http': 'http://proxy:8080', 'no': 'example.com'} != {}\nE   - {'http': 'http://proxy:8080', 'no': 'example.com'}\nE   + {}"
+    }
+  }
+}

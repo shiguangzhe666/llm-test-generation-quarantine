@@ -1,0 +1,109 @@
+COMMAND: pytest 2 tests (strategy=Risk-Aware-Triage, pool=mainline, codebase=fixed)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u
+EXIT_CODE: 1
+DURATION_SECONDS: 0.3295
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 2 items
+
+test_gen_00.py::test_request_with_empty_url PASSED                       [ 50%]
+test_gen_00.py::test_request_with_non_string_url FAILED                  [100%]
+
+================================== FAILURES ===================================
+______________________ test_request_with_non_string_url _______________________
+test_gen_00.py:58: in test_request_with_non_string_url
+    session.request('GET', 123)
+requests\sessions.py:327: in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:256: in prepare_request
+    p.prepare(
+requests\models.py:283: in prepare
+    self.prepare_url(url, params)
+requests\models.py:327: in prepare_url
+    raise MissingSchema("Invalid URL {0!r}: No schema supplied. "
+E   requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhaps you meant http://123?
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:651
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\packages\urllib3\connectionpool.py:651: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:681
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\models.py:681: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:369
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:369: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:379
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:379: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:389
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:389: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:399
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:399: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:409
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:409: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:419
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:419: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:429
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_0nplzb1u\requests\sessions.py:429: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_request_with_non_string_url - requests.exceptions...
+================== 1 failed, 1 passed, 19 warnings in 0.11s ===================
+
+======================================== STDERR ========================================
+(empty)

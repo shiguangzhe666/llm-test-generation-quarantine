@@ -1,0 +1,347 @@
+COMMAND: pytest 15 tests (strategy=Discard-All-Flaky, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8
+EXIT_CODE: 1
+DURATION_SECONDS: 5.2495
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 15 items
+
+test_gen_00.py::test_request_with_unicode_method FAILED                  [  6%]
+test_gen_00.py::test_request_with_non_ascii_method FAILED                [ 13%]
+test_gen_00.py::test_request_with_empty_method FAILED                    [ 20%]
+test_gen_00.py::test_request_with_non_string_method FAILED               [ 26%]
+test_gen_00.py::test_request_with_unicode_url FAILED                     [ 33%]
+test_gen_00.py::test_request_with_non_ascii_url FAILED                   [ 40%]
+test_gen_00.py::test_request_with_empty_url PASSED                       [ 46%]
+test_gen_00.py::test_request_with_non_string_url FAILED                  [ 53%]
+test_gen_00.py::test_request_with_valid_method_and_invalid_url FAILED    [ 60%]
+test_gen_00.py::test_request_with_invalid_method_and_valid_url FAILED    [ 66%]
+test_gen_01.py::test_session_request_with_unicode_method FAILED          [ 73%]
+test_gen_02.py::test_request_with_unicode_method FAILED                  [ 80%]
+test_gen_02.py::test_request_with_non_ascii_method PASSED                [ 86%]
+test_gen_02.py::test_request_with_unicode_url FAILED                     [ 93%]
+test_gen_02.py::test_request_with_non_ascii_url FAILED                   [100%]
+
+================================== FAILURES ===================================
+______________________ test_request_with_unicode_method _______________________
+test_gen_00.py:8: in test_request_with_unicode_method
+    response = session.request(u'\u0410\u043b\u044c\u044e\u0449\u0435\u0439', 'http://example.com')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:285: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1314: in _send_request
+    self.putrequest(method, url, **skips)
+G:\Python311\Lib\http\client.py:1152: in putrequest
+    self._output(self._encode_request(request))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:1232: in _encode_request
+    return request.encode('ascii')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+_____________________ test_request_with_non_ascii_method ______________________
+test_gen_00.py:15: in test_request_with_non_ascii_method
+    response = session.request(u'\u0422\u0435\u043b\u044e', 'http://example.com')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:285: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1314: in _send_request
+    self.putrequest(method, url, **skips)
+G:\Python311\Lib\http\client.py:1152: in putrequest
+    self._output(self._encode_request(request))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:1232: in _encode_request
+    return request.encode('ascii')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+_______________________ test_request_with_empty_method ________________________
+test_gen_00.py:22: in test_request_with_empty_method
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+_____________________ test_request_with_non_string_method _____________________
+test_gen_00.py:30: in test_request_with_non_string_method
+    session.request(123, 'http://example.com')
+requests\sessions.py:314: in request
+    method = method.upper(),
+             ^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'upper'
+________________________ test_request_with_unicode_url ________________________
+requests\packages\urllib3\connectionpool.py:313: in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: HTTPConnection.getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:315: in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:1395: in getresponse
+    response.begin()
+G:\Python311\Lib\http\client.py:325: in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:294: in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+E   http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:521: in urlopen
+    raise MaxRetryError(self, url, e)
+E   requests.packages.urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='xn--80adjk8agr.com', port=80): Max retries exceeded with url: / (Caused by <class 'http.client.RemoteDisconnected'>: Remote end closed connection without response)
+
+During handling of the above exception, another exception occurred:
+test_gen_00.py:36: in test_request_with_unicode_url
+    response = session.request('GET', u'http://\u043f\u0440\u0438\u0432\u0435\u0442\u0430.com')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:356: in send
+    raise ConnectionError(e)
+E   requests.exceptions.ConnectionError: HTTPConnectionPool(host='xn--80adjk8agr.com', port=80): Max retries exceeded with url: / (Caused by <class 'http.client.RemoteDisconnected'>: Remote end closed connection without response)
+_______________________ test_request_with_non_ascii_url _______________________
+requests\packages\urllib3\connectionpool.py:313: in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: HTTPConnection.getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:315: in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:1395: in getresponse
+    response.begin()
+G:\Python311\Lib\http\client.py:325: in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:294: in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+E   http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:521: in urlopen
+    raise MaxRetryError(self, url, e)
+E   requests.packages.urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='xn--80akinhqgi.com', port=80): Max retries exceeded with url: / (Caused by <class 'http.client.RemoteDisconnected'>: Remote end closed connection without response)
+
+During handling of the above exception, another exception occurred:
+test_gen_00.py:43: in test_request_with_non_ascii_url
+    response = session.request('GET', u'http://\u0421\u0442\u0440\u0430\u043d\u0438\u0435\u043b.com')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:356: in send
+    raise ConnectionError(e)
+E   requests.exceptions.ConnectionError: HTTPConnectionPool(host='xn--80akinhqgi.com', port=80): Max retries exceeded with url: / (Caused by <class 'http.client.RemoteDisconnected'>: Remote end closed connection without response)
+______________________ test_request_with_non_string_url _______________________
+test_gen_00.py:58: in test_request_with_non_string_url
+    session.request('GET', 123)
+requests\sessions.py:324: in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:256: in prepare_request
+    p.prepare(
+requests\models.py:283: in prepare
+    self.prepare_url(url, params)
+requests\models.py:327: in prepare_url
+    raise MissingSchema("Invalid URL {0!r}: No schema supplied. "
+E   requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhaps you meant http://123?
+_______________ test_request_with_valid_method_and_invalid_url ________________
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:285: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1349: in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+G:\Python311\Lib\http\client.py:1298: in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+G:\Python311\Lib\http\client.py:1058: in _send_output
+    self.send(msg)
+G:\Python311\Lib\http\client.py:996: in send
+    self.connect()
+G:\Python311\Lib\http\client.py:962: in connect
+    self.sock = self._create_connection(
+G:\Python311\Lib\socket.py:827: in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\socket.py:962: in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:521: in urlopen
+    raise MaxRetryError(self, url, e)
+E   requests.packages.urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: / (Caused by <class 'socket.gaierror'>: [Errno 11001] getaddrinfo failed)
+
+During handling of the above exception, another exception occurred:
+test_gen_00.py:65: in test_request_with_valid_method_and_invalid_url
+    session.request('GET', 'http://invalid-url')
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:356: in send
+    raise ConnectionError(e)
+E   requests.exceptions.ConnectionError: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: / (Caused by <class 'socket.gaierror'>: [Errno 11001] getaddrinfo failed)
+_______________ test_request_with_invalid_method_and_valid_url ________________
+test_gen_00.py:71: in test_request_with_invalid_method_and_valid_url
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+__________________ test_session_request_with_unicode_method ___________________
+test_gen_01.py:13: in test_session_request_with_unicode_method
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+______________________ test_request_with_unicode_method _______________________
+test_gen_02.py:14: in test_request_with_unicode_method
+    assert response.status_code == 200, "Expected status code 200 for POST request"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Expected status code 200 for POST request
+________________________ test_request_with_unicode_url ________________________
+test_gen_02.py:53: in test_request_with_unicode_url
+    assert response.status_code == 200, "Expected status code 200 for GET request with unicode URL"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Expected status code 200 for GET request with unicode URL
+_______________________ test_request_with_non_ascii_url _______________________
+test_gen_02.py:63: in test_request_with_non_ascii_url
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:651
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\packages\urllib3\connectionpool.py:651: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:681
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\models.py:681: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:366
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:366: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:376
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:376: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:386
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:386: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:396
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:396: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:406
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:406: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:416
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:416: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:426
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mc43vdt8\requests\sessions.py:426: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_request_with_unicode_method - UnicodeEncodeError:...
+FAILED test_gen_00.py::test_request_with_non_ascii_method - UnicodeEncodeErro...
+FAILED test_gen_00.py::test_request_with_empty_method - Failed: DID NOT RAISE...
+FAILED test_gen_00.py::test_request_with_non_string_method - AttributeError: ...
+FAILED test_gen_00.py::test_request_with_unicode_url - requests.exceptions.Co...
+FAILED test_gen_00.py::test_request_with_non_ascii_url - requests.exceptions....
+FAILED test_gen_00.py::test_request_with_non_string_url - requests.exceptions...
+FAILED test_gen_00.py::test_request_with_valid_method_and_invalid_url - reque...
+FAILED test_gen_00.py::test_request_with_invalid_method_and_valid_url - Faile...
+FAILED test_gen_01.py::test_session_request_with_unicode_method - Failed: DID...
+FAILED test_gen_02.py::test_request_with_unicode_method - AssertionError: Exp...
+FAILED test_gen_02.py::test_request_with_unicode_url - AssertionError: Expect...
+FAILED test_gen_02.py::test_request_with_non_ascii_url - Failed: DID NOT RAIS...
+================== 13 failed, 2 passed, 19 warnings in 5.02s ==================
+
+======================================== STDERR ========================================
+(empty)

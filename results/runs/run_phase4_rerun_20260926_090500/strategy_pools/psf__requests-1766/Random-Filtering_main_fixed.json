@@ -1,0 +1,121 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_httpbasicauth_empty_username",
+    "test_gen_00.py::test_httpbasicauth_non_ascii",
+    "test_gen_00.py::test_httpbasicauth_sets_authorization_header",
+    "test_gen_00.py::test_httpdigestauth_build_header",
+    "test_gen_00.py::test_httpdigestauth_handle_401",
+    "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce",
+    "test_gen_01.py::test_http_digest_auth_handle_401",
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_sha",
+    "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge",
+    "test_gen_02.py::test_httpproxyauth_empty_username",
+    "test_gen_02.py::test_httpproxyauth_valid_credentials"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_httpbasicauth_empty_username": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_empty_username",
+      "outcome": "PASSED",
+      "duration": 0.00036470000009103387,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpbasicauth_non_ascii": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_non_ascii",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00032820000001265726,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:59: in test_httpbasicauth_non_ascii\n    assert r.headers['Authorization'] == f'Basic {expected}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_httpbasicauth_sets_authorization_header": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_sets_authorization_header",
+      "outcome": "PASSED",
+      "duration": 0.0003048999997190549,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpdigestauth_build_header": {
+      "nodeid": "test_gen_00.py::test_httpdigestauth_build_header",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003111999997145176,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_00.py:73: in test_httpdigestauth_build_header\n    auth(r)\nrequests\\auth.py:193: in __call__\n    r.register_hook('response', self.handle_401)\n    ^^^^^^^^^^^^^^^\nE   AttributeError: 'MockRequest' object has no attribute 'register_hook'"
+    },
+    "test_gen_00.py::test_httpdigestauth_handle_401": {
+      "nodeid": "test_gen_00.py::test_httpdigestauth_handle_401",
+      "outcome": "EXCEPTION",
+      "duration": 0.000352399999883346,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_00.py:81: in test_httpdigestauth_handle_401\n    new_response = auth.handle_401(r)\n                   ^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:169: in handle_401\n    r.content\nE   AttributeError: 'MockResponse' object has no attribute 'content'"
+    },
+    "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header": {
+      "nodeid": "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header",
+      "outcome": "PASSED",
+      "duration": 0.0002882999999656022,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri": {
+      "nodeid": "test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006085999998504121,
+      "error_type": "KeyError",
+      "error_message": "test_gen_01.py:176: in test_http_digest_auth_build_digest_header_with_custom_uri\n    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com/path?query=123')\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:70: in build_digest_header\n    realm = self.chal['realm']\n            ^^^^^^^^^^^^^^^^^^\nE   KeyError: 'realm'"
+    },
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm": {
+      "nodeid": "test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm",
+      "outcome": "EXCEPTION",
+      "duration": 0.00045969999996486877,
+      "error_type": "KeyError",
+      "error_message": "test_gen_01.py:101: in test_http_digest_auth_build_digest_header_with_sha_algorithm\n    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:70: in build_digest_header\n    realm = self.chal['realm']\n            ^^^^^^^^^^^^^^^^^^\nE   KeyError: 'realm'"
+    },
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce": {
+      "nodeid": "test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce",
+      "outcome": "EXCEPTION",
+      "duration": 0.00043089999985568284,
+      "error_type": "KeyError",
+      "error_message": "test_gen_01.py:114: in test_http_digest_auth_build_digest_header_with_stale_nonce\n    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:70: in build_digest_header\n    realm = self.chal['realm']\n            ^^^^^^^^^^^^^^^^^^\nE   KeyError: 'realm'"
+    },
+    "test_gen_01.py::test_http_digest_auth_handle_401": {
+      "nodeid": "test_gen_01.py::test_http_digest_auth_handle_401",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005733000000418542,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_01.py:82: in test_http_digest_auth_handle_401\n    mock_content.return_value = b''\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: 'property' object has no attribute 'return_value'"
+    },
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_sha": {
+      "nodeid": "test_gen_02.py::test_httpdigestauth_build_digest_header_sha",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003080999997564504,
+      "error_type": "UnboundLocalError",
+      "error_message": "test_gen_02.py:125: in test_httpdigestauth_build_digest_header_sha\n    result = auth.build_digest_header(method, url)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:96: in build_digest_header\n    if hash_utf8 is None:\n       ^^^^^^^^^\nE   UnboundLocalError: cannot access local variable 'hash_utf8' where it is not associated with a value"
+    },
+    "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge": {
+      "nodeid": "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005548999999973603,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_02.py:94: in test_httpdigestauth_handle_401_with_digest_challenge\n    mock_response.raw.release_conn = mock.MagicMock()\n    ^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\unittest\\mock.py:653: in __getattr__\n    raise AttributeError(\"Mock object has no attribute %r\" % name)\nE   AttributeError: Mock object has no attribute 'raw'"
+    },
+    "test_gen_02.py::test_httpproxyauth_empty_username": {
+      "nodeid": "test_gen_02.py::test_httpproxyauth_empty_username",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003315000001293811,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:62: in test_httpproxyauth_empty_username\n    assert res.headers[\"Proxy-Authorization\"] == \"Basic dXNlcjpwYXNz\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_httpproxyauth_valid_credentials": {
+      "nodeid": "test_gen_02.py::test_httpproxyauth_valid_credentials",
+      "outcome": "PASSED",
+      "duration": 0.0002862999999706517,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

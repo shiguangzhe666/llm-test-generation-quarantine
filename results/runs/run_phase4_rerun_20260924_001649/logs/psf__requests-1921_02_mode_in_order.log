@@ -1,0 +1,39 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_rlvlpyyr
+EXIT_CODE: 0
+DURATION_SECONDS: 1.8010
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_merge_setting_positive_case": "ASSERTION_FAILED",
+  "test_gen_00.py::test_merge_setting_with_none_values": "ASSERTION_FAILED",
+  "test_gen_00.py::test_merge_setting_with_empty_dict": "PASSED",
+  "test_gen_00.py::test_merge_setting_with_all_none": "PASSED",
+  "test_gen_00.py::test_merge_setting_with_conflicting_keys": "ASSERTION_FAILED",
+  "test_gen_00.py::test_merge_setting_with_non_dict_class": "ASSERTION_FAILED",
+  "test_gen_00.py::test_merge_setting_with_invalid_input": "EXCEPTION",
+  "test_gen_01.py::test_merge_setting_positive_case": "ASSERTION_FAILED",
+  "test_gen_01.py::test_merge_setting_request_override": "PASSED",
+  "test_gen_01.py::test_merge_setting_session_override": "ASSERTION_FAILED",
+  "test_gen_01.py::test_merge_setting_both_override": "ASSERTION_FAILED",
+  "test_gen_01.py::test_merge_setting_empty_request": "PASSED",
+  "test_gen_01.py::test_merge_setting_empty_session": "PASSED",
+  "test_gen_01.py::test_merge_setting_mixed_types": "PASSED",
+  "test_gen_01.py::test_merge_setting_non_dict_class": "ASSERTION_FAILED",
+  "test_gen_01.py::test_merge_setting_none_input": "PASSED",
+  "test_gen_01.py::test_merge_setting_none_request": "PASSED",
+  "test_gen_01.py::test_merge_setting_none_both": "PASSED",
+  "test_gen_02.py::test_merge_setting_with_default_dict_class": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_no_session_settings": "PASSED",
+  "test_gen_02.py::test_merge_setting_with_no_request_settings": "PASSED",
+  "test_gen_02.py::test_merge_setting_with_nested_dicts": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict": "PASSED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request": "ASSERTION_FAILED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session": "PASSED",
+  "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both": "ASSERTION_FAILED"
+}
+======================================== STDERR ========================================
+(empty)

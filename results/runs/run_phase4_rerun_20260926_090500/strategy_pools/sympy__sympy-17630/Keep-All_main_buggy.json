@@ -1,0 +1,81 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_matrix_symbol",
+    "test_gen_00.py::test_matrix_element_derivative",
+    "test_gen_00.py::test_matrix_eq",
+    "test_gen_00.py::test_get_postprocessor",
+    "test_gen_01.py::test_matrixsymbol",
+    "test_gen_01.py::test_matrixelement",
+    "test_gen_01.py::test_substitution",
+    "test_gen_01.py::test_callable",
+    "test_gen_01.py::test_derivative"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_matrix_symbol": {
+      "nodeid": "test_gen_00.py::test_matrix_symbol",
+      "outcome": "EXCEPTION",
+      "duration": 0.0014073000002099434,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:23: in test_matrix_symbol\n    a11 = MatrixElement(A, 0, 0)\n          ^^^^^^^^^^^^^\nE   NameError: name 'MatrixElement' is not defined"
+    },
+    "test_gen_00.py::test_matrix_element_derivative": {
+      "nodeid": "test_gen_00.py::test_matrix_element_derivative",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003961000002163928,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:31: in test_matrix_element_derivative\n    a11 = MatrixElement(A, 0, 0)\n          ^^^^^^^^^^^^^\nE   NameError: name 'MatrixElement' is not defined"
+    },
+    "test_gen_00.py::test_matrix_eq": {
+      "nodeid": "test_gen_00.py::test_matrix_eq",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.001218499999595224,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:45: in test_matrix_eq\n    assert diff.is_ZeroMatrix\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_get_postprocessor": {
+      "nodeid": "test_gen_00.py::test_get_postprocessor",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004015000004073954,
+      "error_type": "TypeError",
+      "error_message": "test_gen_00.py:58: in test_get_postprocessor\n    expr = A + scalar\n           ^^^^^^^^^^\nsympy\\matrices\\expressions\\matexpr.py:24: in __sympifyit_wrapper\n    return func(a, b)\n           ^^^^^^^^^^\nsympy\\core\\decorators.py:129: in binary_op_wrapper\n    return func(self, other)\n           ^^^^^^^^^^^^^^^^^\nsympy\\matrices\\expressions\\matexpr.py:88: in __add__\n    return MatAdd(self, other, check=True).doit()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\matrices\\expressions\\matadd.py:50: in __new__\n    validate(*args)\nsympy\\matrices\\expressions\\matadd.py:85: in validate\n    raise TypeError(\"Mix of Matrix and Scalar symbols\")\nE   TypeError: Mix of Matrix and Scalar symbols"
+    },
+    "test_gen_01.py::test_matrixsymbol": {
+      "nodeid": "test_gen_01.py::test_matrixsymbol",
+      "outcome": "PASSED",
+      "duration": 0.0010065999995276798,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_matrixelement": {
+      "nodeid": "test_gen_01.py::test_matrixelement",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003096000000368804,
+      "error_type": "NameError",
+      "error_message": "test_gen_01.py:14: in test_matrixelement\n    elem = MatrixElement(A, 1, 2)\n           ^^^^^^^^^^^^^\nE   NameError: name 'MatrixElement' is not defined"
+    },
+    "test_gen_01.py::test_substitution": {
+      "nodeid": "test_gen_01.py::test_substitution",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.000566400000025169,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:24: in test_substitution\n    assert substituted == 2*B\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_callable": {
+      "nodeid": "test_gen_01.py::test_callable",
+      "outcome": "PASSED",
+      "duration": 0.00030720000040673767,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_derivative": {
+      "nodeid": "test_gen_01.py::test_derivative",
+      "outcome": "PASSED",
+      "duration": 0.0008760999994592567,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

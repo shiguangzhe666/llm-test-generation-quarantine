@@ -1,0 +1,92 @@
+{
+  "run_id": "run_phase2_reaudit_20260921_011520",
+  "instance_id": "psf__requests-1921",
+  "start_time_utc": "2026-09-20T17:26:32.202207",
+  "end_time_utc": "2026-09-20T17:27:55.159180",
+  "duration_seconds": 82.96,
+  "status": "COMPLETED_AND_VERIFIED",
+  "verification_checks": {
+    "pre_run_repos_clean": true,
+    "swebench_ground_truth_reproduced": true,
+    "fail_to_pass_all_6_evaluated": true,
+    "pass_to_pass_inventory_recorded": true,
+    "confirmed_defect_detectors_count": 1,
+    "execution_modes_verified": [
+      "SINGLE_TEST_ISOLATED",
+      "SUITE_IN_ORDER",
+      "SUITE_RANDOM"
+    ],
+    "mutation_baseline_precheck_verified": true,
+    "triage_executable_retention_separated": true,
+    "post_run_repos_clean": true,
+    "repos_head_hashes_identical": true
+  },
+  "artifacts_generated": {
+    "environment.json": {
+      "sha256": "67698f0abec9c265a07c66d3e8f52d8c71f84c8d62f90a842b154de0c6f0c427",
+      "size_bytes": 822
+    },
+    "environment_metadata.json": {
+      "sha256": "67698f0abec9c265a07c66d3e8f52d8c71f84c8d62f90a842b154de0c6f0c427",
+      "size_bytes": 822
+    },
+    "pre_run_repos_audit.json": {
+      "sha256": "15d432e8ef9e4784ba02569af0913999cb054632ca8f37dd2ed97d60857cdce4",
+      "size_bytes": 4454
+    },
+    "reproduction_evidence.json": {
+      "sha256": "e4b7f59a7eb505c3f29fcb294148a2a9c9fa6a7e8a2106f41737d8092a146fbd",
+      "size_bytes": 12713
+    },
+    "execution_modes_evidence.json": {
+      "sha256": "269f99cc666f1473e7b8e5a20e313c487977459c60b19a8cb12caa150b5f3412",
+      "size_bytes": 2795
+    },
+    "mutation_eval_evidence.json": {
+      "sha256": "6735233ce57f6e4ba8649b77e4f7623aacfd9223761c9420d346985ddc679f0f",
+      "size_bytes": 3663
+    },
+    "triage_benchmark_results.json": {
+      "sha256": "125a25171516af1f516c214183dd69dbafa2e803dca982943867601be495cf80",
+      "size_bytes": 34038
+    },
+    "post_run_repos_audit.json": {
+      "sha256": "887c31cd496720ad3ee34af1f6677bba0606e2968a2e5e7bfd72409f91ab81c1",
+      "size_bytes": 4454
+    },
+    "commands.jsonl": {
+      "sha256": "ab49cb4d464250af3686a7620b68059fbba06c6e9d26793882a7bc622967ee14",
+      "size_bytes": 1905
+    }
+  },
+  "logs_generated": {
+    "00_environment_metadata.log": {
+      "sha256": "e515c9de2263e8d1425dac8008d4b7bea1ec05d0a3df60fd1bdd6cd1d964b72e",
+      "size_bytes": 1129
+    },
+    "01_pre_run_repos_audit.log": {
+      "sha256": "e1ec4f7176a3693297e62a00d45efebd4f227ea6cebf53e922e7dd448ab9a125",
+      "size_bytes": 4778
+    },
+    "02_ground_truth_reproduction.log": {
+      "sha256": "1a8ab26e6427722fdfbb584c44fd5dc160c66e963a14c561f0d8ee26fe24839f",
+      "size_bytes": 13058
+    },
+    "03_execution_modes.log": {
+      "sha256": "e52f1ace40070abdb6bc6416d5c4cf305401cb4c4978bac8d014a49c0358120b",
+      "size_bytes": 3138
+    },
+    "04_mutation_evaluation.log": {
+      "sha256": "59f80726c70f56a9757503e19b9208fda3b25532c9393c38c2d355e74f9783a4",
+      "size_bytes": 4003
+    },
+    "05_triage_benchmark.log": {
+      "sha256": "f927bd154cb499780130beb28089ae846a0d3a7648f6df0f2cd8a87920438dd3",
+      "size_bytes": 34337
+    },
+    "06_post_run_repos_audit.log": {
+      "sha256": "4a55d8c7763f4794d3efd4b97b9361167207c4b8b0f37a1401383780cb0a117e",
+      "size_bytes": 4778
+    }
+  }
+}

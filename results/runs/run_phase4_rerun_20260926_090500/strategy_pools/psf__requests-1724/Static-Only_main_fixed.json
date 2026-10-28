@@ -1,0 +1,25 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_request_with_empty_url",
+    "test_gen_00.py::test_request_with_non_string_url"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_request_with_empty_url": {
+      "nodeid": "test_gen_00.py::test_request_with_empty_url",
+      "outcome": "PASSED",
+      "duration": 0.014442099999769198,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_request_with_non_string_url": {
+      "nodeid": "test_gen_00.py::test_request_with_non_string_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004930000000058499,
+      "error_type": "EXCEPTION",
+      "error_message": "test_gen_00.py:58: in test_request_with_non_string_url\n    session.request('GET', 123)\nrequests\\sessions.py:327: in request\n    prep = self.prepare_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:256: in prepare_request\n    p.prepare(\nrequests\\models.py:283: in prepare\n    self.prepare_url(url, params)\nrequests\\models.py:327: in prepare_url\n    raise MissingSchema(\"Invalid URL {0!r}: No schema supplied. \"\nE   requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhaps you meant http://123?"
+    }
+  }
+}

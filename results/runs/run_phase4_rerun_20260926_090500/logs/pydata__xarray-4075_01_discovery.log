@@ -1,0 +1,15 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\pydata__xarray
+EXIT_CODE: 0
+DURATION_SECONDS: 2.8656
+======================================== STDOUT ========================================
+Discovered 22 nodeids: ['test_gen_00.py::test_weighted_init_valid', 'test_gen_00.py::test_weighted_init_invalid_weights_type', 'test_gen_00.py::test_weighted_init_weights_with_nan', 'test_gen_00.py::test_weighted_reduce_skipna_true', 'test_gen_00.py::test_weighted_reduce_skipna_false', 'test_gen_00.py::test_weighted_sum_of_weights', 'test_gen_00.py::test_weighted_mean_zero_sum', 'test_gen_02.py::test_weighted_init_valid_dataarray', 'test_gen_02.py::test_weighted_init_valid_dataset', 'test_gen_02.py::test_weighted_init_invalid_weights_type', 'test_gen_02.py::test_weighted_init_weights_with_missing_values', 'test_gen_02.py::test_weighted_reduce_skipna_true', 'test_gen_02.py::test_weighted_reduce_skipna_false', 'test_gen_02.py::test_weighted_sum_of_weights_masking', 'test_gen_02.py::test_weighted_sum_of_weights_with_nan', 'test_gen_02.py::test_weighted_weighted_sum', 'test_gen_02.py::test_weighted_weighted_mean', 'test_gen_02.py::test_weighted_weighted_mean_zero_sum', 'test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true', 'test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false', 'test_gen_02.py::test_dataset_weighted_implementation', 'test_gen_02.py::test_dataset_weighted_implementation_no_attrs']
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_nms87ydn\\test_gen_01.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_01.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_nms87ydn\\test_gen_01.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_01.py:3: in <module>\n    from your_module import Weighted, DataArrayWeighted, DatasetWeighted\nE   ModuleNotFoundError: No module named 'your_module'\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\_pytest\\config\\__init__.py:1464\n  G:\\Python311\\Lib\\site-packages\\_pytest\\config\\__init__.py:1464: PytestConfigWarning: Unknown config option: env\n  \n    self._warn_or_fail_if_strict(f\"Unknown"
+  }
+]

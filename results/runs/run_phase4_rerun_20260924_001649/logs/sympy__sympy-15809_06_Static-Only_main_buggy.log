@@ -1,0 +1,212 @@
+COMMAND: pytest 32 tests (strategy=Static-Only, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi
+EXIT_CODE: 1
+DURATION_SECONDS: 1.8659
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 32 items
+
+test_gen_00.py::test_min_zero_arguments FAILED                           [  3%]
+test_gen_00.py::test_min_positive_cases PASSED                           [  6%]
+test_gen_00.py::test_min_mixed_signs PASSED                              [  9%]
+test_gen_00.py::test_min_empty_list FAILED                               [ 12%]
+test_gen_00.py::test_max_zero_arguments FAILED                           [ 15%]
+test_gen_00.py::test_max_positive_cases PASSED                           [ 18%]
+test_gen_00.py::test_max_mixed_signs PASSED                              [ 21%]
+test_gen_00.py::test_max_empty_list FAILED                               [ 25%]
+test_gen_01.py::test_min_zero_args FAILED                                [ 28%]
+test_gen_01.py::test_min_positive_case PASSED                            [ 31%]
+test_gen_01.py::test_min_negative_case PASSED                            [ 34%]
+test_gen_01.py::test_min_mixed_case PASSED                               [ 37%]
+test_gen_01.py::test_min_large_numbers FAILED                            [ 40%]
+test_gen_01.py::test_max_zero_args FAILED                                [ 43%]
+test_gen_01.py::test_max_positive_case PASSED                            [ 46%]
+test_gen_01.py::test_max_negative_case PASSED                            [ 50%]
+test_gen_01.py::test_max_mixed_case PASSED                               [ 53%]
+test_gen_01.py::test_max_large_numbers PASSED                            [ 56%]
+test_gen_01.py::test_min_invalid_input FAILED                            [ 59%]
+test_gen_01.py::test_max_invalid_input FAILED                            [ 62%]
+test_gen_02.py::test_min_no_arguments FAILED                             [ 65%]
+test_gen_02.py::test_min_positive_case PASSED                            [ 68%]
+test_gen_02.py::test_min_negative_case PASSED                            [ 71%]
+test_gen_02.py::test_min_mixed_case PASSED                               [ 75%]
+test_gen_02.py::test_min_nan FAILED                                      [ 78%]
+test_gen_02.py::test_max_no_arguments FAILED                             [ 81%]
+test_gen_02.py::test_max_positive_case PASSED                            [ 84%]
+test_gen_02.py::test_max_negative_case PASSED                            [ 87%]
+test_gen_02.py::test_max_mixed_case PASSED                               [ 90%]
+test_gen_02.py::test_max_nan FAILED                                      [ 93%]
+test_gen_02.py::test_max_mixed_with_nan FAILED                           [ 96%]
+test_gen_02.py::test_max_only_nan FAILED                                 [100%]
+
+================================== FAILURES ===================================
+___________________________ test_min_zero_arguments ___________________________
+test_gen_00.py:7: in test_min_zero_arguments
+    result = Min()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+_____________________________ test_min_empty_list _____________________________
+test_gen_00.py:25: in test_min_empty_list
+    Min([])
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument '[]' is not comparable.
+___________________________ test_max_zero_arguments ___________________________
+test_gen_00.py:29: in test_max_zero_arguments
+    result = Max()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+_____________________________ test_max_empty_list _____________________________
+test_gen_00.py:47: in test_max_empty_list
+    Max([])
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument '[]' is not comparable.
+_____________________________ test_min_zero_args ______________________________
+test_gen_01.py:6: in test_min_zero_args
+    result = Min()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+___________________________ test_min_large_numbers ____________________________
+test_gen_01.py:23: in test_min_large_numbers
+    assert result == -1000000, f"Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got {result}"
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError: Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got -2000000
+_____________________________ test_max_zero_args ______________________________
+test_gen_01.py:26: in test_max_zero_args
+    result = Max()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+___________________________ test_min_invalid_input ____________________________
+test_gen_01.py:46: in test_min_invalid_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE TypeError
+___________________________ test_max_invalid_input ____________________________
+test_gen_01.py:50: in test_max_invalid_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE TypeError
+____________________________ test_min_no_arguments ____________________________
+test_gen_02.py:7: in test_min_no_arguments
+    result = Min()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+________________________________ test_min_nan _________________________________
+test_gen_02.py:23: in test_min_nan
+    result = Min(nan, 1, 2)
+             ^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument 'nan' is not comparable.
+____________________________ test_max_no_arguments ____________________________
+test_gen_02.py:28: in test_max_no_arguments
+    result = Max()
+             ^^^^^
+sympy\functions\elementary\miscellaneous.py:343: in __new__
+    raise ValueError("The Max/Min functions must have arguments.")
+E   ValueError: The Max/Min functions must have arguments.
+________________________________ test_max_nan _________________________________
+test_gen_02.py:44: in test_max_nan
+    result = Max(nan, 1, 2)
+             ^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument 'nan' is not comparable.
+___________________________ test_max_mixed_with_nan ___________________________
+test_gen_02.py:48: in test_max_mixed_with_nan
+    result = Max(1, nan)
+             ^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument 'nan' is not comparable.
+______________________________ test_max_only_nan ______________________________
+test_gen_02.py:52: in test_max_only_nan
+    result = Max(nan, nan)
+             ^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:350: in __new__
+    args = frozenset(cls._new_args_filter(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\functions\elementary\miscellaneous.py:523: in _new_args_filter
+    raise ValueError("The argument '%s' is not comparable." % arg)
+E   ValueError: The argument 'nan' is not comparable.
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35
+  G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated
+    warnings.warn(f"{name} is deprecated", DeprecationWarning)
+
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+  G:\Python311\Lib\site-packages\mpmath\rational.py:4: DeprecationWarning: the rational private module is deprecated
+    warnings.warn("the rational private module is deprecated",
+
+sympy\solvers\diophantine.py:3188
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi\sympy\solvers\diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    if feasible is 1:  # it's prime and k == 2
+
+sympy\plotting\plot.py:520
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi\sympy\plotting\plot.py:520: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    if self.xscale is 'log':
+
+sympy\plotting\plot.py:540
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi\sympy\plotting\plot.py:540: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    if self.xscale is 'log':
+
+sympy\plotting\plot.py:553
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi\sympy\plotting\plot.py:553: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    if self.xscale is 'log':
+
+sympy\plotting\plot.py:560
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_box_vbmi\sympy\plotting\plot.py:560: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    if self.xscale is 'log':
+
+G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464
+  G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464: PytestConfigWarning: Unknown config option: doctestplus
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_min_zero_arguments - ValueError: The Max/Min func...
+FAILED test_gen_00.py::test_min_empty_list - ValueError: The argument '[]' is...
+FAILED test_gen_00.py::test_max_zero_arguments - ValueError: The Max/Min func...
+FAILED test_gen_00.py::test_max_empty_list - ValueError: The argument '[]' is...
+FAILED test_gen_01.py::test_min_zero_args - ValueError: The Max/Min functions...
+FAILED test_gen_01.py::test_min_large_numbers - AssertionError: Expected Min(...
+FAILED test_gen_01.py::test_max_zero_args - ValueError: The Max/Min functions...
+FAILED test_gen_01.py::test_min_invalid_input - Failed: DID NOT RAISE TypeError
+FAILED test_gen_01.py::test_max_invalid_input - Failed: DID NOT RAISE TypeError
+FAILED test_gen_02.py::test_min_no_arguments - ValueError: The Max/Min functi...
+FAILED test_gen_02.py::test_min_nan - ValueError: The argument 'nan' is not c...
+FAILED test_gen_02.py::test_max_no_arguments - ValueError: The Max/Min functi...
+FAILED test_gen_02.py::test_max_nan - ValueError: The argument 'nan' is not c...
+FAILED test_gen_02.py::test_max_mixed_with_nan - ValueError: The argument 'na...
+FAILED test_gen_02.py::test_max_only_nan - ValueError: The argument 'nan' is ...
+================= 15 failed, 17 passed, 10 warnings in 0.30s ==================
+
+======================================== STDERR ========================================
+(empty)

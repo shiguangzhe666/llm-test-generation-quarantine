@@ -1,0 +1,21 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_1lih8n7l
+EXIT_CODE: 1
+DURATION_SECONDS: 8.5361
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_00.py::test_matrix_symbol": "EXCEPTION",
+    "test_gen_00.py::test_matrix_element_derivative": "EXCEPTION",
+    "test_gen_00.py::test_matrix_eq": "ASSERTION_FAILED",
+    "test_gen_00.py::test_get_postprocessor": "EXCEPTION",
+    "test_gen_01.py::test_matrixsymbol": "PASSED",
+    "test_gen_01.py::test_matrixelement": "EXCEPTION",
+    "test_gen_01.py::test_substitution": "ASSERTION_FAILED",
+    "test_gen_01.py::test_callable": "PASSED",
+    "test_gen_01.py::test_derivative": "PASSED"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

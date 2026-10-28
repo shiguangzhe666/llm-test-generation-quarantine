@@ -1,0 +1,265 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_max_empty_list",
+    "test_gen_00.py::test_max_mixed_signs",
+    "test_gen_00.py::test_max_positive_cases",
+    "test_gen_00.py::test_max_zero_arguments",
+    "test_gen_00.py::test_min_empty_list",
+    "test_gen_00.py::test_min_mixed_signs",
+    "test_gen_00.py::test_min_positive_cases",
+    "test_gen_00.py::test_min_zero_arguments",
+    "test_gen_01.py::test_max_invalid_input",
+    "test_gen_01.py::test_max_large_numbers",
+    "test_gen_01.py::test_max_mixed_case",
+    "test_gen_01.py::test_max_negative_case",
+    "test_gen_01.py::test_max_positive_case",
+    "test_gen_01.py::test_max_zero_args",
+    "test_gen_01.py::test_min_invalid_input",
+    "test_gen_01.py::test_min_large_numbers",
+    "test_gen_01.py::test_min_mixed_case",
+    "test_gen_01.py::test_min_negative_case",
+    "test_gen_01.py::test_min_positive_case",
+    "test_gen_01.py::test_min_zero_args",
+    "test_gen_02.py::test_max_mixed_case",
+    "test_gen_02.py::test_max_mixed_with_nan",
+    "test_gen_02.py::test_max_nan",
+    "test_gen_02.py::test_max_negative_case",
+    "test_gen_02.py::test_max_no_arguments",
+    "test_gen_02.py::test_max_only_nan",
+    "test_gen_02.py::test_max_positive_case",
+    "test_gen_02.py::test_min_mixed_case",
+    "test_gen_02.py::test_min_nan",
+    "test_gen_02.py::test_min_negative_case",
+    "test_gen_02.py::test_min_no_arguments",
+    "test_gen_02.py::test_min_positive_case"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_max_empty_list": {
+      "nodeid": "test_gen_00.py::test_max_empty_list",
+      "outcome": "EXCEPTION",
+      "duration": 0.00048650000053385156,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:47: in test_max_empty_list\n    Max([])\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument '[]' is not comparable."
+    },
+    "test_gen_00.py::test_max_mixed_signs": {
+      "nodeid": "test_gen_00.py::test_max_mixed_signs",
+      "outcome": "PASSED",
+      "duration": 0.001210200000059558,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_max_positive_cases": {
+      "nodeid": "test_gen_00.py::test_max_positive_cases",
+      "outcome": "PASSED",
+      "duration": 0.0009242999999514723,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_max_zero_arguments": {
+      "nodeid": "test_gen_00.py::test_max_zero_arguments",
+      "outcome": "EXCEPTION",
+      "duration": 0.00031950000038705184,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:29: in test_max_zero_arguments\n    result = Max()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_00.py::test_min_empty_list": {
+      "nodeid": "test_gen_00.py::test_min_empty_list",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003469000002951361,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:25: in test_min_empty_list\n    Min([])\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument '[]' is not comparable."
+    },
+    "test_gen_00.py::test_min_mixed_signs": {
+      "nodeid": "test_gen_00.py::test_min_mixed_signs",
+      "outcome": "PASSED",
+      "duration": 0.0007446999998137471,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_min_positive_cases": {
+      "nodeid": "test_gen_00.py::test_min_positive_cases",
+      "outcome": "PASSED",
+      "duration": 0.0007110999999895284,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_min_zero_arguments": {
+      "nodeid": "test_gen_00.py::test_min_zero_arguments",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003197000000909611,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:7: in test_min_zero_arguments\n    result = Min()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_01.py::test_max_invalid_input": {
+      "nodeid": "test_gen_01.py::test_max_invalid_input",
+      "outcome": "EXCEPTION",
+      "duration": 0.004937800000334391,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:50: in test_max_invalid_input\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_01.py::test_max_large_numbers": {
+      "nodeid": "test_gen_01.py::test_max_large_numbers",
+      "outcome": "PASSED",
+      "duration": 0.0005329000000529049,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_mixed_case": {
+      "nodeid": "test_gen_01.py::test_max_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0004060000001118169,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_negative_case": {
+      "nodeid": "test_gen_01.py::test_max_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.0004162000000178523,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_positive_case": {
+      "nodeid": "test_gen_01.py::test_max_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0004011000000900822,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_max_zero_args": {
+      "nodeid": "test_gen_01.py::test_max_zero_args",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003007999998771993,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:26: in test_max_zero_args\n    result = Max()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_01.py::test_min_invalid_input": {
+      "nodeid": "test_gen_01.py::test_min_invalid_input",
+      "outcome": "EXCEPTION",
+      "duration": 0.0012464000001273234,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:46: in test_min_invalid_input\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_01.py::test_min_large_numbers": {
+      "nodeid": "test_gen_01.py::test_min_large_numbers",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.000478099999781989,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:23: in test_min_large_numbers\n    assert result == -1000000, f\"Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got {result}\"\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError: Expected Min(1000000, -1000000, 2000000, -2000000) to return -1000000, got -2000000"
+    },
+    "test_gen_01.py::test_min_mixed_case": {
+      "nodeid": "test_gen_01.py::test_min_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0004173000002083427,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_negative_case": {
+      "nodeid": "test_gen_01.py::test_min_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.00040169999965655734,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_positive_case": {
+      "nodeid": "test_gen_01.py::test_min_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0004921999998259707,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_min_zero_args": {
+      "nodeid": "test_gen_01.py::test_min_zero_args",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003652999998848827,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:6: in test_min_zero_args\n    result = Min()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_02.py::test_max_mixed_case": {
+      "nodeid": "test_gen_02.py::test_max_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0007418999998662912,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_mixed_with_nan": {
+      "nodeid": "test_gen_02.py::test_max_mixed_with_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003567999997358129,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:48: in test_max_mixed_with_nan\n    result = Max(1, nan)\n             ^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_nan": {
+      "nodeid": "test_gen_02.py::test_max_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003225999998903717,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:44: in test_max_nan\n    result = Max(nan, 1, 2)\n             ^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_negative_case": {
+      "nodeid": "test_gen_02.py::test_max_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.000646800000595249,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_max_no_arguments": {
+      "nodeid": "test_gen_02.py::test_max_no_arguments",
+      "outcome": "EXCEPTION",
+      "duration": 0.00038080000012996607,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:28: in test_max_no_arguments\n    result = Max()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_02.py::test_max_only_nan": {
+      "nodeid": "test_gen_02.py::test_max_only_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003365999996276514,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:52: in test_max_only_nan\n    result = Max(nan, nan)\n             ^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_max_positive_case": {
+      "nodeid": "test_gen_02.py::test_max_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0005073000002084882,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_mixed_case": {
+      "nodeid": "test_gen_02.py::test_min_mixed_case",
+      "outcome": "PASSED",
+      "duration": 0.0004635999998754414,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_nan": {
+      "nodeid": "test_gen_02.py::test_min_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.00031429999944521114,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:23: in test_min_nan\n    result = Min(nan, 1, 2)\n             ^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:350: in __new__\n    args = frozenset(cls._new_args_filter(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:523: in _new_args_filter\n    raise ValueError(\"The argument '%s' is not comparable.\" % arg)\nE   ValueError: The argument 'nan' is not comparable."
+    },
+    "test_gen_02.py::test_min_negative_case": {
+      "nodeid": "test_gen_02.py::test_min_negative_case",
+      "outcome": "PASSED",
+      "duration": 0.0004391000002215151,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_min_no_arguments": {
+      "nodeid": "test_gen_02.py::test_min_no_arguments",
+      "outcome": "EXCEPTION",
+      "duration": 0.0002962999992632831,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:7: in test_min_no_arguments\n    result = Min()\n             ^^^^^\nsympy\\functions\\elementary\\miscellaneous.py:343: in __new__\n    raise ValueError(\"The Max/Min functions must have arguments.\")\nE   ValueError: The Max/Min functions must have arguments."
+    },
+    "test_gen_02.py::test_min_positive_case": {
+      "nodeid": "test_gen_02.py::test_min_positive_case",
+      "outcome": "PASSED",
+      "duration": 0.0004472999999052263,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

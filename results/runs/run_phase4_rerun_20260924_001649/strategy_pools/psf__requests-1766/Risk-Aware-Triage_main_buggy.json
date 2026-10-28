@@ -1,0 +1,137 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_authbase_call_raises_notimplemented",
+    "test_gen_00.py::test_httpbasicauth_sets_authorization_header",
+    "test_gen_00.py::test_httpbasicauth_empty_username",
+    "test_gen_00.py::test_httpbasicauth_empty_password",
+    "test_gen_00.py::test_httpbasicauth_both_empty",
+    "test_gen_00.py::test_httpbasicauth_non_ascii",
+    "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header",
+    "test_gen_00.py::test_httpdigestauth_handle_401",
+    "test_gen_00.py::test_httpdigestauth_call_registers_hook",
+    "test_gen_01.py::test_basic_auth_str",
+    "test_gen_01.py::test_http_digest_auth_handle_401",
+    "test_gen_02.py::test_httpbasicauth_empty_username",
+    "test_gen_02.py::test_httpbasicauth_empty_password",
+    "test_gen_02.py::test_httpdigestauth_handle_401_no_challenge",
+    "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge",
+    "test_gen_00.py::test_httpdigestauth_build_header"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_authbase_call_raises_notimplemented": {
+      "nodeid": "test_gen_00.py::test_authbase_call_raises_notimplemented",
+      "outcome": "PASSED",
+      "duration": 0.00041820000114967115,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpbasicauth_sets_authorization_header": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_sets_authorization_header",
+      "outcome": "PASSED",
+      "duration": 0.0003240000005462207,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpbasicauth_empty_username": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_empty_username",
+      "outcome": "PASSED",
+      "duration": 0.0003139000000373926,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpbasicauth_empty_password": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_empty_password",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0004231999992043711,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:45: in test_httpbasicauth_empty_password\n    assert r.headers['Authorization'] == f'Basic {expected}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_httpbasicauth_both_empty": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_both_empty",
+      "outcome": "PASSED",
+      "duration": 0.00036559999716700986,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpbasicauth_non_ascii": {
+      "nodeid": "test_gen_00.py::test_httpbasicauth_non_ascii",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003826000029221177,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:59: in test_httpbasicauth_non_ascii\n    assert r.headers['Authorization'] == f'Basic {expected}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header": {
+      "nodeid": "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header",
+      "outcome": "PASSED",
+      "duration": 0.0003660000002128072,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_httpdigestauth_handle_401": {
+      "nodeid": "test_gen_00.py::test_httpdigestauth_handle_401",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004295999970054254,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_00.py:81: in test_httpdigestauth_handle_401\n    new_response = auth.handle_401(r)\n                   ^^^^^^^^^^^^^^^^^^\nrequests\\auth.py:169: in handle_401\n    r.content\nE   AttributeError: 'MockResponse' object has no attribute 'content'"
+    },
+    "test_gen_00.py::test_httpdigestauth_call_registers_hook": {
+      "nodeid": "test_gen_00.py::test_httpdigestauth_call_registers_hook",
+      "outcome": "EXCEPTION",
+      "duration": 0.00036719999843626283,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_00.py:88: in test_httpdigestauth_call_registers_hook\n    auth(r)\nrequests\\auth.py:193: in __call__\n    r.register_hook('response', self.handle_401)\n    ^^^^^^^^^^^^^^^\nE   AttributeError: 'MockRequest' object has no attribute 'register_hook'"
+    },
+    "test_gen_01.py::test_basic_auth_str": {
+      "nodeid": "test_gen_01.py::test_basic_auth_str",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003943999981856905,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:43: in test_basic_auth_str\n    assert _basic_auth_str('', '') == 'Basic ' + base64.b64encode(b'').decode('latin1')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_http_digest_auth_handle_401": {
+      "nodeid": "test_gen_01.py::test_http_digest_auth_handle_401",
+      "outcome": "EXCEPTION",
+      "duration": 0.0009701000017230399,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_01.py:82: in test_http_digest_auth_handle_401\n    mock_content.return_value = b''\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: 'property' object has no attribute 'return_value'"
+    },
+    "test_gen_02.py::test_httpbasicauth_empty_username": {
+      "nodeid": "test_gen_02.py::test_httpbasicauth_empty_username",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00037850000080652535,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:32: in test_httpbasicauth_empty_username\n    assert res.headers[\"Authorization\"] == \"Basic dXNlcjpwYXNz\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_httpbasicauth_empty_password": {
+      "nodeid": "test_gen_02.py::test_httpbasicauth_empty_password",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00031320000198320486,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:38: in test_httpbasicauth_empty_password\n    assert res.headers[\"Authorization\"] == \"Basic dXNlcjpwYXNz\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_httpdigestauth_handle_401_no_challenge": {
+      "nodeid": "test_gen_02.py::test_httpdigestauth_handle_401_no_challenge",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0005111999962537084,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:87: in test_httpdigestauth_handle_401_no_challenge\n    assert result.headers[\"Authorization\"] == \"Basic dXNlcjpwYXNz\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   KeyError: 'Authorization'"
+    },
+    "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge": {
+      "nodeid": "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006444999999075662,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_02.py:94: in test_httpdigestauth_handle_401_with_digest_challenge\n    mock_response.raw.release_conn = mock.MagicMock()\n    ^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\unittest\\mock.py:653: in __getattr__\n    raise AttributeError(\"Mock object has no attribute %r\" % name)\nE   AttributeError: Mock object has no attribute 'raw'"
+    },
+    "test_gen_00.py::test_httpdigestauth_build_header": {
+      "nodeid": "test_gen_00.py::test_httpdigestauth_build_header",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003666000011435244,
+      "error_type": "AttributeError",
+      "error_message": "test_gen_00.py:73: in test_httpdigestauth_build_header\n    auth(r)\nrequests\\auth.py:193: in __call__\n    r.register_hook('response', self.handle_401)\n    ^^^^^^^^^^^^^^^\nE   AttributeError: 'MockRequest' object has no attribute 'register_hook'"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "exitstatus": 0,
+  "runtime_order": [
+    "test_gen_02.py::test_request_with_missing_content_type"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_02.py::test_request_with_missing_content_type": {
+      "nodeid": "test_gen_02.py::test_request_with_missing_content_type",
+      "outcome": "PASSED",
+      "duration": 0.3070808999982546,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

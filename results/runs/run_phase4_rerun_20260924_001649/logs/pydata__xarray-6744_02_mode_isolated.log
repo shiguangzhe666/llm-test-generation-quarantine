@@ -1,0 +1,22 @@
+COMMAND: execute_suite Mode=SINGLE_TEST_ISOLATED (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_dh2gw0pj
+EXIT_CODE: 0
+DURATION_SECONDS: 14.2587
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_dataarray_rolling_mean": "EXCEPTION",
+  "test_gen_00.py::test_dataset_rolling_mean": "EXCEPTION",
+  "test_gen_00.py::test_dataarray_rolling_construct": "EXCEPTION",
+  "test_gen_00.py::test_dataset_rolling_construct": "EXCEPTION",
+  "test_gen_01.py::test_rolling_mean": "ASSERTION_FAILED",
+  "test_gen_01.py::test_dataset_rolling": "EXCEPTION",
+  "test_gen_01.py::test_rolling_with_fillna": "EXCEPTION",
+  "test_gen_02.py::test_dataarray_rolling": "ASSERTION_FAILED",
+  "test_gen_02.py::test_dataset_rolling": "ASSERTION_FAILED",
+  "test_gen_02.py::test_coarsen": "PASSED",
+  "test_gen_02.py::test_rolling_min_periods": "ASSERTION_FAILED",
+  "test_gen_02.py::test_rolling_center": "ASSERTION_FAILED",
+  "test_gen_02.py::test_attributes": "PASSED"
+}
+======================================== STDERR ========================================
+(empty)

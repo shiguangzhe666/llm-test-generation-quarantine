@@ -1,0 +1,15 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\sympy__sympy
+EXIT_CODE: 0
+DURATION_SECONDS: 10.7151
+======================================== STDOUT ========================================
+Discovered 30 nodeids: ['test_gen_01.py::test_annihilate_boson_dagger', 'test_gen_01.py::test_annihilate_boson_state_property', 'test_gen_01.py::test_annihilate_boson_is_symbolic', 'test_gen_01.py::test_annihilate_boson_apply_operator', 'test_gen_01.py::test_create_boson_dagger', 'test_gen_01.py::test_create_boson_state_property', 'test_gen_01.py::test_create_boson_is_symbolic', 'test_gen_01.py::test_create_boson_apply_operator', 'test_gen_01.py::test_fock_state_ket_occupation', 'test_gen_01.py::test_apply_operators', 'test_gen_01.py::test_inner_product', 'test_gen_01.py::test_matrix_rep', 'test_gen_01.py::test_contraction', 'test_gen_01.py::test_wicks', 'test_gen_01.py::test_no', 'test_gen_01.py::test_evaluate_deltas', 'test_gen_01.py::test_substitute_dummies', 'test_gen_01.py::test_permutation_operator', 'test_gen_01.py::test_simplify_index_permutations', 'test_gen_02.py::test_dagger_number', 'test_gen_02.py::test_dagger_annihilate_boson', 'test_gen_02.py::test_dagger_create_boson', 'test_gen_02.py::test_dagger_expression', 'test_gen_02.py::test_antisymmetric_tensor_sorting', 'test_gen_02.py::test_antisymmetric_tensor_latex', 'test_gen_02.py::test_annihilate_boson_state', 'test_gen_02.py::test_annihilate_boson_is_symbolic', 'test_gen_02.py::test_annihilate_boson_apply', 'test_gen_02.py::test_create_boson_apply', 'test_gen_02.py::test_create_boson_is_symbolic']
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_huxlxtb1\\test_gen_00.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warnings.warn(f\"{name} is deprecated\", DeprecationWarning)\n\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\nG:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4\n  G:\\Python311\\Lib\\site-packages\\mpmath\\rational.py:4: DeprecationWarning: the rational private module is deprecated\n    warnings.warn(\"the rational private module is deprecated\",\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\nno tests collected in 0.38s"
+  }
+]

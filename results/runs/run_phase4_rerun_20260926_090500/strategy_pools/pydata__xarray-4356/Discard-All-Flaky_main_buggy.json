@@ -1,0 +1,209 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_replace_nan_with_values",
+    "test_gen_00.py::test_replace_nan_no_values",
+    "test_gen_00.py::test_replace_nan_int",
+    "test_gen_00.py::test_maybe_null_out_min_count",
+    "test_gen_00.py::test_maybe_null_out_axis_none",
+    "test_gen_00.py::test_nanmin_all_nan",
+    "test_gen_00.py::test_nanmin_with_values",
+    "test_gen_00.py::test_nanmax_all_nan",
+    "test_gen_00.py::test_nanmax_with_values",
+    "test_gen_00.py::test_nansum_min_count",
+    "test_gen_01.py::test_placeholder_pydata_xarray_4356",
+    "test_gen_02.py::test_replace_nan_with_nans",
+    "test_gen_02.py::test_replace_nan_no_nans",
+    "test_gen_02.py::test_replace_nan_object_type",
+    "test_gen_02.py::test_maybe_null_out_min_count",
+    "test_gen_02.py::test_maybe_null_out_no_min_count",
+    "test_gen_02.py::test_nan_min_object_array",
+    "test_gen_02.py::test_nan_max_object_array",
+    "test_gen_02.py::test_nan_min_all_nan",
+    "test_gen_02.py::test_nanmin_numeric_array",
+    "test_gen_02.py::test_nanmin_object_array",
+    "test_gen_02.py::test_nanmin_all_nan",
+    "test_gen_02.py::test_nanmax_numeric_array",
+    "test_gen_02.py::test_nanmax_object_array",
+    "test_gen_02.py::test_nanmax_all_nan"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_replace_nan_with_values": {
+      "nodeid": "test_gen_00.py::test_replace_nan_with_values",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004693999994742626,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:12: in test_replace_nan_with_values\n    result, mask = _replace_nan(arr, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_00.py::test_replace_nan_no_values": {
+      "nodeid": "test_gen_00.py::test_replace_nan_no_values",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003571000002011715,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:21: in test_replace_nan_no_values\n    result, mask = _replace_nan(arr, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_00.py::test_replace_nan_int": {
+      "nodeid": "test_gen_00.py::test_replace_nan_int",
+      "outcome": "EXCEPTION",
+      "duration": 0.00035189999971407815,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:28: in test_replace_nan_int\n    result, mask = _replace_nan(arr, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_00.py::test_maybe_null_out_min_count": {
+      "nodeid": "test_gen_00.py::test_maybe_null_out_min_count",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003088000003117486,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:39: in test_maybe_null_out_min_count\n    modified_result = _maybe_null_out(result, axis, mask, min_count)\n                      ^^^^^^^^^^^^^^^\nE   NameError: name '_maybe_null_out' is not defined"
+    },
+    "test_gen_00.py::test_maybe_null_out_axis_none": {
+      "nodeid": "test_gen_00.py::test_maybe_null_out_axis_none",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003115999998044572,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:47: in test_maybe_null_out_axis_none\n    modified_result = _maybe_null_out(result, axis, mask, min_count)\n                      ^^^^^^^^^^^^^^^\nE   NameError: name '_maybe_null_out' is not defined"
+    },
+    "test_gen_00.py::test_nanmin_all_nan": {
+      "nodeid": "test_gen_00.py::test_nanmin_all_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004013999996459461,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:53: in test_nanmin_all_nan\n    nanmin(arr)\n    ^^^^^^\nE   NameError: name 'nanmin' is not defined"
+    },
+    "test_gen_00.py::test_nanmin_with_values": {
+      "nodeid": "test_gen_00.py::test_nanmin_with_values",
+      "outcome": "EXCEPTION",
+      "duration": 0.000331900000674068,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:57: in test_nanmin_with_values\n    result = nanmin(arr)\n             ^^^^^^\nE   NameError: name 'nanmin' is not defined"
+    },
+    "test_gen_00.py::test_nanmax_all_nan": {
+      "nodeid": "test_gen_00.py::test_nanmax_all_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004546999998638057,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:63: in test_nanmax_all_nan\n    nanmax(arr)\n    ^^^^^^\nE   NameError: name 'nanmax' is not defined"
+    },
+    "test_gen_00.py::test_nanmax_with_values": {
+      "nodeid": "test_gen_00.py::test_nanmax_with_values",
+      "outcome": "EXCEPTION",
+      "duration": 0.00034540000024207984,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:67: in test_nanmax_with_values\n    result = nanmax(arr)\n             ^^^^^^\nE   NameError: name 'nanmax' is not defined"
+    },
+    "test_gen_00.py::test_nansum_min_count": {
+      "nodeid": "test_gen_00.py::test_nansum_min_count",
+      "outcome": "EXCEPTION",
+      "duration": 0.0002988000001096225,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:72: in test_nansum_min_count\n    result = n\n             ^\nE   NameError: name 'n' is not defined"
+    },
+    "test_gen_01.py::test_placeholder_pydata_xarray_4356": {
+      "nodeid": "test_gen_01.py::test_placeholder_pydata_xarray_4356",
+      "outcome": "PASSED",
+      "duration": 0.0003531000002112705,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_replace_nan_with_nans": {
+      "nodeid": "test_gen_02.py::test_replace_nan_with_nans",
+      "outcome": "EXCEPTION",
+      "duration": 0.00035149999985151226,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:7: in test_replace_nan_with_nans\n    result, mask = _replace_nan(a, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_02.py::test_replace_nan_no_nans": {
+      "nodeid": "test_gen_02.py::test_replace_nan_no_nans",
+      "outcome": "EXCEPTION",
+      "duration": 0.000289200000679557,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:14: in test_replace_nan_no_nans\n    result, mask = _replace_nan(a, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_02.py::test_replace_nan_object_type": {
+      "nodeid": "test_gen_02.py::test_replace_nan_object_type",
+      "outcome": "EXCEPTION",
+      "duration": 0.00038799999992988887,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:21: in test_replace_nan_object_type\n    result, mask = _replace_nan(a, val)\n                   ^^^^^^^^^^^^\nE   NameError: name '_replace_nan' is not defined"
+    },
+    "test_gen_02.py::test_maybe_null_out_min_count": {
+      "nodeid": "test_gen_02.py::test_maybe_null_out_min_count",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003791999997702078,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:34: in test_maybe_null_out_min_count\n    assert np.array_equal(_maybe_null_out(result, mask, axis, min_count), expected_result)\n                          ^^^^^^^^^^^^^^^\nE   NameError: name '_maybe_null_out' is not defined"
+    },
+    "test_gen_02.py::test_maybe_null_out_no_min_count": {
+      "nodeid": "test_gen_02.py::test_maybe_null_out_no_min_count",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00032980000014504185,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:42: in test_maybe_null_out_no_min_count\n    assert np.array_equal(_maybe_null_out(result, mask, axis, min_count), result)\n                          ^^^^^^^^^^^^^^^\nE   NameError: name '_maybe_null_out' is not defined"
+    },
+    "test_gen_02.py::test_nan_min_object_array": {
+      "nodeid": "test_gen_02.py::test_nan_min_object_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003619000003709516,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:46: in test_nan_min_object_array\n    result = _nan_minmax_object(a, 'min')\n             ^^^^^^^^^^^^^^^^^^\nE   NameError: name '_nan_minmax_object' is not defined"
+    },
+    "test_gen_02.py::test_nan_max_object_array": {
+      "nodeid": "test_gen_02.py::test_nan_max_object_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.00029189999941081624,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:51: in test_nan_max_object_array\n    result = _nan_minmax_object(a, 'max')\n             ^^^^^^^^^^^^^^^^^^\nE   NameError: name '_nan_minmax_object' is not defined"
+    },
+    "test_gen_02.py::test_nan_min_all_nan": {
+      "nodeid": "test_gen_02.py::test_nan_min_all_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003038999998352665,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:57: in test_nan_min_all_nan\n    _nan_minmax_object(a, 'min')\n    ^^^^^^^^^^^^^^^^^^\nE   NameError: name '_nan_minmax_object' is not defined"
+    },
+    "test_gen_02.py::test_nanmin_numeric_array": {
+      "nodeid": "test_gen_02.py::test_nanmin_numeric_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003727000002982095,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:61: in test_nanmin_numeric_array\n    result = nanmin(a)\n             ^^^^^^\nE   NameError: name 'nanmin' is not defined"
+    },
+    "test_gen_02.py::test_nanmin_object_array": {
+      "nodeid": "test_gen_02.py::test_nanmin_object_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.00032289999990098295,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:66: in test_nanmin_object_array\n    result = nanmin(a)\n             ^^^^^^\nE   NameError: name 'nanmin' is not defined"
+    },
+    "test_gen_02.py::test_nanmin_all_nan": {
+      "nodeid": "test_gen_02.py::test_nanmin_all_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.00036420000014913967,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:72: in test_nanmin_all_nan\n    nanmin(a)\n    ^^^^^^\nE   NameError: name 'nanmin' is not defined"
+    },
+    "test_gen_02.py::test_nanmax_numeric_array": {
+      "nodeid": "test_gen_02.py::test_nanmax_numeric_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.00029869999934817315,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:76: in test_nanmax_numeric_array\n    result = nanmax(a)\n             ^^^^^^\nE   NameError: name 'nanmax' is not defined"
+    },
+    "test_gen_02.py::test_nanmax_object_array": {
+      "nodeid": "test_gen_02.py::test_nanmax_object_array",
+      "outcome": "EXCEPTION",
+      "duration": 0.000359000000571541,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:81: in test_nanmax_object_array\n    result = nanmax(a)\n             ^^^^^^\nE   NameError: name 'nanmax' is not defined"
+    },
+    "test_gen_02.py::test_nanmax_all_nan": {
+      "nodeid": "test_gen_02.py::test_nanmax_all_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003338000001349428,
+      "error_type": "NameError",
+      "error_message": "test_gen_02.py:87: in test_nanmax_all_nan\n    nanmax(a)\n    ^^^^^^\nE   NameError: name 'nanmax' is not defined"
+    }
+  }
+}

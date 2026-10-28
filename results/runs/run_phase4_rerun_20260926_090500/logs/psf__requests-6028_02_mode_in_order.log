@@ -1,0 +1,35 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_270a0lcn
+EXIT_CODE: 0
+DURATION_SECONDS: 1.4752
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers": "EXCEPTION",
+  "test_gen_00.py::TestStreamDecode::test_stream_decode": "EXCEPTION",
+  "test_gen_00.py::TestIterSlices::test_iter_slices": "EXCEPTION",
+  "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": "EXCEPTION",
+  "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved": "EXCEPTION",
+  "test_gen_00.py::TestRequoteUri::test_requote_uri": "EXCEPTION",
+  "test_gen_00.py::TestAddressInNetwork::test_address_in_network": "EXCEPTION",
+  "test_gen_00.py::TestDottedNetmask::test_dotted_netmask": "EXCEPTION",
+  "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address": "EXCEPTION",
+  "test_gen_00.py::TestIsValidCidr::test_is_valid_cidr": "EXCEPTION",
+  "test_gen_00.py::TestSetEnviron::test_set_environ": "EXCEPTION",
+  "test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies": "EXCEPTION",
+  "test_gen_02.py::TestEncodingFunctions::test_get_encoding_from_headers": "PASSED",
+  "test_gen_02.py::TestStreamDecode::test_stream_decode": "PASSED",
+  "test_gen_02.py::TestIterSlices::test_iter_slices": "PASSED",
+  "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": "ASSERTION_FAILED",
+  "test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved": "ASSERTION_FAILED",
+  "test_gen_02.py::TestRequoteUri::test_requote_uri": "PASSED",
+  "test_gen_02.py::TestAddressInNetwork::test_address_in_network": "PASSED",
+  "test_gen_02.py::TestDottedNetmask::test_dotted_netmask": "PASSED",
+  "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address": "ASSERTION_FAILED",
+  "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr": "PASSED",
+  "test_gen_02.py::TestSetEnviron::test_set_environ": "PASSED",
+  "test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env": "PASSED",
+  "test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies": "ASSERTION_FAILED",
+  "test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies": "ASSERTION_FAILED"
+}
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,389 @@
+{
+  "timestamp": "2026-09-22T11:21:36.682400",
+  "model": "qwen3:8b",
+  "num_runs": 3,
+  "temperature": 0.7,
+  "total_duration_seconds": 1974.81,
+  "instances": {
+    "psf__requests-1766": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "5a5bf83e2dd40bbad56c313943efdb9243c08e9c85245844a0293404818ebe52",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 83.7,
+        "test_code_length": 3055,
+        "raw_response_length": 4910,
+        "timestamp": "2026-09-22T10:50:06.245779"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "a681a6d46bd94dda135ae068a17241bec13a52d2712874aa8f0f9c1c5bda86c5",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 78.62,
+        "test_code_length": 40,
+        "raw_response_length": 447,
+        "timestamp": "2026-09-22T10:51:24.881531"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "4707aa361a80a1f1534ec5fc2848253f526a1bc92bc38b114d58383e72d86313",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 60.86,
+        "test_code_length": 6478,
+        "raw_response_length": 6492,
+        "timestamp": "2026-09-22T10:52:28.802854"
+      }
+    ],
+    "psf__requests-6028": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "620bbf242ef39d2c157cda69a77733bb75ac83ea6ef188c47e6bc10b2b2d30e1",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 45.77,
+        "test_code_length": 4740,
+        "raw_response_length": 5077,
+        "timestamp": "2026-09-22T10:53:15.503129"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "cfa8a4bc7d2dc08ace104131ccbbf4b00f6e56965c537c125f244e9e19c047c6",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 34.27,
+        "test_code_length": 4287,
+        "raw_response_length": 4301,
+        "timestamp": "2026-09-22T10:53:49.785514"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "2a9cd4a13df25e30f7cd6c8af9d8695414af128005090b1fd81f902a9fad3f72",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 40.91,
+        "test_code_length": 5242,
+        "raw_response_length": 5256,
+        "timestamp": "2026-09-22T10:54:30.710300"
+      }
+    ],
+    "sympy__sympy-17630": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "456469142be96591b333d7520dd2afc8eaec06791ac80eb0b59e022639225859",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 60.6,
+        "test_code_length": 1939,
+        "raw_response_length": 3202,
+        "timestamp": "2026-09-22T10:55:32.889337"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "910f08e7c1326bc3fe0b3ccf0281dfed0dd8e1ead42cc87b4aad71c8da08b86c",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 41.59,
+        "test_code_length": 1139,
+        "raw_response_length": 1153,
+        "timestamp": "2026-09-22T10:56:14.484702"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "da060706aa128611925a7d3b906a75949837641570b50634c1429ef64e3a32b8",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 43.85,
+        "test_code_length": 1196,
+        "raw_response_length": 1210,
+        "timestamp": "2026-09-22T10:56:58.345934"
+      }
+    ],
+    "sympy__sympy-21930": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "3e16ee929b37ef1959be7dbe3f5b5c64a944e434c7a1737e96c05b03cce4e76f",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 62.69,
+        "test_code_length": 1508,
+        "raw_response_length": 2670,
+        "timestamp": "2026-09-22T10:58:02.612652"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 79.12,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T10:59:21.741353"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "f0577c2ba519e53507d98772867e2a99aec0edd97fbb8d3769aaa7fc6c58ecbc",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 84.11,
+        "test_code_length": 16,
+        "raw_response_length": 1799,
+        "timestamp": "2026-09-22T11:00:45.852042"
+      }
+    ],
+    "sympy__sympy-22080": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "062e8294690532269e1086f8813d482f3b193cf6ddfb5945d742d06be89a8b9f",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 60.27,
+        "test_code_length": 1112,
+        "raw_response_length": 1126,
+        "timestamp": "2026-09-22T11:01:47.142639"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "fb373d01b84f1b521850966eca4f7887aba91e0dc8c40d3950fdb59e5e7fc242",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 42.58,
+        "test_code_length": 799,
+        "raw_response_length": 813,
+        "timestamp": "2026-09-22T11:02:29.734058"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "ba83b638231da48ecadd6af628cf6e624ba9b11933284ad94b6c0bde1e9d21af",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 41.56,
+        "test_code_length": 711,
+        "raw_response_length": 725,
+        "timestamp": "2026-09-22T11:03:11.304464"
+      }
+    ],
+    "pydata__xarray-4075": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "8fa2eda57bed1431473d570ee75ff00ac2c6dfd855ea8c7dda85e086bbd0a4d7",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 89.21,
+        "test_code_length": 1879,
+        "raw_response_length": 1889,
+        "timestamp": "2026-09-22T11:04:40.945342"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 89.05,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:06:10.008705"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "7ad05792f47ca0fc3062262b002d93cf423cb65152658b2cdb12c00342ef5685",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 49.12,
+        "test_code_length": 4646,
+        "raw_response_length": 4660,
+        "timestamp": "2026-09-22T11:06:59.124304"
+      }
+    ],
+    "pydata__xarray-4356": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "882cfd3d29ad183160573304ee17b561db7b27837fa8655c417ce7b6eff06cd2",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 89.06,
+        "test_code_length": 2324,
+        "raw_response_length": 2334,
+        "timestamp": "2026-09-22T11:08:28.557377"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 88.97,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:09:57.539547"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "2f4dd76aff63864c3687a5685f7be15c26f1eb7847e5911c60e4272a58c5d344",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 88.85,
+        "test_code_length": 2607,
+        "raw_response_length": 3191,
+        "timestamp": "2026-09-22T11:11:26.387494"
+      }
+    ],
+    "pydata__xarray-4966": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 90.43,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:12:57.311751"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 89.55,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:14:26.862954"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 89.71,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:15:56.569865"
+      }
+    ],
+    "pydata__xarray-6744": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "a58c5196eeb58a9cd2baf477bd4b31815cc10676e99570d0219a5940d5fde37b",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 25.77,
+        "test_code_length": 1231,
+        "raw_response_length": 1245,
+        "timestamp": "2026-09-22T11:16:22.808614"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "5b5168f563004340db5a3b8f10bd83af2c8e25160d41409992c184560ca9d80a",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 21.43,
+        "test_code_length": 1319,
+        "raw_response_length": 1333,
+        "timestamp": "2026-09-22T11:16:44.254714"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "e867ef525054021b58664621fc97f2f3b06dd6503ca81f58730b78e90de1d1b1",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 26.95,
+        "test_code_length": 1442,
+        "raw_response_length": 1456,
+        "timestamp": "2026-09-22T11:17:11.216534"
+      }
+    ],
+    "pydata__xarray-6992": [
+      {
+        "run_index": 0,
+        "file": "test_gen_00.py",
+        "sha256": "f98823e0c2a5013a4963f24f3a74b7015e4f8f2908c653ff53891cb81ca7b661",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 87.53,
+        "test_code_length": 2133,
+        "raw_response_length": 3423,
+        "timestamp": "2026-09-22T11:18:39.111514"
+      },
+      {
+        "run_index": 1,
+        "file": "test_gen_01.py",
+        "sha256": "2b36d47ae8b1341acb5ba657cf434b0e16f66c28595ae758efc6cb48773d5e64",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 88.82,
+        "test_code_length": 1329,
+        "raw_response_length": 2530,
+        "timestamp": "2026-09-22T11:20:07.939477"
+      },
+      {
+        "run_index": 2,
+        "file": "test_gen_02.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model": "qwen3:8b",
+        "template": "basic",
+        "temperature": 0.7,
+        "generation_time_seconds": 88.73,
+        "test_code_length": 0,
+        "raw_response_length": 0,
+        "timestamp": "2026-09-22T11:21:36.680120"
+      }
+    ]
+  }
+}

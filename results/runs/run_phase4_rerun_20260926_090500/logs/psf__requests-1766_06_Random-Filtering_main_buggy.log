@@ -1,0 +1,185 @@
+COMMAND: pytest 14 tests (strategy=Random-Filtering, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui
+EXIT_CODE: 1
+DURATION_SECONDS: 0.3765
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 14 items
+
+test_gen_00.py::test_httpbasicauth_empty_username PASSED                 [  7%]
+test_gen_00.py::test_httpbasicauth_non_ascii FAILED                      [ 14%]
+test_gen_00.py::test_httpbasicauth_sets_authorization_header PASSED      [ 21%]
+test_gen_00.py::test_httpdigestauth_build_header FAILED                  [ 28%]
+test_gen_00.py::test_httpdigestauth_handle_401 FAILED                    [ 35%]
+test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header PASSED [ 42%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri FAILED [ 50%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm FAILED [ 57%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce FAILED [ 64%]
+test_gen_01.py::test_http_digest_auth_handle_401 FAILED                  [ 71%]
+test_gen_02.py::test_httpdigestauth_build_digest_header_sha FAILED       [ 78%]
+test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge FAILED [ 85%]
+test_gen_02.py::test_httpproxyauth_empty_username FAILED                 [ 92%]
+test_gen_02.py::test_httpproxyauth_valid_credentials PASSED              [100%]
+
+================================== FAILURES ===================================
+________________________ test_httpbasicauth_non_ascii _________________________
+test_gen_00.py:59: in test_httpbasicauth_non_ascii
+    assert r.headers['Authorization'] == f'Basic {expected}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpdigestauth_build_header _______________________
+test_gen_00.py:73: in test_httpdigestauth_build_header
+    auth(r)
+requests\auth.py:193: in __call__
+    r.register_hook('response', self.handle_401)
+    ^^^^^^^^^^^^^^^
+E   AttributeError: 'MockRequest' object has no attribute 'register_hook'
+_______________________ test_httpdigestauth_handle_401 ________________________
+test_gen_00.py:81: in test_httpdigestauth_handle_401
+    new_response = auth.handle_401(r)
+                   ^^^^^^^^^^^^^^^^^^
+requests\auth.py:169: in handle_401
+    r.content
+E   AttributeError: 'MockResponse' object has no attribute 'content'
+__________ test_http_digest_auth_build_digest_header_with_custom_uri __________
+test_gen_01.py:176: in test_http_digest_auth_build_digest_header_with_custom_uri
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com/path?query=123')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_sha_algorithm _________
+test_gen_01.py:101: in test_http_digest_auth_build_digest_header_with_sha_algorithm
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+_________ test_http_digest_auth_build_digest_header_with_stale_nonce __________
+test_gen_01.py:114: in test_http_digest_auth_build_digest_header_with_stale_nonce
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______________________ test_http_digest_auth_handle_401 _______________________
+test_gen_01.py:82: in test_http_digest_auth_handle_401
+    mock_content.return_value = b''
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'property' object has no attribute 'return_value'
+_________________ test_httpdigestauth_build_digest_header_sha _________________
+test_gen_02.py:125: in test_httpdigestauth_build_digest_header_sha
+    result = auth.build_digest_header(method, url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:96: in build_digest_header
+    if hash_utf8 is None:
+       ^^^^^^^^^
+E   UnboundLocalError: cannot access local variable 'hash_utf8' where it is not associated with a value
+____________ test_httpdigestauth_handle_401_with_digest_challenge _____________
+test_gen_02.py:94: in test_httpdigestauth_handle_401_with_digest_challenge
+    mock_response.raw.release_conn = mock.MagicMock()
+    ^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\unittest\mock.py:653: in __getattr__
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'raw'
+______________________ test_httpproxyauth_empty_username ______________________
+test_gen_02.py:62: in test_httpproxyauth_empty_username
+    assert res.headers["Proxy-Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:658
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\packages\urllib3\connectionpool.py:658: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:717
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\models.py:717: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:372
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:372: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:382
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:382: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:392
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:392: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:402
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:402: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:412
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:412: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:422
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:422: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:432
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_mw2uuyui\requests\sessions.py:432: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_httpbasicauth_non_ascii - AssertionError
+FAILED test_gen_00.py::test_httpdigestauth_build_header - AttributeError: 'Mo...
+FAILED test_gen_00.py::test_httpdigestauth_handle_401 - AttributeError: 'Mock...
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce
+FAILED test_gen_01.py::test_http_digest_auth_handle_401 - AttributeError: 'pr...
+FAILED test_gen_02.py::test_httpdigestauth_build_digest_header_sha - UnboundL...
+FAILED test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge
+FAILED test_gen_02.py::test_httpproxyauth_empty_username - AssertionError
+================== 10 failed, 4 passed, 19 warnings in 0.16s ==================
+
+======================================== STDERR ========================================
+(empty)

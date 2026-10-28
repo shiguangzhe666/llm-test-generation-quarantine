@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-21T00:17:32.663531",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "G:\\Python311\\python.exe",
+  "run_id": "run_phase3_pilot_20260921_081700",
+  "project_root": "F:\\\u8bba\u6587\\llm-test-stability",
+  "target_instances": [
+    "psf__requests-2317",
+    "psf__requests-1921",
+    "sympy__sympy-15809"
+  ]
+}

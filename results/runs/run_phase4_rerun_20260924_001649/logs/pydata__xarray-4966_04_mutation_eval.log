@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on xarray/coding/variables.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_f8hf1w0c
+EXIT_CODE: 0
+DURATION_SECONDS: 2.6686
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

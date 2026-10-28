@@ -1,0 +1,89 @@
+{
+  "instance_id": "psf__requests-2317",
+  "stages": {
+    "stage_1_generation": {
+      "description": "Raw LLM Test Generation Count",
+      "test_files": {
+        "test_gen_00.py": 7,
+        "test_gen_01.py": 7,
+        "test_gen_02.py": 9
+      },
+      "total_generated": 23,
+      "valid_ast_count": 23,
+      "invalid_syntax_count": 0
+    },
+    "stage_2_collection": {
+      "description": "Pytest AST Test Collection Count",
+      "test_files": {
+        "test_gen_00.py": 7,
+        "test_gen_01.py": 7,
+        "test_gen_02.py": 9
+      },
+      "total_collected": 23,
+      "collection_discrepancy_vs_generation": 0
+    },
+    "stage_3_execution": {
+      "description": "Repeated Execution Accounting across Repetitions",
+      "planned_repetitions": 20,
+      "legacy_runner_observations": {
+        "test_gen_00.py": {
+          "planned_runs_per_test": 20,
+          "observed_runs_per_test": 18,
+          "missing_runs_per_test": 2,
+          "root_cause": "2 suite runs timed out at 30s limit due to unmocked HTTP call in test_session_request_with_utf8_encoding; legacy runner dropped timed-out suite runs without recording MISSING_OBSERVATION for individual tests."
+        },
+        "test_gen_01.py": {
+          "planned_runs_per_test": 20,
+          "observed_runs_per_test": 20,
+          "missing_runs_per_test": 0,
+          "root_cause": "All 20 runs observed cleanly."
+        },
+        "test_gen_02.py": {
+          "planned_runs_per_test": 20,
+          "observed_runs_per_test": 19,
+          "missing_runs_per_test": 1,
+          "root_cause": "1 suite run timed out or aborted due to DNS hang on IDN domain example.\u4e2d\u6587.com; legacy runner dropped unobserved run."
+        }
+      },
+      "hardened_runner_guarantee": "Under Phase II/III StructuredExecutor, all 20 planned runs are strictly accounted for: timed-out or unobserved tests are explicitly recorded as TIMEOUT or MISSING_OBSERVATION rather than altering the total_runs denominator."
+    },
+    "stage_4_triage": {
+      "description": "Risk-Aware Triage Classification and Anomaly Analysis",
+      "legacy_triage_anomalies": [
+        {
+          "bug_id": "TRIAGE-ANOMALY-1",
+          "component": "scripts/gate3_full_study.py:378",
+          "defect": "triage_suite(tf) was called without passing the flakiness_records dictionary (flaky_lookup was computed on line 376 but never passed as an argument).",
+          "impact": "Triage operated in blind cold-start mode with flakiness_rate=None for all tests, completely bypassing observed instability data."
+        },
+        {
+          "bug_id": "TRIAGE-ANOMALY-2",
+          "component": "src/triage/risk_triage.py:266",
+          "defect": "Risk formula scaled flakiness as flaky_obs_penalty = flakiness_rate * 0.4. Since risk_score threshold for TIER_1_SAFE_KEEP was 0.3, any flaky test with flakiness_rate <= 75% received risk_score <= 0.3.",
+          "impact": "Tests with 5.26% and 5.56% empirical flakiness were falsely categorized as TIER_1_SAFE_KEEP with the reason 'deterministic execution profile'."
+        }
+      ],
+      "hardened_triage_resolution": [
+        {
+          "fix_id": "TRIAGE-FIX-1",
+          "action": "Updated flakiness risk formula in src/triage/risk_triage.py so any observed flakiness_rate > 0 incurs a base penalty of 0.35 + flakiness_rate * 0.65, guaranteeing risk_score > 0.3.",
+          "result": "Observed flaky tests are strictly routed to TIER_2_DUAL_PURPOSE (QUARANTINE_INSPECT) if high defect potential, or TIER_4_SPURIOUS (DISCARD) if low defect potential; NEVER TIER_1_SAFE_KEEP."
+        },
+        {
+          "fix_id": "TRIAGE-FIX-2",
+          "action": "Canonical nodeid matching with collision detection prevents cross-module and cross-class key collisions.",
+          "result": "Matched observation keys are fully tracked and auditable in TriageDecision."
+        }
+      ]
+    }
+  },
+  "defect_vs_test_count_distinction": {
+    "principle": "Strictly distinguish Real Defects from Defect-Detecting Tests.",
+    "rules": [
+      "1 SWE-bench instance represents exactly 1 Real Defect (Ground Truth Bug).",
+      "An LLM may generate multiple tests (e.g. 6 tests in sympy-15809) that all detect the same bug.",
+      "Empirical tables must report both: 'Real Bugs Detected' and 'Bug-Detecting Tests'.",
+      "Synthetic control cases from data/sample_project/ are tooling regression benchmarks and are NEVER aggregated into empirical benchmark totals."
+    ]
+  }
+}

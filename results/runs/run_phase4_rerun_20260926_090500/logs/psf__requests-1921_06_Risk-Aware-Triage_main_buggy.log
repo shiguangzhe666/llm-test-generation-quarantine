@@ -1,0 +1,227 @@
+COMMAND: pytest 27 tests (strategy=Risk-Aware-Triage, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub
+EXIT_CODE: 1
+DURATION_SECONDS: 0.3608
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 27 items
+
+test_gen_00.py::test_merge_setting_positive_case FAILED                  [  3%]
+test_gen_00.py::test_merge_setting_with_none_values FAILED               [  7%]
+test_gen_00.py::test_merge_setting_with_empty_dict PASSED                [ 11%]
+test_gen_00.py::test_merge_setting_with_all_none FAILED                  [ 14%]
+test_gen_00.py::test_merge_setting_with_conflicting_keys FAILED          [ 18%]
+test_gen_00.py::test_merge_setting_with_non_dict_class FAILED            [ 22%]
+test_gen_00.py::test_merge_setting_with_invalid_input FAILED             [ 25%]
+test_gen_01.py::test_merge_setting_positive_case FAILED                  [ 29%]
+test_gen_01.py::test_merge_setting_request_override FAILED               [ 33%]
+test_gen_01.py::test_merge_setting_session_override FAILED               [ 37%]
+test_gen_01.py::test_merge_setting_both_override FAILED                  [ 40%]
+test_gen_01.py::test_merge_setting_empty_request PASSED                  [ 44%]
+test_gen_01.py::test_merge_setting_empty_session PASSED                  [ 48%]
+test_gen_01.py::test_merge_setting_mixed_types FAILED                    [ 51%]
+test_gen_01.py::test_merge_setting_non_dict_class FAILED                 [ 55%]
+test_gen_01.py::test_merge_setting_none_input PASSED                     [ 59%]
+test_gen_01.py::test_merge_setting_none_request PASSED                   [ 62%]
+test_gen_02.py::test_merge_setting_with_default_dict_class FAILED        [ 66%]
+test_gen_02.py::test_merge_setting_with_no_session_settings PASSED       [ 70%]
+test_gen_02.py::test_merge_setting_with_no_request_settings FAILED       [ 74%]
+test_gen_02.py::test_merge_setting_with_nested_dicts FAILED              [ 77%]
+test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both FAILED [ 81%]
+test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict PASSED [ 85%]
+test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request FAILED [ 88%]
+test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session PASSED [ 92%]
+test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both FAILED [ 96%]
+test_gen_01.py::test_merge_setting_none_both PASSED                      [100%]
+
+================================== FAILURES ===================================
+______________________ test_merge_setting_positive_case _______________________
+test_gen_00.py:8: in test_merge_setting_positive_case
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_____________________ test_merge_setting_with_none_values _____________________
+test_gen_00.py:14: in test_merge_setting_with_none_values
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_merge_setting_with_all_none _______________________
+test_gen_00.py:26: in test_merge_setting_with_all_none
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+__________________ test_merge_setting_with_conflicting_keys ___________________
+test_gen_00.py:32: in test_merge_setting_with_conflicting_keys
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+___________________ test_merge_setting_with_non_dict_class ____________________
+test_gen_00.py:38: in test_merge_setting_with_non_dict_class
+    assert merge_setting(request_setting, session_setting, dict_class=dict) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+____________________ test_merge_setting_with_invalid_input ____________________
+test_gen_00.py:41: in test_merge_setting_with_invalid_input
+    with pytest.raises(TypeError):
+E   Failed: DID NOT RAISE TypeError
+______________________ test_merge_setting_positive_case _______________________
+test_gen_01.py:8: in test_merge_setting_positive_case
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_____________________ test_merge_setting_request_override _____________________
+test_gen_01.py:14: in test_merge_setting_request_override
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_____________________ test_merge_setting_session_override _____________________
+test_gen_01.py:20: in test_merge_setting_session_override
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_merge_setting_both_override _______________________
+test_gen_01.py:26: in test_merge_setting_both_override
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_______________________ test_merge_setting_mixed_types ________________________
+test_gen_01.py:44: in test_merge_setting_mixed_types
+    assert merge_setting(request_setting, session_setting) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_merge_setting_non_dict_class ______________________
+test_gen_01.py:50: in test_merge_setting_non_dict_class
+    assert merge_setting(request_setting, session_setting, dict_class=dict) == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_merge_setting_with_default_dict_class __________________
+test_gen_02.py:9: in test_merge_setting_with_default_dict_class
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_merge_setting_with_no_request_settings _________________
+test_gen_02.py:23: in test_merge_setting_with_no_request_settings
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+____________________ test_merge_setting_with_nested_dicts _____________________
+test_gen_02.py:30: in test_merge_setting_with_nested_dicts
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+___________ test_merge_setting_with_merging_lists_with_none_in_both ___________
+test_gen_02.py:58: in test_merge_setting_with_merging_lists_with_none_in_both
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______ test_merge_setting_with_merging_lists_with_empty_dict_in_request _______
+test_gen_02.py:72: in test_merge_setting_with_merging_lists_with_empty_dict_in_request
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+________ test_merge_setting_with_merging_lists_with_empty_dict_in_both ________
+test_gen_02.py:100: in test_merge_setting_with_merging_lists_with_empty_dict_in_both
+    assert result == expected
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:385
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\packages\urllib3\connectionpool.py:385: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:664
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\packages\urllib3\connectionpool.py:664: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:740
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\models.py:740: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:396
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:396: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:406
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:406: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:416
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:416: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:426
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:426: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:436
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:436: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:446
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:446: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:456
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ifw06zub\requests\sessions.py:456: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_merge_setting_positive_case - AssertionError
+FAILED test_gen_00.py::test_merge_setting_with_none_values - AssertionError
+FAILED test_gen_00.py::test_merge_setting_with_all_none - AssertionError
+FAILED test_gen_00.py::test_merge_setting_with_conflicting_keys - AssertionError
+FAILED test_gen_00.py::test_merge_setting_with_non_dict_class - AssertionError
+FAILED test_gen_00.py::test_merge_setting_with_invalid_input - Failed: DID NO...
+FAILED test_gen_01.py::test_merge_setting_positive_case - AssertionError
+FAILED test_gen_01.py::test_merge_setting_request_override - AssertionError
+FAILED test_gen_01.py::test_merge_setting_session_override - AssertionError
+FAILED test_gen_01.py::test_merge_setting_both_override - AssertionError
+FAILED test_gen_01.py::test_merge_setting_mixed_types - AssertionError
+FAILED test_gen_01.py::test_merge_setting_non_dict_class - AssertionError
+FAILED test_gen_02.py::test_merge_setting_with_default_dict_class - Assertion...
+FAILED test_gen_02.py::test_merge_setting_with_no_request_settings - Assertio...
+FAILED test_gen_02.py::test_merge_setting_with_nested_dicts - AssertionError
+FAILED test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both
+FAILED test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request
+FAILED test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both
+================== 18 failed, 9 passed, 19 warnings in 0.14s ==================
+
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on requests/auth.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_y_xlgzf7
+EXIT_CODE: 0
+DURATION_SECONDS: 31.5102
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

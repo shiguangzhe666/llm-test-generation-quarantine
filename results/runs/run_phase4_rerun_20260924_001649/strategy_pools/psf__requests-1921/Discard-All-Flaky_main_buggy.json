@@ -1,0 +1,249 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_merge_setting_positive_case",
+    "test_gen_00.py::test_merge_setting_with_none_values",
+    "test_gen_00.py::test_merge_setting_with_empty_dict",
+    "test_gen_00.py::test_merge_setting_with_all_none",
+    "test_gen_00.py::test_merge_setting_with_conflicting_keys",
+    "test_gen_00.py::test_merge_setting_with_non_dict_class",
+    "test_gen_00.py::test_merge_setting_with_invalid_input",
+    "test_gen_01.py::test_merge_setting_positive_case",
+    "test_gen_01.py::test_merge_setting_request_override",
+    "test_gen_01.py::test_merge_setting_session_override",
+    "test_gen_01.py::test_merge_setting_both_override",
+    "test_gen_01.py::test_merge_setting_empty_request",
+    "test_gen_01.py::test_merge_setting_empty_session",
+    "test_gen_01.py::test_merge_setting_mixed_types",
+    "test_gen_01.py::test_merge_setting_non_dict_class",
+    "test_gen_01.py::test_merge_setting_none_input",
+    "test_gen_01.py::test_merge_setting_none_request",
+    "test_gen_01.py::test_merge_setting_none_both",
+    "test_gen_02.py::test_merge_setting_with_default_dict_class",
+    "test_gen_02.py::test_merge_setting_with_no_session_settings",
+    "test_gen_02.py::test_merge_setting_with_no_request_settings",
+    "test_gen_02.py::test_merge_setting_with_nested_dicts",
+    "test_gen_02.py::test_merge_setting_with_merging_lists",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_merge_setting_positive_case": {
+      "nodeid": "test_gen_00.py::test_merge_setting_positive_case",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0004654000003938563,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:8: in test_merge_setting_positive_case\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_merge_setting_with_none_values": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_none_values",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003449000032560434,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:14: in test_merge_setting_with_none_values\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_merge_setting_with_empty_dict": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_empty_dict",
+      "outcome": "PASSED",
+      "duration": 0.00029069999800412916,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_merge_setting_with_all_none": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_all_none",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003051999992749188,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:26: in test_merge_setting_with_all_none\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_merge_setting_with_conflicting_keys": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_conflicting_keys",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003007000013894867,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:32: in test_merge_setting_with_conflicting_keys\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_merge_setting_with_non_dict_class": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_non_dict_class",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029489999724319205,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_00.py:38: in test_merge_setting_with_non_dict_class\n    assert merge_setting(request_setting, session_setting, dict_class=dict) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_00.py::test_merge_setting_with_invalid_input": {
+      "nodeid": "test_gen_00.py::test_merge_setting_with_invalid_input",
+      "outcome": "EXCEPTION",
+      "duration": 0.00046209999709390104,
+      "error_type": "TypeError",
+      "error_message": "test_gen_00.py:41: in test_merge_setting_with_invalid_input\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_01.py::test_merge_setting_positive_case": {
+      "nodeid": "test_gen_01.py::test_merge_setting_positive_case",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003136000050290022,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:8: in test_merge_setting_positive_case\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_request_override": {
+      "nodeid": "test_gen_01.py::test_merge_setting_request_override",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002939000005426351,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:14: in test_merge_setting_request_override\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_session_override": {
+      "nodeid": "test_gen_01.py::test_merge_setting_session_override",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.000307099999190541,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:20: in test_merge_setting_session_override\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_both_override": {
+      "nodeid": "test_gen_01.py::test_merge_setting_both_override",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029660000291187316,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:26: in test_merge_setting_both_override\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_empty_request": {
+      "nodeid": "test_gen_01.py::test_merge_setting_empty_request",
+      "outcome": "PASSED",
+      "duration": 0.0002753999979177024,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_merge_setting_empty_session": {
+      "nodeid": "test_gen_01.py::test_merge_setting_empty_session",
+      "outcome": "PASSED",
+      "duration": 0.000276099999609869,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_merge_setting_mixed_types": {
+      "nodeid": "test_gen_01.py::test_merge_setting_mixed_types",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002856999999494292,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:44: in test_merge_setting_mixed_types\n    assert merge_setting(request_setting, session_setting) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_non_dict_class": {
+      "nodeid": "test_gen_01.py::test_merge_setting_non_dict_class",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002899999963119626,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:50: in test_merge_setting_non_dict_class\n    assert merge_setting(request_setting, session_setting, dict_class=dict) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_merge_setting_none_input": {
+      "nodeid": "test_gen_01.py::test_merge_setting_none_input",
+      "outcome": "PASSED",
+      "duration": 0.00026979999893228523,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_merge_setting_none_request": {
+      "nodeid": "test_gen_01.py::test_merge_setting_none_request",
+      "outcome": "PASSED",
+      "duration": 0.0002666000000317581,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_merge_setting_none_both": {
+      "nodeid": "test_gen_01.py::test_merge_setting_none_both",
+      "outcome": "PASSED",
+      "duration": 0.00026610000350046903,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_merge_setting_with_default_dict_class": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_default_dict_class",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029939999512862414,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:9: in test_merge_setting_with_default_dict_class\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_no_session_settings": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_no_session_settings",
+      "outcome": "PASSED",
+      "duration": 0.00027460000274004415,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_merge_setting_with_no_request_settings": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_no_request_settings",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002877000006265007,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:23: in test_merge_setting_with_no_request_settings\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_nested_dicts": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_nested_dicts",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002981000034196768,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:30: in test_merge_setting_with_nested_dicts\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.000292499997158302,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:37: in test_merge_setting_with_merging_lists\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_none",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029889999859733507,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:44: in test_merge_setting_with_merging_lists_with_none\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029859999995096587,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:51: in test_merge_setting_with_merging_lists_with_none_in_request\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_both",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003007000013894867,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:58: in test_merge_setting_with_merging_lists_with_none_in_both\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict",
+      "outcome": "PASSED",
+      "duration": 0.00028169999859528616,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_request",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0002932999959739391,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:72: in test_merge_setting_with_merging_lists_with_empty_dict_in_request\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_session",
+      "outcome": "PASSED",
+      "duration": 0.0002845999988494441,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_empty_dict_in_both",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00029269999868120067,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:100: in test_merge_setting_with_merging_lists_with_empty_dict_in_both\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    }
+  }
+}

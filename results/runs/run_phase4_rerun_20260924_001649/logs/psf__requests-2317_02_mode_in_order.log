@@ -1,0 +1,32 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_15yrnq47
+EXIT_CODE: 0
+DURATION_SECONDS: 21.0614
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_session_request_with_utf8_encoding": "PASSED",
+  "test_gen_00.py::test_session_request_with_empty_data": "ASSERTION_FAILED",
+  "test_gen_00.py::test_session_request_with_None_data": "ASSERTION_FAILED",
+  "test_gen_00.py::test_session_request_with_non_utf8_encoding": "PASSED",
+  "test_gen_00.py::test_session_request_with_invalid_url": "PASSED",
+  "test_gen_00.py::test_session_request_with_non_string_url": "EXCEPTION",
+  "test_gen_00.py::test_session_request_with_non_string_method": "EXCEPTION",
+  "test_gen_01.py::test_request_with_utf8_encoding": "ASSERTION_FAILED",
+  "test_gen_01.py::test_request_with_non_ascii_data": "EXCEPTION",
+  "test_gen_01.py::test_request_with_empty_data": "ASSERTION_FAILED",
+  "test_gen_01.py::test_request_with_null_data": "ASSERTION_FAILED",
+  "test_gen_01.py::test_request_with_custom_encoding": "EXCEPTION",
+  "test_gen_01.py::test_request_with_invalid_encoding": "EXCEPTION",
+  "test_gen_01.py::test_request_with_missing_data": "ASSERTION_FAILED",
+  "test_gen_02.py::test_request_with_utf8_encoding": "EXCEPTION",
+  "test_gen_02.py::test_request_with_non_ascii_params": "PASSED",
+  "test_gen_02.py::test_request_with_non_ascii_url": "PASSED",
+  "test_gen_02.py::test_request_with_empty_string_encoding": "PASSED",
+  "test_gen_02.py::test_request_with_none_encoding": "PASSED",
+  "test_gen_02.py::test_request_with_invalid_encoding": "EXCEPTION",
+  "test_gen_02.py::test_request_with_missing_content_type": "PASSED",
+  "test_gen_02.py::test_request_with_non_ascii_query_string": "PASSED",
+  "test_gen_02.py::test_request_with_non_ascii_path": "PASSED"
+}
+======================================== STDERR ========================================
+(empty)

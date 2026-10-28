@@ -1,0 +1,159 @@
+COMMAND: evaluate_mutation_score(max_mutants=10, baseline_repetitions=2)
+CWD: F:\论文\llm-test-stability
+EXIT_CODE: 0
+DURATION_SECONDS: 6.8699
+======================================== STDOUT ========================================
+{
+  "target_file": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\tmpbqoqpotu\\config_parser.py",
+  "test_file": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\tmpbqoqpotu\\test_sample.py",
+  "total_mutants_generated": 10,
+  "valid_mutants": 10,
+  "killed_mutants": 1,
+  "survived_mutants": 9,
+  "error_mutants": 0,
+  "mutation_score": 0.1,
+  "mutation_score_str": "10.0%",
+  "baseline_passing_tests": [
+    "test_sample.py::test_has_section"
+  ],
+  "baseline_failing_tests": [
+    "test_sample.py::test_defaults"
+  ],
+  "false_kills_filtered_count": 10,
+  "mutants": [
+    {
+      "mutant_id": 0,
+      "operator": "LCR",
+      "lineno": 24,
+      "original": "Or",
+      "replacement": "And",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 1,
+      "operator": "ROR",
+      "lineno": 31,
+      "original": "NotIn",
+      "replacement": "In",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 2,
+      "operator": "ROR",
+      "lineno": 37,
+      "original": "In",
+      "replacement": "NotIn",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 3,
+      "operator": "ROR",
+      "lineno": 43,
+      "original": "GtE",
+      "replacement": "Lt",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 4,
+      "operator": "ROR",
+      "lineno": 43,
+      "original": "Eq",
+      "replacement": "NotEq",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 5,
+      "operator": "ROR",
+      "lineno": 43,
+      "original": "In",
+      "replacement": "NotIn",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 6,
+      "operator": "LCR",
+      "lineno": 43,
+      "original": "And",
+      "replacement": "Or",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 7,
+      "operator": "ROR",
+      "lineno": 46,
+      "original": "Is",
+      "replacement": "IsNot",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 8,
+      "operator": "ROR",
+      "lineno": 61,
+      "original": "In",
+      "replacement": "NotIn",
+      "status": "KILLED",
+      "killing_tests": [
+        "test_sample.py::test_has_section"
+      ],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    },
+    {
+      "mutant_id": 9,
+      "operator": "ROR",
+      "lineno": 65,
+      "original": "In",
+      "replacement": "NotIn",
+      "status": "SURVIVED",
+      "killing_tests": [],
+      "false_killing_tests": [
+        "test_sample.py::test_defaults"
+      ],
+      "details": null
+    }
+  ]
+}
+======================================== STDERR ========================================
+(empty)

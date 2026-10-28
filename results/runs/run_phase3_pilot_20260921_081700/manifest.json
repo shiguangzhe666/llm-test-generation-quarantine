@@ -1,0 +1,60 @@
+{
+  "run_id": "run_phase3_pilot_20260921_081700",
+  "timestamp_utc": "2026-09-21T00:30:07.931274",
+  "file_count": 13,
+  "files": {
+    "commands.jsonl": {
+      "size_bytes": 1776,
+      "sha256": "8152ef8fcff08d656b80d99cc496918e1bdfe8d790ed2e45112b2679fa6a9571"
+    },
+    "discrepancy_accounting.json": {
+      "size_bytes": 4568,
+      "sha256": "abd11d9bc9d242dd019c8d035643dcc9221c785efc820ba95fd17152faa75d2e"
+    },
+    "environment_metadata.json": {
+      "size_bytes": 474,
+      "sha256": "72b4fd66ad6491359d8542bc00ad33659a975c7b427399f1433fc54f8872d01a"
+    },
+    "feasibility_pilot_results.json": {
+      "size_bytes": 6198,
+      "sha256": "62f6ded5f84f53ebd22088f1681cfefc9db3b5140e45dd6b02ed1128654c86b0"
+    },
+    "logs/01_flakiness_reverification.log": {
+      "size_bytes": 5932,
+      "sha256": "9e0c409e4ed69b409378cb62e860281074f057147477ee513bc3df419b3e4ebe"
+    },
+    "logs/02_discrepancy_accounting.log": {
+      "size_bytes": 4877,
+      "sha256": "bd0db3208c7fe0d1a704aab176a97a23cc758f295066b84a486661c2eceaf7c3"
+    },
+    "logs/03_pilot_psf__requests-1921.log": {
+      "size_bytes": 3036,
+      "sha256": "b6bed10e4ed548c9b34610f87a581e9bd0bfe054e88286f05dc948f1b6ed6e48"
+    },
+    "logs/03_pilot_sympy__sympy-15809.log": {
+      "size_bytes": 2857,
+      "sha256": "8f571e91111dbb75ad29d76d1a837b201d2288a5162c4a24c49e002abcbec8a3"
+    },
+    "logs/post_run_repos_audit.log": {
+      "size_bytes": 4789,
+      "sha256": "63e4d702de57564049eadc539ea2676744c021a2acbe9af3694da972f3d2f40d"
+    },
+    "logs/pre_run_repos_audit.log": {
+      "size_bytes": 4789,
+      "sha256": "f2f4dbb9848f439bafcbaa20685d5b6b59853b3496efaf79b44cc163a6a7c5aa"
+    },
+    "post_run_repos_audit.json": {
+      "size_bytes": 4484,
+      "sha256": "2fd74a6f8ae0666fb5929e361549cc8f029c56c607ebfa49057ce36418a1537a"
+    },
+    "pre_run_repos_audit.json": {
+      "size_bytes": 4484,
+      "sha256": "de9fc21e263311485b001ff973bd6855d50aac94d62eee260e33653910eb6035"
+    },
+    "requests_2317_flakiness_investigation.json": {
+      "size_bytes": 5582,
+      "sha256": "0fc32a4f4f00fc657f398dedea83745f0fc79c33604f55953aa8a51a2c28b86b"
+    }
+  },
+  "status": "COMPLETED_AND_VERIFIED"
+}

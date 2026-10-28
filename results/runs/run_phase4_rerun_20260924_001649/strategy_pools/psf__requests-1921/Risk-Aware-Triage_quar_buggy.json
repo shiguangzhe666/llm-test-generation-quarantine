@@ -1,0 +1,33 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_02.py::test_merge_setting_with_merging_lists",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none",
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_02.py::test_merge_setting_with_merging_lists": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0004484000019147061,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:37: in test_merge_setting_with_merging_lists\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_none",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00034439999944879673,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:44: in test_merge_setting_with_merging_lists_with_none\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request": {
+      "nodeid": "test_gen_02.py::test_merge_setting_with_merging_lists_with_none_in_request",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0003195999961462803,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:51: in test_merge_setting_with_merging_lists_with_none_in_request\n    assert result == expected\n           ^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    }
+  }
+}

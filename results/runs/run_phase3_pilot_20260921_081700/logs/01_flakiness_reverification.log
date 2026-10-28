@@ -1,0 +1,129 @@
+COMMAND: investigate_requests_2317_flakiness(num_runs=5)
+CWD: F:\论文\llm-test-stability\data\repos\psf__requests
+EXIT_CODE: 0
+DURATION_SECONDS: 67.1658
+======================================== STDOUT ========================================
+{
+  "instance_id": "psf__requests-2317",
+  "commit": "091991be0da19de9108dbe5e3752917fea3d7fdc",
+  "targets": [
+    "test_gen_00.py::test_session_request_with_utf8_encoding",
+    "test_gen_02.py::test_request_with_non_ascii_path"
+  ],
+  "modes_tested": [
+    "SINGLE_TEST_ISOLATED",
+    "SUITE_IN_ORDER",
+    "SUITE_RANDOM"
+  ],
+  "num_runs_per_mode": 5,
+  "runs_data": {
+    "single_test": {
+      "test_gen_00.py::test_session_request_with_utf8_encoding": {
+        "nodeid": "test_gen_00.py::test_session_request_with_utf8_encoding",
+        "planned_runs": 5,
+        "observed_runs": 5,
+        "total_runs": 5,
+        "pass_count": 5,
+        "assertion_fail_count": 0,
+        "timeout_count": 0,
+        "skip_count": 0,
+        "exception_count": 0,
+        "not_executed_count": 0,
+        "missing_observation_count": 0,
+        "fail_count": 0,
+        "is_flaky": false,
+        "flakiness_rate": 0.0,
+        "flakiness_rate_str": "0.0%",
+        "flakiness_category": "stable_pass",
+        "error_types": [],
+        "duration_mean": 0.4699
+      },
+      "test_gen_02.py::test_request_with_non_ascii_path": {
+        "nodeid": "test_gen_02.py::test_request_with_non_ascii_path",
+        "planned_runs": 5,
+        "observed_runs": 5,
+        "total_runs": 5,
+        "pass_count": 5,
+        "assertion_fail_count": 0,
+        "timeout_count": 0,
+        "skip_count": 0,
+        "exception_count": 0,
+        "not_executed_count": 0,
+        "missing_observation_count": 0,
+        "fail_count": 0,
+        "is_flaky": false,
+        "flakiness_rate": 0.0,
+        "flakiness_rate_str": "0.0%",
+        "flakiness_category": "stable_pass",
+        "error_types": [],
+        "duration_mean": 0.2759
+      }
+    },
+    "suite_shuffle": {
+      "test_gen_00.py::test_session_request_with_utf8_encoding": {
+        "nodeid": "test_gen_00.py::test_session_request_with_utf8_encoding",
+        "planned_runs": 5,
+        "observed_runs": 5,
+        "total_runs": 5,
+        "pass_count": 5,
+        "assertion_fail_count": 0,
+        "timeout_count": 0,
+        "skip_count": 0,
+        "exception_count": 0,
+        "not_executed_count": 0,
+        "missing_observation_count": 0,
+        "fail_count": 0,
+        "is_flaky": false,
+        "flakiness_rate": 0.0,
+        "flakiness_rate_str": "0.0%",
+        "flakiness_category": "stable_pass",
+        "error_types": [],
+        "duration_mean": 0.5531
+      }
+    }
+  },
+  "root_cause_analysis": {
+    "test_gen_00.py::test_session_request_with_utf8_encoding": {
+      "source_code": "def test_session_request_with_utf8_encoding():\n    session = Session()\n    url = 'https://example.com'\n    method = 'GET'\n    headers = {'Content-Type': 'application/json'}\n    data = '{\"key\": \"value\"}'.encode('utf-8')\n    response = session.request(method, url, headers=headers, data=data)\n    assert response.status_code == 200",
+      "makes_external_network_call": true,
+      "target_url": "https://example.com",
+      "negative_prompt_violation": "Violates prompt instruction: 'Do NOT use external network services'",
+      "flakiness_mechanism": "Executes an live HTTP GET over external TLS socket to https://example.com. Vulnerable to DNS lookup latency, connection timeouts, and remote server drops. Under offline or firewall conditions, raises requests.exceptions.ConnectionError. Under high load or CI timeout, stalls pytest worker process, resulting in missing observations."
+    },
+    "test_gen_02.py::test_request_with_non_ascii_path": {
+      "source_code": "def test_request_with_non_ascii_path():\n    session = Session()\n    method = 'GET'\n    url = 'http://example.\u4e2d\u6587.com/'\n    response = session.request(method, url)\n    assert response.status_code == 200",
+      "makes_external_network_call": true,
+      "target_url": "http://example.\u4e2d\u6587.com/",
+      "negative_prompt_violation": "Violates prompt instruction: 'Do NOT use external network services'",
+      "flakiness_mechanism": "Executes an unmocked HTTP GET to an Internationalized Domain Name (IDN: example.\u4e2d\u6587.com). DNS resolution (getaddrinfo) fails or times out depending on the host's DNS resolver and proxy, producing intermittent gaierror / ConnectionError across test runs."
+    }
+  },
+  "triage_validation": {
+    "test_gen_00.py::test_session_request_with_utf8_encoding": {
+      "action": "QUARANTINE_INSPECT",
+      "category": "TIER_2_DUAL_PURPOSE",
+      "defect_score": 0.7333,
+      "risk_score": 0.3861,
+      "matched_key": "test_gen_00.py::test_session_request_with_utf8_encoding",
+      "properly_quarantined_or_discarded": true,
+      "reasons": [
+        "Empirical flakiness observed (5.6%); classified as unstable execution risk.",
+        "High defect-detection potential BUT exhibits instability risk; quarantine for inspection (auto-repair is not yet implemented)."
+      ]
+    },
+    "test_gen_02.py::test_request_with_non_ascii_path": {
+      "action": "QUARANTINE_INSPECT",
+      "category": "TIER_2_DUAL_PURPOSE",
+      "defect_score": 0.7333,
+      "risk_score": 0.3842,
+      "matched_key": "test_gen_02.py::test_request_with_non_ascii_path",
+      "properly_quarantined_or_discarded": true,
+      "reasons": [
+        "Empirical flakiness observed (5.3%); classified as unstable execution risk.",
+        "High defect-detection potential BUT exhibits instability risk; quarantine for inspection (auto-repair is not yet implemented)."
+      ]
+    }
+  }
+}
+======================================== STDERR ========================================
+(empty)

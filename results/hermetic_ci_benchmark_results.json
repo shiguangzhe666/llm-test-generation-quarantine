@@ -1,0 +1,730 @@
+{
+  "timestamp_utc": "2026-09-26T04:52:56.248564",
+  "total_instances": 13,
+  "instances": {
+    "psf__requests-1724": {
+      "instance_id": "psf__requests-1724",
+      "domain": "HTTP / Networking",
+      "repo": "psf/requests",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 15,
+          "passed_tests": 2,
+          "failed_tests": 13,
+          "network_violations": 9,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 8.307
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 15,
+          "passed_tests": 2,
+          "failed_tests": 13,
+          "network_violations": 9,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 4.675
+        },
+        "Static-Only": {
+          "total_tests": 2,
+          "passed_tests": 1,
+          "failed_tests": 1,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.339
+        },
+        "Random-Filtering": {
+          "total_tests": 2,
+          "passed_tests": 0,
+          "failed_tests": 2,
+          "network_violations": 1,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 0.402
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 2,
+          "passed_tests": 1,
+          "failed_tests": 1,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.327
+        }
+      }
+    },
+    "psf__requests-1766": {
+      "instance_id": "psf__requests-1766",
+      "domain": "HTTP / Networking",
+      "repo": "psf/requests",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 45,
+          "passed_tests": 10,
+          "failed_tests": 35,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.702
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 45,
+          "passed_tests": 10,
+          "failed_tests": 35,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.536
+        },
+        "Static-Only": {
+          "total_tests": 14,
+          "passed_tests": 5,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.408
+        },
+        "Random-Filtering": {
+          "total_tests": 14,
+          "passed_tests": 4,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.404
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 14,
+          "passed_tests": 5,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.406
+        }
+      }
+    },
+    "psf__requests-1921": {
+      "instance_id": "psf__requests-1921",
+      "domain": "HTTP / Networking",
+      "repo": "psf/requests",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 30,
+          "passed_tests": 13,
+          "failed_tests": 17,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.566
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 30,
+          "passed_tests": 13,
+          "failed_tests": 17,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.396
+        },
+        "Static-Only": {
+          "total_tests": 27,
+          "passed_tests": 13,
+          "failed_tests": 14,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.374
+        },
+        "Random-Filtering": {
+          "total_tests": 27,
+          "passed_tests": 12,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.382
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 27,
+          "passed_tests": 13,
+          "failed_tests": 14,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.375
+        }
+      }
+    },
+    "psf__requests-2317": {
+      "instance_id": "psf__requests-2317",
+      "domain": "HTTP / Networking",
+      "repo": "psf/requests",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 23,
+          "passed_tests": 1,
+          "failed_tests": 22,
+          "network_violations": 15,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 5.152
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 23,
+          "passed_tests": 1,
+          "failed_tests": 22,
+          "network_violations": 15,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 8.57
+        },
+        "Static-Only": {
+          "total_tests": 1,
+          "passed_tests": 0,
+          "failed_tests": 1,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.349
+        },
+        "Random-Filtering": {
+          "total_tests": 1,
+          "passed_tests": 0,
+          "failed_tests": 1,
+          "network_violations": 1,
+          "exit_code": 1,
+          "build_status": "BROKEN_BY_NETWORK",
+          "duration_seconds": 0.403
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 1,
+          "passed_tests": 0,
+          "failed_tests": 1,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.337
+        }
+      }
+    },
+    "psf__requests-6028": {
+      "instance_id": "psf__requests-6028",
+      "domain": "HTTP / Networking",
+      "repo": "psf/requests",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 26,
+          "passed_tests": 9,
+          "failed_tests": 17,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.618
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 26,
+          "passed_tests": 9,
+          "failed_tests": 17,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.498
+        },
+        "Static-Only": {
+          "total_tests": 18,
+          "passed_tests": 7,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.449
+        },
+        "Random-Filtering": {
+          "total_tests": 18,
+          "passed_tests": 7,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.451
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 18,
+          "passed_tests": 7,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.459
+        }
+      }
+    },
+    "pallets__flask-5014": {
+      "instance_id": "pallets__flask-5014",
+      "domain": "Web Framework",
+      "repo": "pallets/flask",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 37,
+          "passed_tests": 11,
+          "failed_tests": 26,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.802
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 37,
+          "passed_tests": 11,
+          "failed_tests": 26,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.668
+        },
+        "Static-Only": {
+          "total_tests": 37,
+          "passed_tests": 11,
+          "failed_tests": 26,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.704
+        },
+        "Random-Filtering": {
+          "total_tests": 37,
+          "passed_tests": 11,
+          "failed_tests": 26,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.659
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 37,
+          "passed_tests": 11,
+          "failed_tests": 26,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.659
+        }
+      }
+    },
+    "sympy__sympy-15809": {
+      "instance_id": "sympy__sympy-15809",
+      "domain": "Symbolic Mathematics",
+      "repo": "sympy/sympy",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 32,
+          "passed_tests": 23,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 3.853
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 32,
+          "passed_tests": 23,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.631
+        },
+        "Static-Only": {
+          "total_tests": 32,
+          "passed_tests": 23,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.626
+        },
+        "Random-Filtering": {
+          "total_tests": 32,
+          "passed_tests": 23,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.637
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 32,
+          "passed_tests": 23,
+          "failed_tests": 9,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.632
+        }
+      }
+    },
+    "sympy__sympy-17630": {
+      "instance_id": "sympy__sympy-17630",
+      "domain": "Symbolic Mathematics",
+      "repo": "sympy/sympy",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 9,
+          "passed_tests": 3,
+          "failed_tests": 6,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 4.377
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 9,
+          "passed_tests": 3,
+          "failed_tests": 6,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.635
+        },
+        "Static-Only": {
+          "total_tests": 9,
+          "passed_tests": 3,
+          "failed_tests": 6,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.607
+        },
+        "Random-Filtering": {
+          "total_tests": 9,
+          "passed_tests": 3,
+          "failed_tests": 6,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.591
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 9,
+          "passed_tests": 3,
+          "failed_tests": 6,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.596
+        }
+      }
+    },
+    "sympy__sympy-21930": {
+      "instance_id": "sympy__sympy-21930",
+      "domain": "Symbolic Mathematics",
+      "repo": "sympy/sympy",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 30,
+          "passed_tests": 20,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 5.083
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 30,
+          "passed_tests": 20,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.955
+        },
+        "Static-Only": {
+          "total_tests": 30,
+          "passed_tests": 20,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.865
+        },
+        "Random-Filtering": {
+          "total_tests": 30,
+          "passed_tests": 20,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.856
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 30,
+          "passed_tests": 20,
+          "failed_tests": 10,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.819
+        }
+      }
+    },
+    "pydata__xarray-4075": {
+      "instance_id": "pydata__xarray-4075",
+      "domain": "Scientific Computing",
+      "repo": "pydata/xarray",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 22,
+          "passed_tests": 7,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.752
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 22,
+          "passed_tests": 7,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.277
+        },
+        "Static-Only": {
+          "total_tests": 22,
+          "passed_tests": 7,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.544
+        },
+        "Random-Filtering": {
+          "total_tests": 22,
+          "passed_tests": 7,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.303
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 22,
+          "passed_tests": 7,
+          "failed_tests": 15,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.284
+        }
+      }
+    },
+    "pydata__xarray-4356": {
+      "instance_id": "pydata__xarray-4356",
+      "domain": "Scientific Computing",
+      "repo": "pydata/xarray",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 25,
+          "passed_tests": 1,
+          "failed_tests": 24,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.42
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 25,
+          "passed_tests": 1,
+          "failed_tests": 24,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.459
+        },
+        "Static-Only": {
+          "total_tests": 25,
+          "passed_tests": 1,
+          "failed_tests": 24,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.4
+        },
+        "Random-Filtering": {
+          "total_tests": 25,
+          "passed_tests": 1,
+          "failed_tests": 24,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.402
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 25,
+          "passed_tests": 1,
+          "failed_tests": 24,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 0.396
+        }
+      }
+    },
+    "pydata__xarray-4966": {
+      "instance_id": "pydata__xarray-4966",
+      "domain": "Scientific Computing",
+      "repo": "pydata/xarray",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 1,
+          "passed_tests": 1,
+          "failed_tests": 0,
+          "network_violations": 0,
+          "exit_code": 0,
+          "build_status": "PASSED",
+          "duration_seconds": 0.3
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 1,
+          "passed_tests": 1,
+          "failed_tests": 0,
+          "network_violations": 0,
+          "exit_code": 0,
+          "build_status": "PASSED",
+          "duration_seconds": 0.287
+        },
+        "Static-Only": {
+          "total_tests": 1,
+          "passed_tests": 1,
+          "failed_tests": 0,
+          "network_violations": 0,
+          "exit_code": 0,
+          "build_status": "PASSED",
+          "duration_seconds": 0.286
+        },
+        "Random-Filtering": {
+          "total_tests": 1,
+          "passed_tests": 1,
+          "failed_tests": 0,
+          "network_violations": 0,
+          "exit_code": 0,
+          "build_status": "PASSED",
+          "duration_seconds": 0.285
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 1,
+          "passed_tests": 1,
+          "failed_tests": 0,
+          "network_violations": 0,
+          "exit_code": 0,
+          "build_status": "PASSED",
+          "duration_seconds": 0.286
+        }
+      }
+    },
+    "pydata__xarray-6744": {
+      "instance_id": "pydata__xarray-6744",
+      "domain": "Scientific Computing",
+      "repo": "pydata/xarray",
+      "strategies": {
+        "Keep-All": {
+          "total_tests": 13,
+          "passed_tests": 2,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.927
+        },
+        "Discard-All-Flaky": {
+          "total_tests": 13,
+          "passed_tests": 2,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.542
+        },
+        "Static-Only": {
+          "total_tests": 13,
+          "passed_tests": 2,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.626
+        },
+        "Random-Filtering": {
+          "total_tests": 13,
+          "passed_tests": 2,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.715
+        },
+        "Risk-Aware-Triage": {
+          "total_tests": 13,
+          "passed_tests": 2,
+          "failed_tests": 11,
+          "network_violations": 0,
+          "exit_code": 1,
+          "build_status": "TEST_FAILED_HERMETIC",
+          "duration_seconds": 1.506
+        }
+      }
+    }
+  },
+  "summary": {
+    "Keep-All": {
+      "total_tests_evaluated": 308,
+      "passed_tests": 103,
+      "network_violations": 24,
+      "broken_instances": 2,
+      "clean_instances": 11,
+      "spurious_network_break_rate_pct": 15.38,
+      "hermetic_build_feasibility_rate_pct": 84.62
+    },
+    "Discard-All-Flaky": {
+      "total_tests_evaluated": 308,
+      "passed_tests": 103,
+      "network_violations": 24,
+      "broken_instances": 2,
+      "clean_instances": 11,
+      "spurious_network_break_rate_pct": 15.38,
+      "hermetic_build_feasibility_rate_pct": 84.62
+    },
+    "Static-Only": {
+      "total_tests_evaluated": 231,
+      "passed_tests": 94,
+      "network_violations": 0,
+      "broken_instances": 0,
+      "clean_instances": 13,
+      "spurious_network_break_rate_pct": 0.0,
+      "hermetic_build_feasibility_rate_pct": 100.0
+    },
+    "Random-Filtering": {
+      "total_tests_evaluated": 231,
+      "passed_tests": 91,
+      "network_violations": 2,
+      "broken_instances": 2,
+      "clean_instances": 11,
+      "spurious_network_break_rate_pct": 15.38,
+      "hermetic_build_feasibility_rate_pct": 84.62
+    },
+    "Risk-Aware-Triage": {
+      "total_tests_evaluated": 231,
+      "passed_tests": 94,
+      "network_violations": 0,
+      "broken_instances": 0,
+      "clean_instances": 13,
+      "spurious_network_break_rate_pct": 0.0,
+      "hermetic_build_feasibility_rate_pct": 100.0
+    }
+  },
+  "duration_seconds": 97.81
+}

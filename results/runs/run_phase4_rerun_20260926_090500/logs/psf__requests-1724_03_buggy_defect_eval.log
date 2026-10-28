@@ -1,0 +1,27 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_y4gr6hfu
+EXIT_CODE: 1
+DURATION_SECONDS: 10.4165
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_00.py::test_request_with_unicode_method": "EXCEPTION",
+    "test_gen_00.py::test_request_with_non_ascii_method": "EXCEPTION",
+    "test_gen_00.py::test_request_with_empty_method": "EXCEPTION",
+    "test_gen_00.py::test_request_with_non_string_method": "EXCEPTION",
+    "test_gen_00.py::test_request_with_unicode_url": "EXCEPTION",
+    "test_gen_00.py::test_request_with_non_ascii_url": "EXCEPTION",
+    "test_gen_00.py::test_request_with_empty_url": "PASSED",
+    "test_gen_00.py::test_request_with_non_string_url": "EXCEPTION",
+    "test_gen_00.py::test_request_with_valid_method_and_invalid_url": "EXCEPTION",
+    "test_gen_00.py::test_request_with_invalid_method_and_valid_url": "EXCEPTION",
+    "test_gen_01.py::test_session_request_with_unicode_method": "EXCEPTION",
+    "test_gen_02.py::test_request_with_unicode_method": "ASSERTION_FAILED",
+    "test_gen_02.py::test_request_with_non_ascii_method": "PASSED",
+    "test_gen_02.py::test_request_with_unicode_url": "ASSERTION_FAILED",
+    "test_gen_02.py::test_request_with_non_ascii_url": "EXCEPTION"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

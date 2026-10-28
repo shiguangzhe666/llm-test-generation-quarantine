@@ -1,0 +1,152 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt__j7ly74b
+EXIT_CODE: 0
+DURATION_SECONDS: 111.2699
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_dataarray_rolling_construct": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_dataset_rolling_mean": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_dataset_rolling_construct": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::test_dataarray_rolling_mean": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_dataset_rolling": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_rolling_mean": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_rolling_with_fillna": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_rolling_min_periods": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dataset_rolling": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_coarsen": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_rolling_center": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dataarray_rolling": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_attributes": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  }
+}
+======================================== STDERR ========================================
+(empty)

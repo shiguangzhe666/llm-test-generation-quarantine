@@ -1,0 +1,14 @@
+COMMAND: pytest 1 tests (strategy=Static-Only, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_2d4a9so1
+EXIT_CODE: 0
+DURATION_SECONDS: 0.2706
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 1 item
+
+test_gen_01.py::test_placeholder_pydata_xarray_4966 PASSED               [100%]
+
+============================== 1 passed in 0.01s ==============================
+
+======================================== STDERR ========================================
+(empty)

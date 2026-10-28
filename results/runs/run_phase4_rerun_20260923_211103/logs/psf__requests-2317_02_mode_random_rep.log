@@ -1,0 +1,8 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM
+CWD: F:\论文\llm-test-stability\data\repos\psf__requests
+EXIT_CODE: 0
+DURATION_SECONDS: 316.9954
+======================================== STDOUT ========================================
+(empty)
+======================================== STDERR ========================================
+(empty)

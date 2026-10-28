@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-19T21:42:26.651821",
+  "pilot_dir": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\llm_test_pilot_xw08a6_p",
+  "results": {
+    "stable_fixed": {
+      "pass": 10,
+      "fail": 0,
+      "flaky": false,
+      "rate": 0.0,
+      "category": "stable_pass"
+    },
+    "flaky_fixed": {
+      "pass": 10,
+      "fail": 0,
+      "flaky": false,
+      "rate": 0.0,
+      "category": "stable_pass",
+      "error_types": []
+    },
+    "bugdetect_fixed": {
+      "pass": 5,
+      "fail": 0
+    },
+    "bugdetect_buggy": {
+      "pass": 0,
+      "fail": 5
+    }
+  },
+  "checks": {
+    "Tests execute successfully": true,
+    "Stable tests are stable": true,
+    "Flakiness observable": false,
+    "Bug detection works": true,
+    "Pipeline runs end-to-end": true
+  }
+}

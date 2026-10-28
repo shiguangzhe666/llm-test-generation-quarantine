@@ -1,0 +1,196 @@
+COMMAND: pytest 13 tests (strategy=Discard-All-Flaky, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_jmm4kfh0
+EXIT_CODE: 1
+DURATION_SECONDS: 1.2308
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 13 items
+
+test_gen_00.py::test_dataarray_rolling_mean FAILED                       [  7%]
+test_gen_00.py::test_dataset_rolling_mean FAILED                         [ 15%]
+test_gen_00.py::test_dataarray_rolling_construct FAILED                  [ 23%]
+test_gen_00.py::test_dataset_rolling_construct FAILED                    [ 30%]
+test_gen_01.py::test_rolling_mean FAILED                                 [ 38%]
+test_gen_01.py::test_dataset_rolling FAILED                              [ 46%]
+test_gen_01.py::test_rolling_with_fillna FAILED                          [ 53%]
+test_gen_02.py::test_dataarray_rolling FAILED                            [ 61%]
+test_gen_02.py::test_dataset_rolling FAILED                              [ 69%]
+test_gen_02.py::test_coarsen PASSED                                      [ 76%]
+test_gen_02.py::test_rolling_min_periods FAILED                          [ 84%]
+test_gen_02.py::test_rolling_center FAILED                               [ 92%]
+test_gen_02.py::test_attributes PASSED                                   [100%]
+
+================================== FAILURES ===================================
+_________________________ test_dataarray_rolling_mean _________________________
+xarray\core\dataarray.py:760: in _getitem_coord
+    var = self._coords[key]
+          ^^^^^^^^^^^^^^^^^
+E   KeyError: 'window'
+
+During handling of the above exception, another exception occurred:
+test_gen_00.py:8: in test_dataarray_rolling_mean
+    rolled = da.rolling(window=3, min_periods=2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:5560: in rolling
+    return DataArrayRolling(self, dim, min_periods=min_periods, center=center)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\rolling.py:268: in __init__
+    self.window_labels = self.obj[self.dim[0]]
+                         ^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:769: in __getitem__
+    return self._getitem_coord(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:763: in _getitem_coord
+    _, key, var = _get_virtual_variable(self._coords, key, dim_sizes)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:175: in _get_virtual_variable
+    raise KeyError(key)
+E   KeyError: 'window'
+__________________________ test_dataset_rolling_mean __________________________
+test_gen_00.py:19: in test_dataset_rolling_mean
+    rolled = ds.rolling(window=3, min_periods=2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:8753: in rolling
+    return DatasetRolling(self, dim, min_periods=min_periods, center=center)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\rolling.py:629: in __init__
+    raise KeyError(self.dim)
+E   KeyError: ['window']
+______________________ test_dataarray_rolling_construct _______________________
+xarray\core\dataarray.py:760: in _getitem_coord
+    var = self._coords[key]
+          ^^^^^^^^^^^^^^^^^
+E   KeyError: 'window'
+
+During handling of the above exception, another exception occurred:
+test_gen_00.py:26: in test_dataarray_rolling_construct
+    rolled = da.rolling(window=3)
+             ^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:5560: in rolling
+    return DataArrayRolling(self, dim, min_periods=min_periods, center=center)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\rolling.py:268: in __init__
+    self.window_labels = self.obj[self.dim[0]]
+                         ^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:769: in __getitem__
+    return self._getitem_coord(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataarray.py:763: in _getitem_coord
+    _, key, var = _get_virtual_variable(self._coords, key, dim_sizes)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:175: in _get_virtual_variable
+    raise KeyError(key)
+E   KeyError: 'window'
+_______________________ test_dataset_rolling_construct ________________________
+test_gen_00.py:36: in test_dataset_rolling_construct
+    rolled = ds.rolling(window=3)
+             ^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:8753: in rolling
+    return DatasetRolling(self, dim, min_periods=min_periods, center=center)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\rolling.py:629: in __init__
+    raise KeyError(self.dim)
+E   KeyError: ['window']
+______________________________ test_rolling_mean ______________________________
+test_gen_01.py:10: in test_rolling_mean
+    assert np.isnan(rolled[0, :].values).all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+____________________________ test_dataset_rolling _____________________________
+xarray\core\variable.py:130: in as_variable
+    obj = Variable(*obj)
+          ^^^^^^^^^^^^^^
+xarray\core\variable.py:318: in __init__
+    self._dims = self._parse_dimensions(dims)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\variable.py:578: in _parse_dimensions
+    raise ValueError(
+E   ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=2
+
+During handling of the above exception, another exception occurred:
+test_gen_01.py:17: in test_dataset_rolling
+    ds = xr.Dataset({'temp': ('time', data)}, coords={'time': np.arange(10)})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:599: in __init__
+    variables, coord_names, dims, indexes, _ = merge_data_and_coords(
+xarray\core\merge.py:575: in merge_data_and_coords
+    return merge_core(
+xarray\core\merge.py:755: in merge_core
+    collected = collect_variables_and_indexes(aligned, indexes=indexes)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\merge.py:365: in collect_variables_and_indexes
+    variable = as_variable(variable, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\variable.py:133: in as_variable
+    raise error.__class__(
+E   ValueError: Could not convert tuple of form (dims, data[, attrs, encoding]): ('time', array([[0.51581745, 0.45957118, 0.88680908],
+E          [0.94881173, 0.10509992, 0.72899118],
+E          [0.17288585, 0.81300839, 0.89418593],
+E          [0.08650575, 0.99031117, 0.85896433],
+E          [0.52648542, 0.39603376, 0.11016019],
+E          [0.97759945, 0.72534243, 0.97106692],
+E          [0.37485897, 0.58025216, 0.06785267],
+E          [0.77564002, 0.12802156, 0.22154929],
+E          [0.79690046, 0.26459199, 0.84670244],
+E          [0.98384333, 0.98804466, 0.36562974]])) to Variable.
+__________________________ test_rolling_with_fillna ___________________________
+test_gen_01.py:28: in test_rolling_with_fillna
+    rolled = da.rolling(time=3, min_periods=1).mean(fillna=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\rolling.py:155: in method
+    return self._numpy_or_bottleneck_reduce(
+E   TypeError: xarray.core.rolling.DataArrayRolling._numpy_or_bottleneck_reduce() got multiple values for keyword argument 'fillna'
+___________________________ test_dataarray_rolling ____________________________
+test_gen_02.py:7: in test_dataarray_rolling
+    assert result.shape == (7,)
+           ^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+____________________________ test_dataset_rolling _____________________________
+test_gen_02.py:15: in test_dataset_rolling
+    np.testing.assert_array_equal(result[var].values, [np.nan, np.nan, 1., 2., 3., 4., 5.])
+E   AssertionError: 
+E   Arrays are not equal
+E   
+E   (shapes (10,), (7,) mismatch)
+E    ACTUAL: array([nan, nan,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.])
+E    DESIRED: array([nan, nan,  1.,  2.,  3.,  4.,  5.])
+__________________________ test_rolling_min_periods ___________________________
+test_gen_02.py:25: in test_rolling_min_periods
+    np.testing.assert_array_equal(result.values, [np.nan, np.nan, 1., 2., 3., 4., 5.])
+E   AssertionError: 
+E   Arrays are not equal
+E   
+E   (shapes (10,), (7,) mismatch)
+E    ACTUAL: array([nan, 0.5, 1. , 2. , 3. , 4. , 5. , 6. , 7. , 8. ])
+E    DESIRED: array([nan, nan,  1.,  2.,  3.,  4.,  5.])
+_____________________________ test_rolling_center _____________________________
+test_gen_02.py:30: in test_rolling_center
+    np.testing.assert_array_equal(result.values, [np.nan, 0.5, 1.5, 2.5, 3.5, 4.5, np.nan])
+E   AssertionError: 
+E   Arrays are not equal
+E   
+E   (shapes (10,), (7,) mismatch)
+E    ACTUAL: array([nan,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8., nan])
+E    DESIRED: array([nan, 0.5, 1.5, 2.5, 3.5, 4.5, nan])
+============================== warnings summary ===============================
+xarray\core\nputils.py:7
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_jmm4kfh0\xarray\core\nputils.py:7: DeprecationWarning: numpy.core.multiarray is deprecated and has been renamed to numpy._core.multiarray. The numpy._core namespace contains private NumPy internals and its use is discouraged, as NumPy internals can change without warning in any release. In practice, most real-world usage of numpy.core is to access functionality in the public NumPy API. If that is the case, use the public NumPy API. If not, you are using NumPy internals. If you would still like to access an internal attribute, use numpy._core.multiarray.normalize_axis_index.
+    from numpy.core.multiarray import normalize_axis_index  # type: ignore[attr-defined]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_dataarray_rolling_mean - KeyError: 'window'
+FAILED test_gen_00.py::test_dataset_rolling_mean - KeyError: ['window']
+FAILED test_gen_00.py::test_dataarray_rolling_construct - KeyError: 'window'
+FAILED test_gen_00.py::test_dataset_rolling_construct - KeyError: ['window']
+FAILED test_gen_01.py::test_rolling_mean - AssertionError
+FAILED test_gen_01.py::test_dataset_rolling - ValueError: Could not convert t...
+FAILED test_gen_01.py::test_rolling_with_fillna - TypeError: xarray.core.roll...
+FAILED test_gen_02.py::test_dataarray_rolling - AssertionError
+FAILED test_gen_02.py::test_dataset_rolling - AssertionError: 
+FAILED test_gen_02.py::test_rolling_min_periods - AssertionError: 
+FAILED test_gen_02.py::test_rolling_center - AssertionError: 
+=================== 11 failed, 2 passed, 1 warning in 0.90s ===================
+
+======================================== STDERR ========================================
+(empty)

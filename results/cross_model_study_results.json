@@ -1,0 +1,953 @@
+{
+  "timestamp_utc": "2026-09-26T09:56:50.776124Z",
+  "benchmark_design": "4-Model Cross-Vendor Study on SWE-bench Verified (Alibaba, DeepSeek, Meta)",
+  "models": [
+    "qwen3_8b",
+    "qwen25_7b",
+    "deepseek_coder_67b",
+    "codellama_7b"
+  ],
+  "summary": {
+    "qwen3_8b": {
+      "model_key": "qwen3_8b",
+      "display_name": "Qwen3-8B",
+      "vendor": "Alibaba",
+      "scale": "8 Billion",
+      "total_generated": 308,
+      "total_collected": 308,
+      "collection_pass_rate_pct": 100.0,
+      "unmocked_urls": 62,
+      "mean_sdefect": 0.742,
+      "tier_1_safe_keep": 182,
+      "tier_1_rate_pct": 59.1,
+      "tier_2_quarantine": 62,
+      "tier_2_rate_pct": 20.1,
+      "tier_3_safe_low": 49,
+      "tier_3_rate_pct": 15.9,
+      "tier_4_spurious": 15,
+      "tier_4_rate_pct": 4.9
+    },
+    "qwen25_7b": {
+      "model_size": "7B parameters",
+      "release_generation": "Preceding Generation (Qwen2.5)",
+      "total_generated": 282,
+      "total_collected": 201,
+      "collection_pass_rate_pct": 71.3,
+      "unmocked_urls": 61,
+      "mean_sdefect": 0.6188,
+      "tier_1_safe_keep": 142,
+      "tier_1_rate_pct": 50.4,
+      "tier_2_quarantine": 51,
+      "tier_2_rate_pct": 18.1,
+      "tier_3_safe_low": 78,
+      "tier_3_rate_pct": 27.7,
+      "tier_4_spurious": 11,
+      "tier_4_rate_pct": 3.9,
+      "scale": "7 Billion",
+      "vendor": "Alibaba",
+      "display_name": "Qwen2.5-7B"
+    },
+    "deepseek_coder_67b": {
+      "model_key": "deepseek_coder_67b",
+      "display_name": "DeepSeek-Coder-6.7B",
+      "vendor": "DeepSeek",
+      "scale": "6.7 Billion",
+      "total_generated": 230,
+      "total_collected": 189,
+      "collection_pass_rate_pct": 82.2,
+      "unmocked_urls": 59,
+      "mean_sdefect": 0.6527,
+      "tier_1_safe_keep": 109,
+      "tier_1_rate_pct": 47.4,
+      "tier_2_quarantine": 57,
+      "tier_2_rate_pct": 24.8,
+      "tier_3_safe_low": 62,
+      "tier_3_rate_pct": 27.0,
+      "tier_4_spurious": 2,
+      "tier_4_rate_pct": 0.9,
+      "instance_results": {
+        "psf__requests-1724": {
+          "total_generated": 27,
+          "total_collected": 27,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 22,
+          "tier_1_safe_keep": 2,
+          "tier_2_dual_purpose": 22,
+          "tier_3_safe_low": 3,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7076
+        },
+        "psf__requests-1766": {
+          "total_generated": 14,
+          "total_collected": 14,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 12,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 2,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6928
+        },
+        "psf__requests-1921": {
+          "total_generated": 14,
+          "total_collected": 14,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 12,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 12,
+          "tier_3_safe_low": 2,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.714
+        },
+        "psf__requests-2317": {
+          "total_generated": 22,
+          "total_collected": 22,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 21,
+          "tier_1_safe_keep": 1,
+          "tier_2_dual_purpose": 21,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7454
+        },
+        "psf__requests-6028": {
+          "total_generated": 20,
+          "total_collected": 5,
+          "collection_pass_rate_pct": 25.0,
+          "unmocked_urls": 4,
+          "tier_1_safe_keep": 10,
+          "tier_2_dual_purpose": 2,
+          "tier_3_safe_low": 6,
+          "tier_4_spurious": 2,
+          "mean_sdefect": 0.5761
+        },
+        "pallets__flask-5014": {
+          "total_generated": 19,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 12,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 7,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.606
+        },
+        "sympy__sympy-15809": {
+          "total_generated": 3,
+          "total_collected": 2,
+          "collection_pass_rate_pct": 66.7,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 3,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7886
+        },
+        "sympy__sympy-17630": {
+          "total_generated": 5,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 5,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7533
+        },
+        "sympy__sympy-21930": {
+          "total_generated": 1,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 1,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.8
+        },
+        "pydata__xarray-4075": {
+          "total_generated": 24,
+          "total_collected": 24,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 9,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 15,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.5108
+        },
+        "pydata__xarray-4356": {
+          "total_generated": 44,
+          "total_collected": 44,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 34,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 10,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6723
+        },
+        "pydata__xarray-4966": {
+          "total_generated": 30,
+          "total_collected": 30,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 19,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 11,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6632
+        },
+        "pydata__xarray-6744": {
+          "total_generated": 7,
+          "total_collected": 7,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 1,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 6,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.459
+        }
+      }
+    },
+    "codellama_7b": {
+      "model_key": "codellama_7b",
+      "display_name": "CodeLlama-7B",
+      "vendor": "Meta",
+      "scale": "7 Billion",
+      "total_generated": 103,
+      "total_collected": 77,
+      "collection_pass_rate_pct": 74.8,
+      "unmocked_urls": 4,
+      "mean_sdefect": 0.7035,
+      "tier_1_safe_keep": 87,
+      "tier_1_rate_pct": 84.5,
+      "tier_2_quarantine": 4,
+      "tier_2_rate_pct": 3.9,
+      "tier_3_safe_low": 12,
+      "tier_3_rate_pct": 11.7,
+      "tier_4_spurious": 0,
+      "tier_4_rate_pct": 0.0,
+      "instance_results": {
+        "psf__requests-1724": {
+          "total_generated": 3,
+          "total_collected": 3,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 3,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.4905
+        },
+        "psf__requests-1766": {
+          "total_generated": 25,
+          "total_collected": 18,
+          "collection_pass_rate_pct": 72.0,
+          "unmocked_urls": 3,
+          "tier_1_safe_keep": 19,
+          "tier_2_dual_purpose": 3,
+          "tier_3_safe_low": 3,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6968
+        },
+        "psf__requests-1921": {
+          "total_generated": 3,
+          "total_collected": 3,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 1,
+          "tier_1_safe_keep": 1,
+          "tier_2_dual_purpose": 1,
+          "tier_3_safe_low": 1,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6533
+        },
+        "psf__requests-2317": {
+          "total_generated": 3,
+          "total_collected": 3,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 2,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 1,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.5956
+        },
+        "psf__requests-6028": {
+          "total_generated": 0,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.0
+        },
+        "pallets__flask-5014": {
+          "total_generated": 0,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.0
+        },
+        "sympy__sympy-15809": {
+          "total_generated": 0,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.0
+        },
+        "sympy__sympy-17630": {
+          "total_generated": 0,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.0
+        },
+        "sympy__sympy-21930": {
+          "total_generated": 0,
+          "total_collected": 0,
+          "collection_pass_rate_pct": 0.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.0
+        },
+        "pydata__xarray-4075": {
+          "total_generated": 20,
+          "total_collected": 5,
+          "collection_pass_rate_pct": 25.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 17,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 3,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.6853
+        },
+        "pydata__xarray-4356": {
+          "total_generated": 36,
+          "total_collected": 36,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 36,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7565
+        },
+        "pydata__xarray-4966": {
+          "total_generated": 12,
+          "total_collected": 8,
+          "collection_pass_rate_pct": 66.7,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 12,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 0,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.7007
+        },
+        "pydata__xarray-6744": {
+          "total_generated": 1,
+          "total_collected": 1,
+          "collection_pass_rate_pct": 100.0,
+          "unmocked_urls": 0,
+          "tier_1_safe_keep": 0,
+          "tier_2_dual_purpose": 0,
+          "tier_3_safe_low": 1,
+          "tier_4_spurious": 0,
+          "mean_sdefect": 0.48
+        }
+      }
+    }
+  },
+  "instances": {
+    "psf__requests-1724": {
+      "instance_id": "psf__requests-1724",
+      "domain": "HTTP / Networking",
+      "qwen3_8b": {
+        "total_tests": 15,
+        "tier_1_safe_keep": 2,
+        "tier_2_dual_purpose": 13,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 21,
+        "total_collected": 21,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 3,
+        "tier_1_safe_keep": 6,
+        "tier_2_dual_purpose": 2,
+        "tier_3_safe_low": 11,
+        "tier_4_spurious": 2,
+        "mean_sdefect": 0.5425
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 27,
+        "total_collected": 27,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 22,
+        "tier_1_safe_keep": 2,
+        "tier_2_dual_purpose": 22,
+        "tier_3_safe_low": 3,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7076
+      },
+      "codellama_7b": {
+        "total_generated": 3,
+        "total_collected": 3,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 3,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.4905
+      }
+    },
+    "psf__requests-1766": {
+      "instance_id": "psf__requests-1766",
+      "domain": "HTTP / Networking",
+      "qwen3_8b": {
+        "total_tests": 45,
+        "tier_1_safe_keep": 13,
+        "tier_2_dual_purpose": 19,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 12
+      },
+      "qwen25_7b": {
+        "total_generated": 17,
+        "total_collected": 17,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 17,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 14,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 3,
+        "mean_sdefect": 0.662
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 14,
+        "total_collected": 14,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 12,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 2,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6928
+      },
+      "codellama_7b": {
+        "total_generated": 25,
+        "total_collected": 18,
+        "collection_pass_rate_pct": 72.0,
+        "unmocked_urls": 3,
+        "tier_1_safe_keep": 19,
+        "tier_2_dual_purpose": 3,
+        "tier_3_safe_low": 3,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6968
+      }
+    },
+    "psf__requests-1921": {
+      "instance_id": "psf__requests-1921",
+      "domain": "HTTP / Networking",
+      "qwen3_8b": {
+        "total_tests": 30,
+        "tier_1_safe_keep": 26,
+        "tier_2_dual_purpose": 3,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 35,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 25,
+        "tier_1_safe_keep": 9,
+        "tier_2_dual_purpose": 22,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 3,
+        "mean_sdefect": 0.6831
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 14,
+        "total_collected": 14,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 12,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 12,
+        "tier_3_safe_low": 2,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.714
+      },
+      "codellama_7b": {
+        "total_generated": 3,
+        "total_collected": 3,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 1,
+        "tier_1_safe_keep": 1,
+        "tier_2_dual_purpose": 1,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6533
+      }
+    },
+    "psf__requests-2317": {
+      "instance_id": "psf__requests-2317",
+      "domain": "HTTP / Networking",
+      "qwen3_8b": {
+        "total_tests": 23,
+        "tier_1_safe_keep": 1,
+        "tier_2_dual_purpose": 22,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 26,
+        "total_collected": 26,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 10,
+        "tier_1_safe_keep": 14,
+        "tier_2_dual_purpose": 7,
+        "tier_3_safe_low": 2,
+        "tier_4_spurious": 3,
+        "mean_sdefect": 0.661
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 22,
+        "total_collected": 22,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 21,
+        "tier_1_safe_keep": 1,
+        "tier_2_dual_purpose": 21,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7454
+      },
+      "codellama_7b": {
+        "total_generated": 3,
+        "total_collected": 3,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 2,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.5956
+      }
+    },
+    "psf__requests-6028": {
+      "instance_id": "psf__requests-6028",
+      "domain": "HTTP / Networking",
+      "qwen3_8b": {
+        "total_tests": 26,
+        "tier_1_safe_keep": 13,
+        "tier_2_dual_purpose": 5,
+        "tier_3_safe_low": 5,
+        "tier_4_spurious": 3
+      },
+      "qwen25_7b": {
+        "total_generated": 16,
+        "total_collected": 8,
+        "collection_pass_rate_pct": 50.0,
+        "unmocked_urls": 6,
+        "tier_1_safe_keep": 9,
+        "tier_2_dual_purpose": 6,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6526
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 20,
+        "total_collected": 5,
+        "collection_pass_rate_pct": 25.0,
+        "unmocked_urls": 4,
+        "tier_1_safe_keep": 10,
+        "tier_2_dual_purpose": 2,
+        "tier_3_safe_low": 6,
+        "tier_4_spurious": 2,
+        "mean_sdefect": 0.5761
+      },
+      "codellama_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      }
+    },
+    "pallets__flask-5014": {
+      "instance_id": "pallets__flask-5014",
+      "domain": "Web Framework",
+      "qwen3_8b": {
+        "total_tests": 37,
+        "tier_1_safe_keep": 36,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 4,
+        "total_collected": 4,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 4,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7936
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 19,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 12,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 7,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.606
+      },
+      "codellama_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      }
+    },
+    "sympy__sympy-15809": {
+      "instance_id": "sympy__sympy-15809",
+      "domain": "Symbolic Mathematics",
+      "qwen3_8b": {
+        "total_tests": 32,
+        "tier_1_safe_keep": 32,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 12,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 12,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7481
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 3,
+        "total_collected": 2,
+        "collection_pass_rate_pct": 66.7,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 3,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7886
+      },
+      "codellama_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      }
+    },
+    "sympy__sympy-17630": {
+      "instance_id": "sympy__sympy-17630",
+      "domain": "Symbolic Mathematics",
+      "qwen3_8b": {
+        "total_tests": 9,
+        "tier_1_safe_keep": 8,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 5,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 5,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7533
+      },
+      "codellama_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      }
+    },
+    "sympy__sympy-21930": {
+      "instance_id": "sympy__sympy-21930",
+      "domain": "Symbolic Mathematics",
+      "qwen3_8b": {
+        "total_tests": 30,
+        "tier_1_safe_keep": 18,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 12,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 2,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 2,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.5737
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 1,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 1,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.8
+      },
+      "codellama_7b": {
+        "total_generated": 0,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.0
+      }
+    },
+    "pydata__xarray-4075": {
+      "instance_id": "pydata__xarray-4075",
+      "domain": "Scientific Computing",
+      "qwen3_8b": {
+        "total_tests": 22,
+        "tier_1_safe_keep": 8,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 14,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 43,
+        "total_collected": 43,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 13,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 30,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.5155
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 24,
+        "total_collected": 24,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 9,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 15,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.5108
+      },
+      "codellama_7b": {
+        "total_generated": 20,
+        "total_collected": 5,
+        "collection_pass_rate_pct": 25.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 17,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 3,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6853
+      }
+    },
+    "pydata__xarray-4356": {
+      "instance_id": "pydata__xarray-4356",
+      "domain": "Scientific Computing",
+      "qwen3_8b": {
+        "total_tests": 25,
+        "tier_1_safe_keep": 13,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 12,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 60,
+        "total_collected": 52,
+        "collection_pass_rate_pct": 86.7,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 40,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 20,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6087
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 44,
+        "total_collected": 44,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 34,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 10,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6723
+      },
+      "codellama_7b": {
+        "total_generated": 36,
+        "total_collected": 36,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 36,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7565
+      }
+    },
+    "pydata__xarray-4966": {
+      "instance_id": "pydata__xarray-4966",
+      "domain": "Scientific Computing",
+      "qwen3_8b": {
+        "total_tests": 1,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 44,
+        "total_collected": 30,
+        "collection_pass_rate_pct": 68.2,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 33,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 11,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6253
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 30,
+        "total_collected": 30,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 19,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 11,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.6632
+      },
+      "codellama_7b": {
+        "total_generated": 12,
+        "total_collected": 8,
+        "collection_pass_rate_pct": 66.7,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 12,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 0,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.7007
+      }
+    },
+    "pydata__xarray-6744": {
+      "instance_id": "pydata__xarray-6744",
+      "domain": "Scientific Computing",
+      "qwen3_8b": {
+        "total_tests": 13,
+        "tier_1_safe_keep": 12,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0
+      },
+      "qwen25_7b": {
+        "total_generated": 2,
+        "total_collected": 0,
+        "collection_pass_rate_pct": 0.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 2,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.4133
+      },
+      "deepseek_coder_67b": {
+        "total_generated": 7,
+        "total_collected": 7,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 1,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 6,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.459
+      },
+      "codellama_7b": {
+        "total_generated": 1,
+        "total_collected": 1,
+        "collection_pass_rate_pct": 100.0,
+        "unmocked_urls": 0,
+        "tier_1_safe_keep": 0,
+        "tier_2_dual_purpose": 0,
+        "tier_3_safe_low": 1,
+        "tier_4_spurious": 0,
+        "mean_sdefect": 0.48
+      }
+    }
+  }
+}

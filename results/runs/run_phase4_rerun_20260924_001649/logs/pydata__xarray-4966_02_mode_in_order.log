@@ -1,0 +1,10 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER (1 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ufpxqf66
+EXIT_CODE: 0
+DURATION_SECONDS: 0.5796
+======================================== STDOUT ========================================
+{
+  "test_gen_01.py::test_placeholder_pydata_xarray_4966": "PASSED"
+}
+======================================== STDERR ========================================
+(empty)

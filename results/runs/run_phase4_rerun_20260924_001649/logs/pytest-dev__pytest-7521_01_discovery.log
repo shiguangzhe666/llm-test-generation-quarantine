@@ -1,0 +1,21 @@
+COMMAND: discover_test_nodeids across 2 files
+CWD: F:\论文\llm-test-stability\data\repos\pytest-dev__pytest
+EXIT_CODE: 1
+DURATION_SECONDS: 0.7016
+======================================== STDOUT ========================================
+Discovered 0 nodeids: []
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\test_gen_00.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 189, in _run_module_as_main\n  File \"<frozen runpy>\", line 148, in _get_module_details\n  File \"<frozen runpy>\", line 112, in _get_module_details\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\pytest\\__init__.py\", line 7, in <module>\n    from _pytest.assertion import register_assert_rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\_pytest\\assertion\\__init__.py\", line 10, in <module>\n    from _pytest.assertion import rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\_pytest\\assertion\\rewrite.py\", line 29, in <module>\n    from _pytest._version import version\nModuleNotFoundError: No module named '_pytest._version'"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\test_gen_01.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 189, in _run_module_as_main\n  File \"<frozen runpy>\", line 148, in _get_module_details\n  File \"<frozen runpy>\", line 112, in _get_module_details\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\pytest\\__init__.py\", line 7, in <module>\n    from _pytest.assertion import register_assert_rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\_pytest\\assertion\\__init__.py\", line 10, in <module>\n    from _pytest.assertion import rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_oiiib0z7\\src\\_pytest\\assertion\\rewrite.py\", line 29, in <module>\n    from _pytest._version import version\nModuleNotFoundError: No module named '_pytest._version'"
+  }
+]

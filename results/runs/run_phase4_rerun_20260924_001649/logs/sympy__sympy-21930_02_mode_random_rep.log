@@ -1,0 +1,339 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_vo8m67tu
+EXIT_CODE: 0
+DURATION_SECONDS: 134.7048
+======================================== STDOUT ========================================
+{
+  "test_gen_01.py::test_no": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_wicks": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_create_boson_dagger": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_apply_operators": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_create_boson_state_property": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_evaluate_deltas": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_permutation_operator": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_create_boson_is_symbolic": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_contraction": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_substitute_dummies": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_inner_product": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_annihilate_boson_state_property": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_matrix_rep": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_annihilate_boson_is_symbolic": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_simplify_index_permutations": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_create_boson_apply_operator": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_fock_state_ket_occupation": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_annihilate_boson_dagger": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_01.py::test_annihilate_boson_apply_operator": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_annihilate_boson_is_symbolic": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dagger_expression": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dagger_create_boson": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_annihilate_boson_apply": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_antisymmetric_tensor_latex": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_annihilate_boson_state": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_create_boson_apply": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_antisymmetric_tensor_sorting": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dagger_number": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_dagger_annihilate_boson": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::test_create_boson_is_symbolic": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  }
+}
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,280 @@
+{
+  "test_file": "test_config_run2.py",
+  "project_dir": "F:\\论文\\llm-test-stability\\data\\generated_tests\\config_parser",
+  "num_runs": 10,
+  "timestamp": "2026-09-19T23:50:54.273138",
+  "summary": {
+    "total": 26,
+    "stable_pass": 23,
+    "stable_fail": 3,
+    "flaky": 0
+  },
+  "tests": {
+    "test_config_parser_init_defaults": {
+      "test_id": "test_config_run2.py::test_config_parser_init_defaults",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4571
+    },
+    "test_config_parser_read_string_empty_input": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_empty_input",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4602
+    },
+    "test_config_parser_read_string_valid_section": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_valid_section",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4995
+    },
+    "test_config_not_empty_line_skipped": {
+      "test_id": "test_config_run2.py::test_config_not_empty_line_skipped",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.5085
+    },
+    "test_config_parser_read_string_section_header_only": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_section_header_only",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.5535
+    },
+    "test_config_parser_read_string_quotes_around_value": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_quotes_around_value",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.5629
+    },
+    "test_config_parser_read_string_interpolated_value": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_interpolated_value",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.5587
+    },
+    "test_config_parser_read_string_invalid_line": {
+      "test_id": "test_config_run2.py::test_config_parser_read_string_invalid_line",
+      "passes": 0,
+      "fails": 10,
+      "is_flaky": false,
+      "category": "stable_fail",
+      "flakiness_rate": 0.0,
+      "errors": [
+        "E   Failed: DID NOT RAISE ValueError"
+      ],
+      "mean_duration": 0.4572
+    },
+    "test_config_parser_get_existing_section_key": {
+      "test_id": "test_config_run2.py::test_config_parser_get_existing_section_key",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4479
+    },
+    "test_config_parser_get_default_value": {
+      "test_id": "test_config_run2.py::test_config_parser_get_default_value",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4543
+    },
+    "test_config_parser_get_with_fallback": {
+      "test_id": "test_config_run2.py::test_config_parser_get_with_fallback",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4839
+    },
+    "test_config_parser_get_missing_key": {
+      "test_id": "test_config_run2.py::test_config_parser_get_missing_key",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.468
+    },
+    "test_config_parser_getint_valid_integer": {
+      "test_id": "test_config_run2.py::test_config_parser_getint_valid_integer",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4924
+    },
+    "test_config_parser_getint_invalid_integer": {
+      "test_id": "test_config_run2.py::test_config_parser_getint_invalid_integer",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.456
+    },
+    "test_config_parser_getint_with_fallback": {
+      "test_id": "test_config_run2.py::test_config_parser_getint_with_fallback",
+      "passes": 0,
+      "fails": 10,
+      "is_flaky": false,
+      "category": "stable_fail",
+      "flakiness_rate": 0.0,
+      "errors": [
+        "E   ValueError: invalid literal for int() with base 10: 'invalid'"
+      ],
+      "mean_duration": 0.4469
+    },
+    "test_config_parser_getboolean_valid_true": {
+      "test_id": "test_config_run2.py::test_config_parser_getboolean_valid_true",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4614
+    },
+    "test_config_parser_getboolean_valid_false": {
+      "test_id": "test_config_run2.py::test_config_parser_getboolean_valid_false",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4729
+    },
+    "test_config_parser_getboolean_invalid_string": {
+      "test_id": "test_config_run2.py::test_config_parser_getboolean_invalid_string",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4407
+    },
+    "test_config_parser_items_combined_defaults_and_section": {
+      "test_id": "test_config_run2.py::test_config_parser_items_combined_defaults_and_section",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.431
+    },
+    "test_config_parser_items_with_missing_section": {
+      "test_id": "test_config_run2.py::test_config_parser_items_with_missing_section",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4438
+    },
+    "test_config_parser_interpolate_basic": {
+      "test_id": "test_config_run2.py::test_config_parser_interpolate_basic",
+      "passes": 0,
+      "fails": 10,
+      "is_flaky": false,
+      "category": "stable_fail",
+      "flakiness_rate": 0.0,
+      "errors": [
+        "E   RecursionError: maximum recursion depth exceeded"
+      ],
+      "mean_duration": 0.4315
+    },
+    "test_config_parser_interpolate_section_key": {
+      "test_id": "test_config_run2.py::test_config_parser_interpolate_section_key",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4301
+    },
+    "test_config_parser_interpolate_missing_variable": {
+      "test_id": "test_config_run2.py::test_config_parser_interpolate_missing_variable",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4328
+    },
+    "test_config_parser_interpolate_nested": {
+      "test_id": "test_config_run2.py::test_config_parser_interpolate_nested",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4359
+    },
+    "test_config_parser_interpolate_non_string_value": {
+      "test_id": "test_config_run2.py::test_config_parser_interpolate_non_string_value",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4404
+    },
+    "test_config_parser_to_dict": {
+      "test_id": "test_config_run2.py::test_config_parser_to_dict",
+      "passes": 10,
+      "fails": 0,
+      "is_flaky": false,
+      "category": "stable_pass",
+      "flakiness_rate": 0.0,
+      "errors": [],
+      "mean_duration": 0.4435
+    }
+  }
+}

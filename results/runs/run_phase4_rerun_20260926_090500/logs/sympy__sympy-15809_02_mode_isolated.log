@@ -1,0 +1,41 @@
+COMMAND: execute_suite Mode=SINGLE_TEST_ISOLATED (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_6m_47twl
+EXIT_CODE: 0
+DURATION_SECONDS: 52.5010
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_min_zero_arguments": "PASSED",
+  "test_gen_00.py::test_min_positive_cases": "PASSED",
+  "test_gen_00.py::test_min_mixed_signs": "PASSED",
+  "test_gen_00.py::test_min_empty_list": "EXCEPTION",
+  "test_gen_00.py::test_max_zero_arguments": "PASSED",
+  "test_gen_00.py::test_max_positive_cases": "PASSED",
+  "test_gen_00.py::test_max_mixed_signs": "PASSED",
+  "test_gen_00.py::test_max_empty_list": "EXCEPTION",
+  "test_gen_01.py::test_min_zero_args": "PASSED",
+  "test_gen_01.py::test_min_positive_case": "PASSED",
+  "test_gen_01.py::test_min_negative_case": "PASSED",
+  "test_gen_01.py::test_min_mixed_case": "PASSED",
+  "test_gen_01.py::test_min_large_numbers": "ASSERTION_FAILED",
+  "test_gen_01.py::test_max_zero_args": "PASSED",
+  "test_gen_01.py::test_max_positive_case": "PASSED",
+  "test_gen_01.py::test_max_negative_case": "PASSED",
+  "test_gen_01.py::test_max_mixed_case": "PASSED",
+  "test_gen_01.py::test_max_large_numbers": "PASSED",
+  "test_gen_01.py::test_min_invalid_input": "EXCEPTION",
+  "test_gen_01.py::test_max_invalid_input": "EXCEPTION",
+  "test_gen_02.py::test_min_no_arguments": "PASSED",
+  "test_gen_02.py::test_min_positive_case": "PASSED",
+  "test_gen_02.py::test_min_negative_case": "PASSED",
+  "test_gen_02.py::test_min_mixed_case": "PASSED",
+  "test_gen_02.py::test_min_nan": "EXCEPTION",
+  "test_gen_02.py::test_max_no_arguments": "PASSED",
+  "test_gen_02.py::test_max_positive_case": "PASSED",
+  "test_gen_02.py::test_max_negative_case": "PASSED",
+  "test_gen_02.py::test_max_mixed_case": "PASSED",
+  "test_gen_02.py::test_max_nan": "EXCEPTION",
+  "test_gen_02.py::test_max_mixed_with_nan": "EXCEPTION",
+  "test_gen_02.py::test_max_only_nan": "EXCEPTION"
+}
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,197 @@
+COMMAND: pytest 22 tests (strategy=Random-Filtering, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee
+EXIT_CODE: 1
+DURATION_SECONDS: 1.3399
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 22 items
+
+test_gen_00.py::test_weighted_init_invalid_weights_type FAILED           [  4%]
+test_gen_00.py::test_weighted_init_valid FAILED                          [  9%]
+test_gen_00.py::test_weighted_init_weights_with_nan FAILED               [ 13%]
+test_gen_00.py::test_weighted_mean_zero_sum FAILED                       [ 18%]
+test_gen_00.py::test_weighted_reduce_skipna_false FAILED                 [ 22%]
+test_gen_00.py::test_weighted_reduce_skipna_true FAILED                  [ 27%]
+test_gen_00.py::test_weighted_sum_of_weights FAILED                      [ 31%]
+test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false PASSED [ 36%]
+test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true PASSED [ 40%]
+test_gen_02.py::test_dataset_weighted_implementation FAILED              [ 45%]
+test_gen_02.py::test_dataset_weighted_implementation_no_attrs FAILED     [ 50%]
+test_gen_02.py::test_weighted_init_invalid_weights_type PASSED           [ 54%]
+test_gen_02.py::test_weighted_init_valid_dataarray PASSED                [ 59%]
+test_gen_02.py::test_weighted_init_valid_dataset FAILED                  [ 63%]
+test_gen_02.py::test_weighted_init_weights_with_missing_values PASSED    [ 68%]
+test_gen_02.py::test_weighted_reduce_skipna_false PASSED                 [ 72%]
+test_gen_02.py::test_weighted_reduce_skipna_true PASSED                  [ 77%]
+test_gen_02.py::test_weighted_sum_of_weights_masking FAILED              [ 81%]
+test_gen_02.py::test_weighted_sum_of_weights_with_nan FAILED             [ 86%]
+test_gen_02.py::test_weighted_weighted_mean FAILED                       [ 90%]
+test_gen_02.py::test_weighted_weighted_mean_zero_sum FAILED              [ 95%]
+test_gen_02.py::test_weighted_weighted_sum FAILED                        [100%]
+
+================================== FAILURES ===================================
+___________________ test_weighted_init_invalid_weights_type ___________________
+test_gen_00.py:16: in test_weighted_init_invalid_weights_type
+    Weighted(da, weights)
+    ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+__________________________ test_weighted_init_valid ___________________________
+test_gen_00.py:8: in test_weighted_init_valid
+    weighted = Weighted(da, weights)
+               ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+_____________________ test_weighted_init_weights_with_nan _____________________
+test_gen_00.py:22: in test_weighted_init_weights_with_nan
+    Weighted(da, weights)
+    ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+_________________________ test_weighted_mean_zero_sum _________________________
+test_gen_00.py:49: in test_weighted_mean_zero_sum
+    weighted = Weighted(da, weights)
+               ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+______________________ test_weighted_reduce_skipna_false ______________________
+test_gen_00.py:34: in test_weighted_reduce_skipna_false
+    result = Weighted._reduce(da, weights, dim=None, skipna=False)
+             ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+______________________ test_weighted_reduce_skipna_true _______________________
+test_gen_00.py:27: in test_weighted_reduce_skipna_true
+    result = Weighted._reduce(da, weights, dim=None, skipna=True)
+             ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+________________________ test_weighted_sum_of_weights _________________________
+test_gen_00.py:41: in test_weighted_sum_of_weights
+    weighted = Weighted(da, weights)
+               ^^^^^^^^
+E   NameError: name 'Weighted' is not defined
+____________________ test_dataset_weighted_implementation _____________________
+test_gen_02.py:98: in test_dataset_weighted_implementation
+    ds = Dataset({"a": np.random.rand(3, 4)}, attrs={"attr1": "value1"})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:542: in __init__
+    variables, coord_names, dims, indexes, _ = merge_data_and_coords(
+xarray\core\merge.py:466: in merge_data_and_coords
+    return merge_core(
+xarray\core\merge.py:594: in merge_core
+    collected = collect_variables_and_indexes(aligned)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\merge.py:277: in collect_variables_and_indexes
+    variable = as_variable(variable, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\variable.py:120: in as_variable
+    raise MissingDimensionsError(
+E   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead.
+________________ test_dataset_weighted_implementation_no_attrs ________________
+test_gen_02.py:104: in test_dataset_weighted_implementation_no_attrs
+    ds = Dataset({"a": np.random.rand(3, 4)})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:542: in __init__
+    variables, coord_names, dims, indexes, _ = merge_data_and_coords(
+xarray\core\merge.py:466: in merge_data_and_coords
+    return merge_core(
+xarray\core\merge.py:594: in merge_core
+    collected = collect_variables_and_indexes(aligned)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\merge.py:277: in collect_variables_and_indexes
+    variable = as_variable(variable, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\variable.py:120: in as_variable
+    raise MissingDimensionsError(
+E   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead.
+______________________ test_weighted_init_valid_dataset _______________________
+test_gen_02.py:18: in test_weighted_init_valid_dataset
+    ds = Dataset({"a": np.random.rand(3, 4)})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\dataset.py:542: in __init__
+    variables, coord_names, dims, indexes, _ = merge_data_and_coords(
+xarray\core\merge.py:466: in merge_data_and_coords
+    return merge_core(
+xarray\core\merge.py:594: in merge_core
+    collected = collect_variables_and_indexes(aligned)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\merge.py:277: in collect_variables_and_indexes
+    variable = as_variable(variable, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xarray\core\variable.py:120: in as_variable
+    raise MissingDimensionsError(
+E   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead.
+____________________ test_weighted_sum_of_weights_masking _____________________
+test_gen_02.py:53: in test_weighted_sum_of_weights_masking
+    result = Weighted._sum_of_weights(da, dim="dim0")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Weighted._sum_of_weights() missing 1 required positional argument: 'da'
+____________________ test_weighted_sum_of_weights_with_nan ____________________
+test_gen_02.py:60: in test_weighted_sum_of_weights_with_nan
+    result = Weighted._sum_of_weights(da, dim="dim0")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Weighted._sum_of_weights() missing 1 required positional argument: 'da'
+_________________________ test_weighted_weighted_mean _________________________
+test_gen_02.py:74: in test_weighted_weighted_mean
+    result = Weighted._weighted_mean(da, dim="dim0")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Weighted._weighted_mean() missing 1 required positional argument: 'da'
+____________________ test_weighted_weighted_mean_zero_sum _____________________
+test_gen_02.py:81: in test_weighted_weighted_mean_zero_sum
+    result = Weighted._weighted_mean(da, dim="dim0")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Weighted._weighted_mean() missing 1 required positional argument: 'da'
+_________________________ test_weighted_weighted_sum __________________________
+test_gen_02.py:67: in test_weighted_weighted_sum
+    result = Weighted._weighted_sum(da, dim="dim0")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Weighted._weighted_sum() missing 1 required positional argument: 'da'
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464
+  G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464: PytestConfigWarning: Unknown config option: env
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+xarray\core\dask_array_compat.py:16
+xarray\core\dask_array_compat.py:16
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee\xarray\core\dask_array_compat.py:16: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(dask_version) >= LooseVersion("2.0.0"):
+
+xarray\core\dask_array_compat.py:149
+xarray\core\dask_array_compat.py:149
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee\xarray\core\dask_array_compat.py:149: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(dask_version) >= LooseVersion("2.8.1"):
+
+xarray\core\dask_array_compat.py:186
+xarray\core\dask_array_compat.py:186
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee\xarray\core\dask_array_compat.py:186: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(dask_version) > LooseVersion("2.9.0"):
+
+xarray\core\nputils.py:5
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee\xarray\core\nputils.py:5: DeprecationWarning: numpy.core.multiarray is deprecated and has been renamed to numpy._core.multiarray. The numpy._core namespace contains private NumPy internals and its use is discouraged, as NumPy internals can change without warning in any release. In practice, most real-world usage of numpy.core is to access functionality in the public NumPy API. If that is the case, use the public NumPy API. If not, you are using NumPy internals. If you would still like to access an internal attribute, use numpy._core.multiarray.normalize_axis_index.
+    from numpy.core.multiarray import normalize_axis_index
+
+xarray\core\pdcompat.py:45
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_xfk8b1ee\xarray\core\pdcompat.py:45: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(pd.__version__) < "0.25.0":
+
+G:\Python311\Lib\site-packages\setuptools\_distutils\version.py:346
+  G:\Python311\Lib\site-packages\setuptools\_distutils\version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    other = LooseVersion(other)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_weighted_init_invalid_weights_type - NameError: n...
+FAILED test_gen_00.py::test_weighted_init_valid - NameError: name 'Weighted' ...
+FAILED test_gen_00.py::test_weighted_init_weights_with_nan - NameError: name ...
+FAILED test_gen_00.py::test_weighted_mean_zero_sum - NameError: name 'Weighte...
+FAILED test_gen_00.py::test_weighted_reduce_skipna_false - NameError: name 'W...
+FAILED test_gen_00.py::test_weighted_reduce_skipna_true - NameError: name 'We...
+FAILED test_gen_00.py::test_weighted_sum_of_weights - NameError: name 'Weight...
+FAILED test_gen_02.py::test_dataset_weighted_implementation - xarray.core.var...
+FAILED test_gen_02.py::test_dataset_weighted_implementation_no_attrs - xarray...
+FAILED test_gen_02.py::test_weighted_init_valid_dataset - xarray.core.variabl...
+FAILED test_gen_02.py::test_weighted_sum_of_weights_masking - TypeError: Weig...
+FAILED test_gen_02.py::test_weighted_sum_of_weights_with_nan - TypeError: Wei...
+FAILED test_gen_02.py::test_weighted_weighted_mean - TypeError: Weighted._wei...
+FAILED test_gen_02.py::test_weighted_weighted_mean_zero_sum - TypeError: Weig...
+FAILED test_gen_02.py::test_weighted_weighted_sum - TypeError: Weighted._weig...
+================== 15 failed, 7 passed, 10 warnings in 0.96s ==================
+
+======================================== STDERR ========================================
+(empty)

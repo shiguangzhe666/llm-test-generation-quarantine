@@ -1,0 +1,183 @@
+COMMAND: pytest 16 tests (strategy=Static-Only, pool=mainline, codebase=fixed)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv
+EXIT_CODE: 1
+DURATION_SECONDS: 0.4675
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 16 items
+
+test_gen_00.py::test_authbase_call_raises_notimplemented PASSED          [  6%]
+test_gen_00.py::test_httpbasicauth_sets_authorization_header PASSED      [ 12%]
+test_gen_00.py::test_httpbasicauth_empty_username PASSED                 [ 18%]
+test_gen_00.py::test_httpbasicauth_empty_password FAILED                 [ 25%]
+test_gen_00.py::test_httpbasicauth_both_empty PASSED                     [ 31%]
+test_gen_00.py::test_httpbasicauth_non_ascii FAILED                      [ 37%]
+test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header PASSED [ 43%]
+test_gen_00.py::test_httpdigestauth_build_header FAILED                  [ 50%]
+test_gen_00.py::test_httpdigestauth_handle_401 FAILED                    [ 56%]
+test_gen_00.py::test_httpdigestauth_call_registers_hook FAILED           [ 62%]
+test_gen_01.py::test_basic_auth_str FAILED                               [ 68%]
+test_gen_01.py::test_http_digest_auth_handle_401 FAILED                  [ 75%]
+test_gen_02.py::test_httpbasicauth_empty_username FAILED                 [ 81%]
+test_gen_02.py::test_httpbasicauth_empty_password FAILED                 [ 87%]
+test_gen_02.py::test_httpdigestauth_handle_401_no_challenge FAILED       [ 93%]
+test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge FAILED [100%]
+
+================================== FAILURES ===================================
+______________________ test_httpbasicauth_empty_password ______________________
+test_gen_00.py:45: in test_httpbasicauth_empty_password
+    assert r.headers['Authorization'] == f'Basic {expected}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+________________________ test_httpbasicauth_non_ascii _________________________
+test_gen_00.py:59: in test_httpbasicauth_non_ascii
+    assert r.headers['Authorization'] == f'Basic {expected}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpdigestauth_build_header _______________________
+test_gen_00.py:73: in test_httpdigestauth_build_header
+    auth(r)
+requests\auth.py:193: in __call__
+    r.register_hook('response', self.handle_401)
+    ^^^^^^^^^^^^^^^
+E   AttributeError: 'MockRequest' object has no attribute 'register_hook'
+_______________________ test_httpdigestauth_handle_401 ________________________
+test_gen_00.py:81: in test_httpdigestauth_handle_401
+    new_response = auth.handle_401(r)
+                   ^^^^^^^^^^^^^^^^^^
+requests\auth.py:169: in handle_401
+    r.content
+E   AttributeError: 'MockResponse' object has no attribute 'content'
+___________________ test_httpdigestauth_call_registers_hook ___________________
+test_gen_00.py:88: in test_httpdigestauth_call_registers_hook
+    auth(r)
+requests\auth.py:193: in __call__
+    r.register_hook('response', self.handle_401)
+    ^^^^^^^^^^^^^^^
+E   AttributeError: 'MockRequest' object has no attribute 'register_hook'
+_____________________________ test_basic_auth_str _____________________________
+test_gen_01.py:43: in test_basic_auth_str
+    assert _basic_auth_str('', '') == 'Basic ' + base64.b64encode(b'').decode('latin1')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_http_digest_auth_handle_401 _______________________
+test_gen_01.py:82: in test_http_digest_auth_handle_401
+    mock_content.return_value = b''
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'property' object has no attribute 'return_value'
+______________________ test_httpbasicauth_empty_username ______________________
+test_gen_02.py:32: in test_httpbasicauth_empty_username
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpbasicauth_empty_password ______________________
+test_gen_02.py:38: in test_httpbasicauth_empty_password
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_httpdigestauth_handle_401_no_challenge _________________
+test_gen_02.py:87: in test_httpdigestauth_handle_401_no_challenge
+    assert result.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'Authorization'
+____________ test_httpdigestauth_handle_401_with_digest_challenge _____________
+test_gen_02.py:94: in test_httpdigestauth_handle_401_with_digest_challenge
+    mock_response.raw.release_conn = mock.MagicMock()
+    ^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\unittest\mock.py:653: in __getattr__
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'raw'
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:658
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\packages\urllib3\connectionpool.py:658: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:717
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\models.py:717: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:372
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:372: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:382
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:382: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:392
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:392: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:402
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:402: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:412
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:412: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:422
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:422: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:432
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ghlcmjmv\requests\sessions.py:432: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_httpbasicauth_empty_password - AssertionError
+FAILED test_gen_00.py::test_httpbasicauth_non_ascii - AssertionError
+FAILED test_gen_00.py::test_httpdigestauth_build_header - AttributeError: 'Mo...
+FAILED test_gen_00.py::test_httpdigestauth_handle_401 - AttributeError: 'Mock...
+FAILED test_gen_00.py::test_httpdigestauth_call_registers_hook - AttributeErr...
+FAILED test_gen_01.py::test_basic_auth_str - AssertionError
+FAILED test_gen_01.py::test_http_digest_auth_handle_401 - AttributeError: 'pr...
+FAILED test_gen_02.py::test_httpbasicauth_empty_username - AssertionError
+FAILED test_gen_02.py::test_httpbasicauth_empty_password - AssertionError
+FAILED test_gen_02.py::test_httpdigestauth_handle_401_no_challenge - KeyError...
+FAILED test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge
+================== 11 failed, 5 passed, 19 warnings in 0.20s ==================
+
+======================================== STDERR ========================================
+(empty)

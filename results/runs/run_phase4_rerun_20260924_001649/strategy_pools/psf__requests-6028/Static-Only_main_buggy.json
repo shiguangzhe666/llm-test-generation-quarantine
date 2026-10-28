@@ -1,0 +1,153 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers",
+    "test_gen_00.py::TestStreamDecode::test_stream_decode",
+    "test_gen_00.py::TestIterSlices::test_iter_slices",
+    "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+    "test_gen_00.py::TestAddressInNetwork::test_address_in_network",
+    "test_gen_00.py::TestDottedNetmask::test_dotted_netmask",
+    "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address",
+    "test_gen_00.py::TestIsValidCidr::test_is_valid_cidr",
+    "test_gen_00.py::TestSetEnviron::test_set_environ",
+    "test_gen_02.py::TestEncodingFunctions::test_get_encoding_from_headers",
+    "test_gen_02.py::TestStreamDecode::test_stream_decode",
+    "test_gen_02.py::TestIterSlices::test_iter_slices",
+    "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+    "test_gen_02.py::TestAddressInNetwork::test_address_in_network",
+    "test_gen_02.py::TestDottedNetmask::test_dotted_netmask",
+    "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address",
+    "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr",
+    "test_gen_02.py::TestSetEnviron::test_set_environ"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers": {
+      "nodeid": "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006682000057480764,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:17: in test_get_encoding_from_headers\n    self.assertEqual(get_encoding_from_headers(headers), 'utf-8')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'get_encoding_from_headers' is not defined"
+    },
+    "test_gen_00.py::TestStreamDecode::test_stream_decode": {
+      "nodeid": "test_gen_00.py::TestStreamDecode::test_stream_decode",
+      "outcome": "EXCEPTION",
+      "duration": 0.000716499998816289,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:37: in test_stream_decode\n    result = list(stream_decode_response_unicode(iterator, r))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'stream_decode_response_unicode' is not defined"
+    },
+    "test_gen_00.py::TestIterSlices::test_iter_slices": {
+      "nodeid": "test_gen_00.py::TestIterSlices::test_iter_slices",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004109999972570222,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:47: in test_iter_slices\n    self.assertEqual(list(iter_slices('abcdef', 2)), ['ab', 'cd', 'ef'])\n                          ^^^^^^^^^^^\nE   NameError: name 'iter_slices' is not defined"
+    },
+    "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+      "nodeid": "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005994999992253724,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:56: in test_get_unicode_from_response\n    self.assertEqual(get_unicode_from_response(r), 'hello')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'get_unicode_from_response' is not defined"
+    },
+    "test_gen_00.py::TestAddressInNetwork::test_address_in_network": {
+      "nodeid": "test_gen_00.py::TestAddressInNetwork::test_address_in_network",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004922000007354654,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:78: in test_address_in_network\n    self.assertTrue(address_in_network('192.168.1.1', '192.168.1.0/24'))\n                    ^^^^^^^^^^^^^^^^^^\nE   NameError: name 'address_in_network' is not defined"
+    },
+    "test_gen_00.py::TestDottedNetmask::test_dotted_netmask": {
+      "nodeid": "test_gen_00.py::TestDottedNetmask::test_dotted_netmask",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005348999984562397,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:83: in test_dotted_netmask\n    self.assertEqual(dotted_netmask(24), '255.255.255.0')\n                     ^^^^^^^^^^^^^^\nE   NameError: name 'dotted_netmask' is not defined"
+    },
+    "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address": {
+      "nodeid": "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address",
+      "outcome": "EXCEPTION",
+      "duration": 0.00047819999963394366,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:88: in test_is_ipv4_address\n    self.assertTrue(is_ipv4_address('192.168.1.1'))\n                    ^^^^^^^^^^^^^^^\nE   NameError: name 'is_ipv4_address' is not defined"
+    },
+    "test_gen_00.py::TestIsValidCidr::test_is_valid_cidr": {
+      "nodeid": "test_gen_00.py::TestIsValidCidr::test_is_valid_cidr",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004993000002286863,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:93: in test_is_valid_cidr\n    self.assertTrue(is_valid_cidr('192.168.1.0/24'))\n                    ^^^^^^^^^^^^^\nE   NameError: name 'is_valid_cidr' is not defined"
+    },
+    "test_gen_00.py::TestSetEnviron::test_set_environ": {
+      "nodeid": "test_gen_00.py::TestSetEnviron::test_set_environ",
+      "outcome": "EXCEPTION",
+      "duration": 0.000796300002548378,
+      "error_type": "FileNotFoundError",
+      "error_message": "test_gen_00.py:100: in test_set_environ\n    with contextlib.chdir('/test'):\nG:\\Python311\\Lib\\contextlib.py:788: in __enter__\n    os.chdir(self.path)\nE   FileNotFoundError: [WinError 2] 系统找不到指定的文件。: '/test'"
+    },
+    "test_gen_02.py::TestEncodingFunctions::test_get_encoding_from_headers": {
+      "nodeid": "test_gen_02.py::TestEncodingFunctions::test_get_encoding_from_headers",
+      "outcome": "PASSED",
+      "duration": 0.00046020000081625767,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestStreamDecode::test_stream_decode": {
+      "nodeid": "test_gen_02.py::TestStreamDecode::test_stream_decode",
+      "outcome": "PASSED",
+      "duration": 0.0004915999998047482,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestIterSlices::test_iter_slices": {
+      "nodeid": "test_gen_02.py::TestIterSlices::test_iter_slices",
+      "outcome": "PASSED",
+      "duration": 0.00038419999691541307,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+      "nodeid": "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.007808499998645857,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:50: in test_get_unicode_from_response\n    self.assertEqual(get_unicode_from_response(r), 'Hello')\nE   AssertionError: b'Hello' != 'Hello'"
+    },
+    "test_gen_02.py::TestAddressInNetwork::test_address_in_network": {
+      "nodeid": "test_gen_02.py::TestAddressInNetwork::test_address_in_network",
+      "outcome": "PASSED",
+      "duration": 0.0004478999981074594,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestDottedNetmask::test_dotted_netmask": {
+      "nodeid": "test_gen_02.py::TestDottedNetmask::test_dotted_netmask",
+      "outcome": "PASSED",
+      "duration": 0.00041880000208038837,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address": {
+      "nodeid": "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.00039229999674716964,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:80: in test_is_ipv4_address\n    self.assertFalse(is_ipv4_address('192.168.1'))\nE   AssertionError: True is not false"
+    },
+    "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr": {
+      "nodeid": "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr",
+      "outcome": "PASSED",
+      "duration": 0.0003744999994523823,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestSetEnviron::test_set_environ": {
+      "nodeid": "test_gen_02.py::TestSetEnviron::test_set_environ",
+      "outcome": "PASSED",
+      "duration": 0.00039600000309292227,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

@@ -1,0 +1,31 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_rii9_a0a
+EXIT_CODE: 0
+DURATION_SECONDS: 4.0835
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::test_weighted_init_valid": "EXCEPTION",
+  "test_gen_00.py::test_weighted_init_invalid_weights_type": "EXCEPTION",
+  "test_gen_00.py::test_weighted_init_weights_with_nan": "EXCEPTION",
+  "test_gen_00.py::test_weighted_reduce_skipna_true": "EXCEPTION",
+  "test_gen_00.py::test_weighted_reduce_skipna_false": "EXCEPTION",
+  "test_gen_00.py::test_weighted_sum_of_weights": "EXCEPTION",
+  "test_gen_00.py::test_weighted_mean_zero_sum": "EXCEPTION",
+  "test_gen_02.py::test_weighted_init_valid_dataarray": "PASSED",
+  "test_gen_02.py::test_weighted_init_valid_dataset": "EXCEPTION",
+  "test_gen_02.py::test_weighted_init_invalid_weights_type": "PASSED",
+  "test_gen_02.py::test_weighted_init_weights_with_missing_values": "PASSED",
+  "test_gen_02.py::test_weighted_reduce_skipna_true": "PASSED",
+  "test_gen_02.py::test_weighted_reduce_skipna_false": "PASSED",
+  "test_gen_02.py::test_weighted_sum_of_weights_masking": "EXCEPTION",
+  "test_gen_02.py::test_weighted_sum_of_weights_with_nan": "EXCEPTION",
+  "test_gen_02.py::test_weighted_weighted_sum": "EXCEPTION",
+  "test_gen_02.py::test_weighted_weighted_mean": "EXCEPTION",
+  "test_gen_02.py::test_weighted_weighted_mean_zero_sum": "EXCEPTION",
+  "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true": "PASSED",
+  "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false": "PASSED",
+  "test_gen_02.py::test_dataset_weighted_implementation": "EXCEPTION",
+  "test_gen_02.py::test_dataset_weighted_implementation_no_attrs": "EXCEPTION"
+}
+======================================== STDERR ========================================
+(empty)

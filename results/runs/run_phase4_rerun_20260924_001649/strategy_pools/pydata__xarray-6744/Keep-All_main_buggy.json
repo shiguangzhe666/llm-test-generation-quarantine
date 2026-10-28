@@ -1,0 +1,113 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_dataarray_rolling_mean",
+    "test_gen_00.py::test_dataset_rolling_mean",
+    "test_gen_00.py::test_dataarray_rolling_construct",
+    "test_gen_00.py::test_dataset_rolling_construct",
+    "test_gen_01.py::test_rolling_mean",
+    "test_gen_01.py::test_dataset_rolling",
+    "test_gen_01.py::test_rolling_with_fillna",
+    "test_gen_02.py::test_dataarray_rolling",
+    "test_gen_02.py::test_dataset_rolling",
+    "test_gen_02.py::test_coarsen",
+    "test_gen_02.py::test_rolling_min_periods",
+    "test_gen_02.py::test_rolling_center",
+    "test_gen_02.py::test_attributes"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_dataarray_rolling_mean": {
+      "nodeid": "test_gen_00.py::test_dataarray_rolling_mean",
+      "outcome": "EXCEPTION",
+      "duration": 0.011592900002142414,
+      "error_type": "KeyError",
+      "error_message": "xarray\\core\\dataarray.py:760: in _getitem_coord\n    var = self._coords[key]\n          ^^^^^^^^^^^^^^^^^\nE   KeyError: 'window'\n\nDuring handling of the above exception, another exception occurred:\ntest_gen_00.py:8: in test_dataarray_rolling_mean\n    rolled = da.rolling(window=3, min_periods=2)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:5560: in rolling\n    return DataArrayRolling(self, dim, min_periods=min_periods, center=center)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\rolling.py:268: in __init__\n    self.window_labels = self.obj[self.dim[0]]\n                         ^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:769: in __getitem__\n    return self._getitem_coord(key)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:763: in _getitem_coord\n    _, key, var = _get_virtual_variable(self._coords, key, dim_sizes)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\datase"
+    },
+    "test_gen_00.py::test_dataset_rolling_mean": {
+      "nodeid": "test_gen_00.py::test_dataset_rolling_mean",
+      "outcome": "EXCEPTION",
+      "duration": 0.0008534000007784925,
+      "error_type": "KeyError",
+      "error_message": "test_gen_00.py:19: in test_dataset_rolling_mean\n    rolled = ds.rolling(window=3, min_periods=2)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:8753: in rolling\n    return DatasetRolling(self, dim, min_periods=min_periods, center=center)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\rolling.py:629: in __init__\n    raise KeyError(self.dim)\nE   KeyError: ['window']"
+    },
+    "test_gen_00.py::test_dataarray_rolling_construct": {
+      "nodeid": "test_gen_00.py::test_dataarray_rolling_construct",
+      "outcome": "EXCEPTION",
+      "duration": 0.00047810000251047313,
+      "error_type": "KeyError",
+      "error_message": "xarray\\core\\dataarray.py:760: in _getitem_coord\n    var = self._coords[key]\n          ^^^^^^^^^^^^^^^^^\nE   KeyError: 'window'\n\nDuring handling of the above exception, another exception occurred:\ntest_gen_00.py:26: in test_dataarray_rolling_construct\n    rolled = da.rolling(window=3)\n             ^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:5560: in rolling\n    return DataArrayRolling(self, dim, min_periods=min_periods, center=center)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\rolling.py:268: in __init__\n    self.window_labels = self.obj[self.dim[0]]\n                         ^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:769: in __getitem__\n    return self._getitem_coord(key)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataarray.py:763: in _getitem_coord\n    _, key, var = _get_virtual_variable(self._coords, key, dim_sizes)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:175: in _get_virtua"
+    },
+    "test_gen_00.py::test_dataset_rolling_construct": {
+      "nodeid": "test_gen_00.py::test_dataset_rolling_construct",
+      "outcome": "EXCEPTION",
+      "duration": 0.0007307000050786883,
+      "error_type": "KeyError",
+      "error_message": "test_gen_00.py:36: in test_dataset_rolling_construct\n    rolled = ds.rolling(window=3)\n             ^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:8753: in rolling\n    return DatasetRolling(self, dim, min_periods=min_periods, center=center)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\rolling.py:629: in __init__\n    raise KeyError(self.dim)\nE   KeyError: ['window']"
+    },
+    "test_gen_01.py::test_rolling_mean": {
+      "nodeid": "test_gen_01.py::test_rolling_mean",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.014067200001591118,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_01.py:10: in test_rolling_mean\n    assert np.isnan(rolled[0, :].values).all()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_01.py::test_dataset_rolling": {
+      "nodeid": "test_gen_01.py::test_dataset_rolling",
+      "outcome": "EXCEPTION",
+      "duration": 0.0007877999960328452,
+      "error_type": "ValueError",
+      "error_message": "xarray\\core\\variable.py:130: in as_variable\n    obj = Variable(*obj)\n          ^^^^^^^^^^^^^^\nxarray\\core\\variable.py:318: in __init__\n    self._dims = self._parse_dimensions(dims)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\variable.py:578: in _parse_dimensions\n    raise ValueError(\nE   ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=2\n\nDuring handling of the above exception, another exception occurred:\ntest_gen_01.py:17: in test_dataset_rolling\n    ds = xr.Dataset({'temp': ('time', data)}, coords={'time': np.arange(10)})\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:599: in __init__\n    variables, coord_names, dims, indexes, _ = merge_data_and_coords(\nxarray\\core\\merge.py:575: in merge_data_and_coords\n    return merge_core(\nxarray\\core\\merge.py:755: in merge_core\n    collected = collect_variables_and_indexes(aligned, indexes=indexes)\n                ^^^^^^^^^^^^^^^^^"
+    },
+    "test_gen_01.py::test_rolling_with_fillna": {
+      "nodeid": "test_gen_01.py::test_rolling_with_fillna",
+      "outcome": "EXCEPTION",
+      "duration": 0.00046630000360892154,
+      "error_type": "TypeError",
+      "error_message": "test_gen_01.py:28: in test_rolling_with_fillna\n    rolled = da.rolling(time=3, min_periods=1).mean(fillna=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\rolling.py:155: in method\n    return self._numpy_or_bottleneck_reduce(\nE   TypeError: xarray.core.rolling.DataArrayRolling._numpy_or_bottleneck_reduce() got multiple values for keyword argument 'fillna'"
+    },
+    "test_gen_02.py::test_dataarray_rolling": {
+      "nodeid": "test_gen_02.py::test_dataarray_rolling",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.001618199996300973,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:7: in test_dataarray_rolling\n    assert result.shape == (7,)\n           ^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+    },
+    "test_gen_02.py::test_dataset_rolling": {
+      "nodeid": "test_gen_02.py::test_dataset_rolling",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.005717800002457807,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:15: in test_dataset_rolling\n    np.testing.assert_array_equal(result[var].values, [np.nan, np.nan, 1., 2., 3., 4., 5.])\nE   AssertionError: \nE   Arrays are not equal\nE   \nE   (shapes (10,), (7,) mismatch)\nE    ACTUAL: array([nan, nan,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.])\nE    DESIRED: array([nan, nan,  1.,  2.,  3.,  4.,  5.])"
+    },
+    "test_gen_02.py::test_coarsen": {
+      "nodeid": "test_gen_02.py::test_coarsen",
+      "outcome": "PASSED",
+      "duration": 0.00047840000115684234,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_rolling_min_periods": {
+      "nodeid": "test_gen_02.py::test_rolling_min_periods",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0013902000027883332,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:25: in test_rolling_min_periods\n    np.testing.assert_array_equal(result.values, [np.nan, np.nan, 1., 2., 3., 4., 5.])\nE   AssertionError: \nE   Arrays are not equal\nE   \nE   (shapes (10,), (7,) mismatch)\nE    ACTUAL: array([nan, 0.5, 1. , 2. , 3. , 4. , 5. , 6. , 7. , 8. ])\nE    DESIRED: array([nan, nan,  1.,  2.,  3.,  4.,  5.])"
+    },
+    "test_gen_02.py::test_rolling_center": {
+      "nodeid": "test_gen_02.py::test_rolling_center",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0013555000041378662,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:30: in test_rolling_center\n    np.testing.assert_array_equal(result.values, [np.nan, 0.5, 1.5, 2.5, 3.5, 4.5, np.nan])\nE   AssertionError: \nE   Arrays are not equal\nE   \nE   (shapes (10,), (7,) mismatch)\nE    ACTUAL: array([nan,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8., nan])\nE    DESIRED: array([nan, 0.5, 1.5, 2.5, 3.5, 4.5, nan])"
+    },
+    "test_gen_02.py::test_attributes": {
+      "nodeid": "test_gen_02.py::test_attributes",
+      "outcome": "PASSED",
+      "duration": 0.0019287000031908974,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

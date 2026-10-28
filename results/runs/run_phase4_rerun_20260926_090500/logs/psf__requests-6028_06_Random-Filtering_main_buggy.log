@@ -1,0 +1,96 @@
+COMMAND: pytest 18 tests (strategy=Random-Filtering, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_u_i8peio
+EXIT_CODE: 1
+DURATION_SECONDS: 0.4161
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 18 items
+
+test_gen_00.py::TestDottedNetmask::test_dotted_netmask FAILED            [  5%]
+test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers FAILED [ 11%]
+test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response FAILED [ 16%]
+test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address FAILED           [ 22%]
+test_gen_00.py::TestIterSlices::test_iter_slices FAILED                  [ 27%]
+test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies FAILED [ 33%]
+test_gen_00.py::TestStreamDecode::test_stream_decode FAILED              [ 38%]
+test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved FAILED    [ 44%]
+test_gen_02.py::TestAddressInNetwork::test_address_in_network PASSED     [ 50%]
+test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response FAILED [ 55%]
+test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address FAILED           [ 61%]
+test_gen_02.py::TestIsValidCidr::test_is_valid_cidr PASSED               [ 66%]
+test_gen_02.py::TestIterSlices::test_iter_slices PASSED                  [ 72%]
+test_gen_02.py::TestRequoteUri::test_requote_uri PASSED                  [ 77%]
+test_gen_02.py::TestSetEnviron::test_set_environ PASSED                  [ 83%]
+test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env PASSED        [ 88%]
+test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies FAILED [ 94%]
+test_gen_02.py::TestStreamDecode::test_stream_decode PASSED              [100%]
+
+================================== FAILURES ===================================
+____________________ TestDottedNetmask.test_dotted_netmask ____________________
+test_gen_00.py:83: in test_dotted_netmask
+    self.assertEqual(dotted_netmask(24), '255.255.255.0')
+                     ^^^^^^^^^^^^^^
+E   NameError: name 'dotted_netmask' is not defined
+____________ TestEncodingFunctions.test_get_encoding_from_headers _____________
+test_gen_00.py:17: in test_get_encoding_from_headers
+    self.assertEqual(get_encoding_from_headers(headers), 'utf-8')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   NameError: name 'get_encoding_from_headers' is not defined
+__________ TestGetUnicodeFromResponse.test_get_unicode_from_response __________
+test_gen_00.py:56: in test_get_unicode_from_response
+    self.assertEqual(get_unicode_from_response(r), 'hello')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   NameError: name 'get_unicode_from_response' is not defined
+___________________ TestIsIpv4Address.test_is_ipv4_address ____________________
+test_gen_00.py:88: in test_is_ipv4_address
+    self.assertTrue(is_ipv4_address('192.168.1.1'))
+                    ^^^^^^^^^^^^^^^
+E   NameError: name 'is_ipv4_address' is not defined
+_______________________ TestIterSlices.test_iter_slices _______________________
+test_gen_00.py:47: in test_iter_slices
+    self.assertEqual(list(iter_slices('abcdef', 2)), ['ab', 'cd', 'ef'])
+                          ^^^^^^^^^^^
+E   NameError: name 'iter_slices' is not defined
+_____________ TestShouldBypassProxies.test_should_bypass_proxies ______________
+test_gen_00.py:109: in test_should_bypass_proxies
+    self.assertTrue(should_bypass_proxies('http://example.com'))
+                    ^^^^^^^^^^^^^^^^^^^^^
+E   NameError: name 'should_bypass_proxies' is not defined
+_____________________ TestStreamDecode.test_stream_decode _____________________
+test_gen_00.py:37: in test_stream_decode
+    result = list(stream_decode_response_unicode(iterator, r))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   NameError: name 'stream_decode_response_unicode' is not defined
+________________ TestUnquoteUnreserved.test_unquote_unreserved ________________
+test_gen_00.py:67: in test_unquote_unreserved
+    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')
+                     ^^^^^^^^^^^^^^^^^^
+E   NameError: name 'unquote_unreserved' is not defined
+__________ TestGetUnicodeFromResponse.test_get_unicode_from_response __________
+test_gen_02.py:50: in test_get_unicode_from_response
+    self.assertEqual(get_unicode_from_response(r), 'Hello')
+E   AssertionError: b'Hello' != 'Hello'
+___________________ TestIsIpv4Address.test_is_ipv4_address ____________________
+test_gen_02.py:80: in test_is_ipv4_address
+    self.assertFalse(is_ipv4_address('192.168.1'))
+E   AssertionError: True is not false
+_____________ TestShouldBypassProxies.test_should_bypass_proxies ______________
+test_gen_02.py:102: in test_should_bypass_proxies
+    self.assertFalse(should_bypass_proxies('http://example.com', 'example.com'))
+E   AssertionError: True is not false
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::TestDottedNetmask::test_dotted_netmask - NameError: na...
+FAILED test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers
+FAILED test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response
+FAILED test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address - NameError: n...
+FAILED test_gen_00.py::TestIterSlices::test_iter_slices - NameError: name 'it...
+FAILED test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies - ...
+FAILED test_gen_00.py::TestStreamDecode::test_stream_decode - NameError: name...
+FAILED test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved - NameE...
+FAILED test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response
+FAILED test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address - AssertionErr...
+FAILED test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies - ...
+======================== 11 failed, 7 passed in 0.19s =========================
+
+======================================== STDERR ========================================
+(empty)

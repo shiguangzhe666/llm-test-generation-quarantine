@@ -1,0 +1,401 @@
+COMMAND: pytest 45 tests (strategy=Keep-All, pool=mainline, codebase=fixed)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci
+EXIT_CODE: 1
+DURATION_SECONDS: 0.6077
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 45 items
+
+test_gen_00.py::test_authbase_call_raises_notimplemented PASSED          [  2%]
+test_gen_00.py::test_httpbasicauth_sets_authorization_header PASSED      [  4%]
+test_gen_00.py::test_httpbasicauth_empty_username PASSED                 [  6%]
+test_gen_00.py::test_httpbasicauth_empty_password FAILED                 [  8%]
+test_gen_00.py::test_httpbasicauth_both_empty PASSED                     [ 11%]
+test_gen_00.py::test_httpbasicauth_non_ascii FAILED                      [ 13%]
+test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header PASSED [ 15%]
+test_gen_00.py::test_httpdigestauth_build_header FAILED                  [ 17%]
+test_gen_00.py::test_httpdigestauth_handle_401 FAILED                    [ 20%]
+test_gen_00.py::test_httpdigestauth_call_registers_hook FAILED           [ 22%]
+test_gen_01.py::test_basic_auth_str FAILED                               [ 24%]
+test_gen_01.py::test_http_basic_auth PASSED                              [ 26%]
+test_gen_01.py::test_http_proxy_auth PASSED                              [ 28%]
+test_gen_01.py::test_http_digest_auth_build_digest_header FAILED         [ 31%]
+test_gen_01.py::test_http_digest_auth_handle_401 FAILED                  [ 33%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm FAILED [ 35%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_opaque FAILED [ 37%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce FAILED [ 40%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_multiple_qop_values FAILED [ 42%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_md5 FAILED [ 44%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_sha FAILED [ 46%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_invalid_algorithm FAILED [ 48%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_qop FAILED [ 51%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_realm FAILED [ 53%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_nonce FAILED [ 55%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_algorithm FAILED [ 57%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_uri FAILED [ 60%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri FAILED [ 62%]
+test_gen_01.py::test_http_digest_auth_build_digest_header_with_special_characters FAILED [ 64%]
+test_gen_02.py::test_httpbasicauth_valid_credentials PASSED              [ 66%]
+test_gen_02.py::test_httpbasicauth_empty_username FAILED                 [ 68%]
+test_gen_02.py::test_httpbasicauth_empty_password FAILED                 [ 71%]
+test_gen_02.py::test_httpbasicauth_none_username FAILED                  [ 73%]
+test_gen_02.py::test_httpbasicauth_none_password FAILED                  [ 75%]
+test_gen_02.py::test_httpproxyauth_valid_credentials PASSED              [ 77%]
+test_gen_02.py::test_httpproxyauth_empty_username FAILED                 [ 80%]
+test_gen_02.py::test_httpproxyauth_empty_password FAILED                 [ 82%]
+test_gen_02.py::test_httpproxyauth_none_username FAILED                  [ 84%]
+test_gen_02.py::test_httpproxyauth_none_password PASSED                  [ 86%]
+test_gen_02.py::test_httpdigestauth_handle_401_no_challenge FAILED       [ 88%]
+test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge FAILED [ 91%]
+test_gen_02.py::test_httpdigestauth_build_digest_header_md5 FAILED       [ 93%]
+test_gen_02.py::test_httpdigestauth_build_digest_header_sha FAILED       [ 95%]
+test_gen_02.py::test_httpdigestauth_build_digest_header_md5_no_qop FAILED [ 97%]
+test_gen_02.py::test_httpdigestauth_build_digest_header_with_realm FAILED [100%]
+
+================================== FAILURES ===================================
+______________________ test_httpbasicauth_empty_password ______________________
+test_gen_00.py:45: in test_httpbasicauth_empty_password
+    assert r.headers['Authorization'] == f'Basic {expected}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+________________________ test_httpbasicauth_non_ascii _________________________
+test_gen_00.py:59: in test_httpbasicauth_non_ascii
+    assert r.headers['Authorization'] == f'Basic {expected}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpdigestauth_build_header _______________________
+test_gen_00.py:73: in test_httpdigestauth_build_header
+    auth(r)
+requests\auth.py:193: in __call__
+    r.register_hook('response', self.handle_401)
+    ^^^^^^^^^^^^^^^
+E   AttributeError: 'MockRequest' object has no attribute 'register_hook'
+_______________________ test_httpdigestauth_handle_401 ________________________
+test_gen_00.py:81: in test_httpdigestauth_handle_401
+    new_response = auth.handle_401(r)
+                   ^^^^^^^^^^^^^^^^^^
+requests\auth.py:169: in handle_401
+    r.content
+E   AttributeError: 'MockResponse' object has no attribute 'content'
+___________________ test_httpdigestauth_call_registers_hook ___________________
+test_gen_00.py:88: in test_httpdigestauth_call_registers_hook
+    auth(r)
+requests\auth.py:193: in __call__
+    r.register_hook('response', self.handle_401)
+    ^^^^^^^^^^^^^^^
+E   AttributeError: 'MockRequest' object has no attribute 'register_hook'
+_____________________________ test_basic_auth_str _____________________________
+test_gen_01.py:43: in test_basic_auth_str
+    assert _basic_auth_str('', '') == 'Basic ' + base64.b64encode(b'').decode('latin1')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+__________________ test_http_digest_auth_build_digest_header __________________
+test_gen_01.py:70: in test_http_digest_auth_build_digest_header
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______________________ test_http_digest_auth_handle_401 _______________________
+test_gen_01.py:82: in test_http_digest_auth_handle_401
+    mock_content.return_value = b''
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'property' object has no attribute 'return_value'
+________ test_http_digest_auth_build_digest_header_with_sha_algorithm _________
+test_gen_01.py:101: in test_http_digest_auth_build_digest_header_with_sha_algorithm
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_missing_opaque ________
+test_gen_01.py:107: in test_http_digest_auth_build_digest_header_with_missing_opaque
+    mock_parse_dict, mock_parse_dict_header.return_value = {'realm': 'realm', 'nonce': 'nonce', 'qop': 'auth', 'algorithm': 'MD5'}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: too many values to unpack (expected 2)
+_________ test_http_digest_auth_build_digest_header_with_stale_nonce __________
+test_gen_01.py:114: in test_http_digest_auth_build_digest_header_with_stale_nonce
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+_____ test_http_digest_auth_build_digest_header_with_multiple_qop_values ______
+test_gen_01.py:121: in test_http_digest_auth_build_digest_header_with_multiple_qop_values
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_algorithm_md5 _________
+test_gen_01.py:127: in test_http_digest_auth_build_digest_header_with_algorithm_md5
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_algorithm_sha _________
+test_gen_01.py:133: in test_http_digest_auth_build_digest_header_with_algorithm_sha
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______ test_http_digest_auth_build_digest_header_with_invalid_algorithm _______
+test_gen_01.py:139: in test_http_digest_auth_build_digest_header_with_invalid_algorithm
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+_________ test_http_digest_auth_build_digest_header_with_missing_qop __________
+test_gen_01.py:145: in test_http_digest_auth_build_digest_header_with_missing_qop
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_missing_realm _________
+test_gen_01.py:151: in test_http_digest_auth_build_digest_header_with_missing_realm
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+________ test_http_digest_auth_build_digest_header_with_missing_nonce _________
+test_gen_01.py:157: in test_http_digest_auth_build_digest_header_with_missing_nonce
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______ test_http_digest_auth_build_digest_header_with_missing_algorithm _______
+test_gen_01.py:163: in test_http_digest_auth_build_digest_header_with_missing_algorithm
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+_________ test_http_digest_auth_build_digest_header_with_missing_uri __________
+test_gen_01.py:169: in test_http_digest_auth_build_digest_header_with_missing_uri
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+__________ test_http_digest_auth_build_digest_header_with_custom_uri __________
+test_gen_01.py:176: in test_http_digest_auth_build_digest_header_with_custom_uri
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com/path?query=123')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______ test_http_digest_auth_build_digest_header_with_special_characters ______
+test_gen_01.py:182: in test_http_digest_auth_build_digest_header_with_special_characters
+    digest_header = http_digest_auth.build_digest_header('GET', 'http://example.com/path?query=123')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:70: in build_digest_header
+    realm = self.chal['realm']
+            ^^^^^^^^^^^^^^^^^^
+E   KeyError: 'realm'
+______________________ test_httpbasicauth_empty_username ______________________
+test_gen_02.py:32: in test_httpbasicauth_empty_username
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpbasicauth_empty_password ______________________
+test_gen_02.py:38: in test_httpbasicauth_empty_password
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpbasicauth_none_username _______________________
+test_gen_02.py:44: in test_httpbasicauth_none_username
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpbasicauth_none_password _______________________
+test_gen_02.py:50: in test_httpbasicauth_none_password
+    assert res.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpproxyauth_empty_username ______________________
+test_gen_02.py:62: in test_httpproxyauth_empty_username
+    assert res.headers["Proxy-Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpproxyauth_empty_password ______________________
+test_gen_02.py:68: in test_httpproxyauth_empty_password
+    assert res.headers["Proxy-Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_httpproxyauth_none_username _______________________
+test_gen_02.py:74: in test_httpproxyauth_none_username
+    assert res.headers["Proxy-Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_httpdigestauth_handle_401_no_challenge _________________
+test_gen_02.py:87: in test_httpdigestauth_handle_401_no_challenge
+    assert result.headers["Authorization"] == "Basic dXNlcjpwYXNz"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'Authorization'
+____________ test_httpdigestauth_handle_401_with_digest_challenge _____________
+test_gen_02.py:94: in test_httpdigestauth_handle_401_with_digest_challenge
+    mock_response.raw.release_conn = mock.MagicMock()
+    ^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\unittest\mock.py:653: in __getattr__
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'raw'
+_________________ test_httpdigestauth_build_digest_header_md5 _________________
+test_gen_02.py:115: in test_httpdigestauth_build_digest_header_md5
+    assert result == "Digest username=\"user\", realm=\"example\", nonce=\"123456789\", uri=\"/path?query=param\", response=\"0a4d55a8d5ca9e5a9b1e356b1b79e6a1\", qop=auth, nc=00000001, cnonce=\"0a4d55a8\", algorithm=MD5"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_httpdigestauth_build_digest_header_sha _________________
+test_gen_02.py:125: in test_httpdigestauth_build_digest_header_sha
+    result = auth.build_digest_header(method, url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\auth.py:96: in build_digest_header
+    if hash_utf8 is None:
+       ^^^^^^^^^
+E   UnboundLocalError: cannot access local variable 'hash_utf8' where it is not associated with a value
+_____________ test_httpdigestauth_build_digest_header_md5_no_qop ______________
+test_gen_02.py:137: in test_httpdigestauth_build_digest_header_md5_no_qop
+    assert result == "Digest username=\"user\", realm=\"example\", nonce=\"123456789\", uri=\"/path?query=param\", response=\"0a4d55a8d5ca9e5a9b1e356b1b79e6a1\", algorithm=MD5"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_____________ test_httpdigestauth_build_digest_header_with_realm ______________
+test_gen_02.py:148: in test_httpdigestauth_build_digest_header_with_realm
+    assert result == "Digest username=\"user\", realm=\"example.com\", nonce=\"123456789\", uri=\"/path?query=param\", response=\"0a4d55a8d5ca9e5a9b1e356b1b79e6a1\", algorithm=MD5"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:658
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\packages\urllib3\connectionpool.py:658: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:717
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\models.py:717: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:372
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:372: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:382
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:382: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:392
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:392: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:402
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:402: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:412
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:412: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:422
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:422: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:432
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_3ab9ufci\requests\sessions.py:432: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_httpbasicauth_empty_password - AssertionError
+FAILED test_gen_00.py::test_httpbasicauth_non_ascii - AssertionError
+FAILED test_gen_00.py::test_httpdigestauth_build_header - AttributeError: 'Mo...
+FAILED test_gen_00.py::test_httpdigestauth_handle_401 - AttributeError: 'Mock...
+FAILED test_gen_00.py::test_httpdigestauth_call_registers_hook - AttributeErr...
+FAILED test_gen_01.py::test_basic_auth_str - AssertionError
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header - KeyError: ...
+FAILED test_gen_01.py::test_http_digest_auth_handle_401 - AttributeError: 'pr...
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_opaque
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_multiple_qop_values
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_md5
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_sha
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_invalid_algorithm
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_qop
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_realm
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_nonce
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_algorithm
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_uri
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri
+FAILED test_gen_01.py::test_http_digest_auth_build_digest_header_with_special_characters
+FAILED test_gen_02.py::test_httpbasicauth_empty_username - AssertionError
+FAILED test_gen_02.py::test_httpbasicauth_empty_password - AssertionError
+FAILED test_gen_02.py::test_httpbasicauth_none_username - AssertionError
+FAILED test_gen_02.py::test_httpbasicauth_none_password - AssertionError
+FAILED test_gen_02.py::test_httpproxyauth_empty_username - AssertionError
+FAILED test_gen_02.py::test_httpproxyauth_empty_password - AssertionError
+FAILED test_gen_02.py::test_httpproxyauth_none_username - AssertionError
+FAILED test_gen_02.py::test_httpdigestauth_handle_401_no_challenge - KeyError...
+FAILED test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge
+FAILED test_gen_02.py::test_httpdigestauth_build_digest_header_md5 - Assertio...
+FAILED test_gen_02.py::test_httpdigestauth_build_digest_header_sha - UnboundL...
+FAILED test_gen_02.py::test_httpdigestauth_build_digest_header_md5_no_qop - A...
+FAILED test_gen_02.py::test_httpdigestauth_build_digest_header_with_realm - A...
+================= 35 failed, 10 passed, 19 warnings in 0.37s ==================
+
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,57 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_6a5ddpdf
+EXIT_CODE: 1
+DURATION_SECONDS: 2.2361
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_00.py::test_authbase_call_raises_notimplemented": "PASSED",
+    "test_gen_00.py::test_httpbasicauth_sets_authorization_header": "PASSED",
+    "test_gen_00.py::test_httpbasicauth_empty_username": "PASSED",
+    "test_gen_00.py::test_httpbasicauth_empty_password": "ASSERTION_FAILED",
+    "test_gen_00.py::test_httpbasicauth_both_empty": "PASSED",
+    "test_gen_00.py::test_httpbasicauth_non_ascii": "ASSERTION_FAILED",
+    "test_gen_00.py::test_httpproxyauth_sets_proxy_authorization_header": "PASSED",
+    "test_gen_00.py::test_httpdigestauth_build_header": "EXCEPTION",
+    "test_gen_00.py::test_httpdigestauth_handle_401": "EXCEPTION",
+    "test_gen_00.py::test_httpdigestauth_call_registers_hook": "EXCEPTION",
+    "test_gen_01.py::test_basic_auth_str": "ASSERTION_FAILED",
+    "test_gen_01.py::test_http_basic_auth": "PASSED",
+    "test_gen_01.py::test_http_proxy_auth": "PASSED",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_handle_401": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_sha_algorithm": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_opaque": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_stale_nonce": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_multiple_qop_values": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_md5": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_algorithm_sha": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_invalid_algorithm": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_qop": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_realm": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_nonce": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_algorithm": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_missing_uri": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_custom_uri": "EXCEPTION",
+    "test_gen_01.py::test_http_digest_auth_build_digest_header_with_special_characters": "EXCEPTION",
+    "test_gen_02.py::test_httpbasicauth_valid_credentials": "PASSED",
+    "test_gen_02.py::test_httpbasicauth_empty_username": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpbasicauth_empty_password": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpbasicauth_none_username": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpbasicauth_none_password": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpproxyauth_valid_credentials": "PASSED",
+    "test_gen_02.py::test_httpproxyauth_empty_username": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpproxyauth_empty_password": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpproxyauth_none_username": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpproxyauth_none_password": "PASSED",
+    "test_gen_02.py::test_httpdigestauth_handle_401_no_challenge": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpdigestauth_handle_401_with_digest_challenge": "EXCEPTION",
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_md5": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_sha": "EXCEPTION",
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_md5_no_qop": "ASSERTION_FAILED",
+    "test_gen_02.py::test_httpdigestauth_build_digest_header_with_realm": "ASSERTION_FAILED"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

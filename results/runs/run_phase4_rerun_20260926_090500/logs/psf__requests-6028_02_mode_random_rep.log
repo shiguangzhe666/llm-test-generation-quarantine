@@ -1,0 +1,295 @@
+COMMAND: run_repeated N=20 Mode=SUITE_RANDOM (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_270a0lcn
+EXIT_CODE: 0
+DURATION_SECONDS: 29.1754
+======================================== STDOUT ========================================
+{
+  "test_gen_00.py::TestDottedNetmask::test_dotted_netmask": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestRequoteUri::test_requote_uri": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestIterSlices::test_iter_slices": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestIsValidCidr::test_is_valid_cidr": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestAddressInNetwork::test_address_in_network": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestStreamDecode::test_stream_decode": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_00.py::TestSetEnviron::test_set_environ": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestDottedNetmask::test_dotted_netmask": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestAddressInNetwork::test_address_in_network": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestRequoteUri::test_requote_uri": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestIterSlices::test_iter_slices": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved": {
+    "flakiness_rate": 0.0,
+    "category": "stable_fail",
+    "is_flaky": false,
+    "pass_count": 0,
+    "fail_count": 20,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestEncodingFunctions::test_get_encoding_from_headers": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestStreamDecode::test_stream_decode": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  },
+  "test_gen_02.py::TestSetEnviron::test_set_environ": {
+    "flakiness_rate": 0.0,
+    "category": "stable_pass",
+    "is_flaky": false,
+    "pass_count": 20,
+    "fail_count": 0,
+    "planned_runs": 20,
+    "observed_runs": 20,
+    "missing_observation_count": 0,
+    "timeout_count": 0
+  }
+}
+======================================== STDERR ========================================
+(empty)

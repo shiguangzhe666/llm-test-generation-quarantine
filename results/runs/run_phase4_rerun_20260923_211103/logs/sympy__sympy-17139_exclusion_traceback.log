@@ -1,0 +1,37 @@
+INSTANCE: sympy__sympy-17139
+ERROR: =================================== ERRORS ====================================
+_______________________ ERROR collecting test_gen_00.py _______________________
+ImportError while importing test module 'C:\Users\ASUS\AppData\Local\Temp\swebench_wt_66ec7ldu\test_gen_00.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+G:\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_gen_00.py:1: in <module>
+    from sympy.simplify.fu import simplify
+E   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\Users\ASUS\AppData\Local\Temp\swebench_wt_66ec7ldu\sympy\simplify\fu.py)
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35
+  G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated
+    warni
+TRACEBACK:
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_00.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_00.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_00.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_00.py:1: in <module>\n    from sympy.simplify.fu import simplify\nE   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\sympy\\simplify\\fu.py)\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warni"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_01.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_01.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_01.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_01.py:2: in <module>\n    from sympy.simplify.fu import simplify\nE   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\sympy\\simplify\\fu.py)\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warni"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_02.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_02.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\test_gen_02.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_02.py:2: in <module>\n    from sympy.simplify.fu import simplify\nE   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_66ec7ldu\\sympy\\simplify\\fu.py)\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated\n    warni"
+  }
+]

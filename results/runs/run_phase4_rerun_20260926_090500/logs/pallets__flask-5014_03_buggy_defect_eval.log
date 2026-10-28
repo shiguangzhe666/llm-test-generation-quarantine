@@ -1,0 +1,54 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (3 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_c43tj3wi
+EXIT_CODE: 0
+DURATION_SECONDS: 2.6217
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_00.py::test_blueprint_with_valid_name": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_empty_name": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_none_name": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_long_name": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_special_characters_in_name": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_special_characters": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_special_characters": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_containing_spaces": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_underscore": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_underscore": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_number": "IMPORT_ERROR",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_number": "IMPORT_ERROR",
+    "test_gen_01.py::test_blueprint_with_non_empty_name": "PASSED",
+    "test_gen_01.py::test_blueprint_with_empty_name": "EXCEPTION",
+    "test_gen_01.py::test_blueprint_with_none_name": "EXCEPTION",
+    "test_gen_01.py::test_blueprint_with_valid_name_type": "PASSED",
+    "test_gen_01.py::test_blueprint_with_name_length": "PASSED",
+    "test_gen_01.py::test_blueprint_with_name_starting_with_underscores": "EXCEPTION",
+    "test_gen_01.py::test_blueprint_with_name_starting_with_digits": "EXCEPTION",
+    "test_gen_01.py::test_blueprint_with_name_containing_invalid_characters": "EXCEPTION",
+    "test_gen_01.py::test_blueprint_with_valid_import_name": "PASSED",
+    "test_gen_01.py::test_blueprint_with_invalid_import_name": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_non_empty_name": "PASSED",
+    "test_gen_02.py::test_blueprint_with_empty_name_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_space_name_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_name_starting_with_underscore_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_name_ending_with_underscore_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_special_characters_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_only_digits_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name": "PASSED",
+    "test_gen_02.py::test_blueprint_with_invalid_module_name_fails": "PASSED",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_empty_name_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_space_name_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_starting_with_underscore_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_ending_with_underscore_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_special_characters_fails": "EXCEPTION",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_only_digits_fails": "EXCEPTION"
+  },
+  "defect_detecting_test_keys": [
+    "test_gen_01.py::test_blueprint_with_none_name",
+    "test_gen_02.py::test_blueprint_with_empty_name_fails",
+    "test_gen_01.py::test_blueprint_with_empty_name",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_empty_name_fails"
+  ]
+}
+======================================== STDERR ========================================
+(empty)

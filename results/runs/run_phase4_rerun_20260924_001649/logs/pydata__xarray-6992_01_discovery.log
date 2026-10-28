@@ -1,0 +1,27 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\pydata__xarray
+EXIT_CODE: 1
+DURATION_SECONDS: 3.1966
+======================================== STDOUT ========================================
+Discovered 0 nodeids: []
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\test_gen_00.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_00.py _______________________\ntest_gen_00.py:69: in <module>\n    min_ds = ds.isel(x=min_idx.x, y=min_idx.y, time=min_idx.time)\n                       ^^^^^^^^^\nxarray\\core\\common.py:269: in __getattr__\n    raise AttributeError(\nE   AttributeError: 'DataArray' object has no attribute 'x'\n============================== warnings summary ===============================\nxarray\\core\\nputils.py:7\n  C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\xarray\\core\\nputils.py:7: DeprecationWarning: numpy.core.multiarray is deprecated and has been renamed to numpy._core.multiarray. The numpy._core namespace contains private NumPy internals and its use is discouraged, as NumPy internals can change without warning in any release. In practice, most real-world usage of numpy.core is to access functionality in the public NumPy API. If that is the case, use the public NumPy"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\test_gen_01.py",
+    "outcome": "COLLECTION_ERROR",
+    "error_type": "COLLECTION_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_01.py _______________________\ntest_gen_01.py:36: in <module>\n    min_temp_point = ds.isel(x=min_temp_idx.x, y=min_temp_idx.y, time=min_temp_idx.time)\n                               ^^^^^^^^^^^^^^\nE   AttributeError: 'dict' object has no attribute 'x'\n============================== warnings summary ===============================\nxarray\\core\\nputils.py:7\n  C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\xarray\\core\\nputils.py:7: DeprecationWarning: numpy.core.multiarray is deprecated and has been renamed to numpy._core.multiarray. The numpy._core namespace contains private NumPy internals and its use is discouraged, as NumPy internals can change without warning in any release. In practice, most real-world usage of numpy.core is to access functionality in the public NumPy API. If that is the case, use the public NumPy API. If not, you are using NumPy int"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\test_gen_02.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_02.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\test_gen_02.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_02.py:8: in <module>\n    from xarray.core.dimension import Dimension\nE   ModuleNotFoundError: No module named 'xarray.core.dimension'\n============================== warnings summary ===============================\nxarray\\core\\nputils.py:7\n  C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_4v_iybki\\xarray\\core\\nputils.py:7: DeprecationWarning: numpy.core.multiarray is deprecated and has been renamed to numpy._core.multiarray. The numpy._core namespace "
+  }
+]

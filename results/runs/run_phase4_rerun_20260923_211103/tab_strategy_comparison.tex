@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Empirical Comparison of Test Selection Strategies Across SWE-bench Verified Instances}
+\label{tab:strategy_comparison}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Strategy} & \textbf{Exec. Ret. (\%)} & \textbf{Quarantine (\%)} & \textbf{CI Determ. (\%)} & \textbf{Bug Ret. (\%)} & \textbf{Defect Tests Ret. (\%)} & \textbf{Mut. Score (\%)} \\
+\midrule
+Keep-All & 100.0 & 0.0 & 98.7 & 100.0 & 100.0 & 7.7 \\
+Discard-All-Flaky & 98.7 & 0.0 & 100.0 & 100.0 & 100.0 & 7.7 \\
+Random-Filtering & 77.9 & 0.0 & 92.3 & 100.0 & 100.0 & 7.7 \\
+Static-Only & 77.9 & 0.0 & 100.0 & 100.0 & 100.0 & 7.7 \\
+Risk-Aware-Triage & 77.9 & 19.2 & 100.0 & 100.0 & 100.0 & 7.7 \\
+\bottomrule
+\end{tabular}
+\end{table*}

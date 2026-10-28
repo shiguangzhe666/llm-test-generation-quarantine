@@ -1,0 +1,305 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_blueprint_with_valid_name",
+    "test_gen_00.py::test_blueprint_with_empty_name",
+    "test_gen_00.py::test_blueprint_with_none_name",
+    "test_gen_00.py::test_blueprint_with_long_name",
+    "test_gen_00.py::test_blueprint_with_special_characters_in_name",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_special_characters",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_special_characters",
+    "test_gen_00.py::test_blueprint_with_name_containing_spaces",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_underscore",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_underscore",
+    "test_gen_00.py::test_blueprint_with_name_starting_with_number",
+    "test_gen_00.py::test_blueprint_with_name_ending_with_number",
+    "test_gen_01.py::test_blueprint_with_non_empty_name",
+    "test_gen_01.py::test_blueprint_with_empty_name",
+    "test_gen_01.py::test_blueprint_with_none_name",
+    "test_gen_01.py::test_blueprint_with_valid_name_type",
+    "test_gen_01.py::test_blueprint_with_name_length",
+    "test_gen_01.py::test_blueprint_with_name_starting_with_underscores",
+    "test_gen_01.py::test_blueprint_with_name_starting_with_digits",
+    "test_gen_01.py::test_blueprint_with_name_containing_invalid_characters",
+    "test_gen_01.py::test_blueprint_with_valid_import_name",
+    "test_gen_01.py::test_blueprint_with_invalid_import_name",
+    "test_gen_02.py::test_blueprint_with_non_empty_name",
+    "test_gen_02.py::test_blueprint_with_empty_name_fails",
+    "test_gen_02.py::test_blueprint_with_space_name_fails",
+    "test_gen_02.py::test_blueprint_with_name_starting_with_underscore_fails",
+    "test_gen_02.py::test_blueprint_with_name_ending_with_underscore_fails",
+    "test_gen_02.py::test_blueprint_with_special_characters_fails",
+    "test_gen_02.py::test_blueprint_with_only_digits_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name",
+    "test_gen_02.py::test_blueprint_with_invalid_module_name_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_empty_name_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_space_name_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_starting_with_underscore_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_ending_with_underscore_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_special_characters_fails",
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_only_digits_fails"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_blueprint_with_valid_name": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_valid_name",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0007402999999612803,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:6: in test_blueprint_with_valid_name\n    blueprint = Blueprint('valid_name', 'module.name')\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Erro"
+    },
+    "test_gen_00.py::test_blueprint_with_empty_name": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_empty_name",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006954999998924905,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:12: in test_blueprint_with_empty_name\n    Blueprint('', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class 'ModuleNotFoundError'>: No "
+    },
+    "test_gen_00.py::test_blueprint_with_none_name": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_none_name",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006629000004068075,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:17: in test_blueprint_with_none_name\n    Blueprint(None, 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class 'ModuleNotFoundError'>: No"
+    },
+    "test_gen_00.py::test_blueprint_with_long_name": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_long_name",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006410000000869331,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:22: in test_blueprint_with_long_name\n    blueprint = Blueprint(long_name, 'module.name')\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error whil"
+    },
+    "test_gen_00.py::test_blueprint_with_special_characters_in_name": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_special_characters_in_name",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006760000001122535,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:27: in test_blueprint_with_special_characters_in_name\n    blueprint = Blueprint('valid_name@123', 'module.name')\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from"
+    },
+    "test_gen_00.py::test_blueprint_with_name_starting_with_special_characters": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_starting_with_special_characters",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006734999999480351,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:33: in test_blueprint_with_name_starting_with_special_characters\n    Blueprint('@valid_name', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.nam"
+    },
+    "test_gen_00.py::test_blueprint_with_name_ending_with_special_characters": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_ending_with_special_characters",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006872999999814056,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:38: in test_blueprint_with_name_ending_with_special_characters\n    Blueprint('valid_name@', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name'"
+    },
+    "test_gen_00.py::test_blueprint_with_name_containing_spaces": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_containing_spaces",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.000675099999853046,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:43: in test_blueprint_with_name_containing_spaces\n    Blueprint('valid name', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class 'Modu"
+    },
+    "test_gen_00.py::test_blueprint_with_name_starting_with_underscore": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_starting_with_underscore",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006510000000616856,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:48: in test_blueprint_with_name_starting_with_underscore\n    Blueprint('_valid_name', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<cla"
+    },
+    "test_gen_00.py::test_blueprint_with_name_ending_with_underscore": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_ending_with_underscore",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006209000002854737,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:53: in test_blueprint_with_name_ending_with_underscore\n    Blueprint('valid_name_', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class"
+    },
+    "test_gen_00.py::test_blueprint_with_name_starting_with_number": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_starting_with_number",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006321999999272521,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:58: in test_blueprint_with_name_starting_with_number\n    Blueprint('1valid_name', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class '"
+    },
+    "test_gen_00.py::test_blueprint_with_name_ending_with_number": {
+      "nodeid": "test_gen_00.py::test_blueprint_with_name_ending_with_number",
+      "outcome": "IMPORT_ERROR",
+      "duration": 0.0006201000001055945,
+      "error_type": "ImportError",
+      "error_message": "G:\\Python311\\Lib\\pkgutil.py:496: in find_loader\n    spec = importlib.util.find_spec(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'module'\n\nThe above exception was the direct cause of the following exception:\ntest_gen_00.py:63: in test_blueprint_with_name_ending_with_number\n    Blueprint('valid_name1', 'module.name')\nsrc\\flask\\blueprints.py:185: in __init__\n    super().__init__(\nsrc\\flask\\scaffold.py:97: in __init__\n    root_path = get_root_path(self.import_name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsrc\\flask\\helpers.py:578: in get_root_path\n    loader = pkgutil.get_loader(import_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:482: in get_loader\n    return find_loader(fullname)\n           ^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\pkgutil.py:502: in find_loader\n    raise ImportError(msg.format(fullname, type(ex), ex)) from ex\nE   ImportError: Error while finding loader for 'module.name' (<class 'Mo"
+    },
+    "test_gen_01.py::test_blueprint_with_non_empty_name": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_non_empty_name",
+      "outcome": "PASSED",
+      "duration": 0.0003141000001960492,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_empty_name": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_empty_name",
+      "outcome": "PASSED",
+      "duration": 0.0002888999999868247,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_none_name": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_none_name",
+      "outcome": "PASSED",
+      "duration": 0.00029350000022532186,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_valid_name_type": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_valid_name_type",
+      "outcome": "PASSED",
+      "duration": 0.00028549999979077256,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_name_length": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_name_length",
+      "outcome": "PASSED",
+      "duration": 0.00027339999974174134,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_name_starting_with_underscores": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_name_starting_with_underscores",
+      "outcome": "EXCEPTION",
+      "duration": 0.00036499999987427145,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:31: in test_blueprint_with_name_starting_with_underscores\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_01.py::test_blueprint_with_name_starting_with_digits": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_name_starting_with_digits",
+      "outcome": "EXCEPTION",
+      "duration": 0.00030619999984082824,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:36: in test_blueprint_with_name_starting_with_digits\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_01.py::test_blueprint_with_name_containing_invalid_characters": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_name_containing_invalid_characters",
+      "outcome": "EXCEPTION",
+      "duration": 0.0002951000001303328,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:41: in test_blueprint_with_name_containing_invalid_characters\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_01.py::test_blueprint_with_valid_import_name": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_valid_import_name",
+      "outcome": "PASSED",
+      "duration": 0.00027619999991657096,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_01.py::test_blueprint_with_invalid_import_name": {
+      "nodeid": "test_gen_01.py::test_blueprint_with_invalid_import_name",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005699999999251304,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:51: in test_blueprint_with_invalid_import_name\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_non_empty_name": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_non_empty_name",
+      "outcome": "PASSED",
+      "duration": 0.0005304000001160603,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_blueprint_with_empty_name_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_empty_name_fails",
+      "outcome": "PASSED",
+      "duration": 0.0005422999997790612,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_blueprint_with_space_name_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_space_name_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005404000000908127,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:17: in test_blueprint_with_space_name_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_name_starting_with_underscore_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_name_starting_with_underscore_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005364999999528663,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:22: in test_blueprint_with_name_starting_with_underscore_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_name_ending_with_underscore_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_name_ending_with_underscore_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005516999999599648,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:27: in test_blueprint_with_name_ending_with_underscore_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_special_characters_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_special_characters_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005407999997260049,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:32: in test_blueprint_with_special_characters_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_only_digits_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_only_digits_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005476999999700638,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:37: in test_blueprint_with_only_digits_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name",
+      "outcome": "PASSED",
+      "duration": 0.0005261999999675027,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_blueprint_with_invalid_module_name_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_invalid_module_name_fails",
+      "outcome": "PASSED",
+      "duration": 0.0005178999999770895,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_empty_name_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_empty_name_fails",
+      "outcome": "PASSED",
+      "duration": 0.0005280999998831248,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_space_name_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_space_name_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005334999998467538,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:58: in test_blueprint_with_valid_module_name_and_space_name_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_starting_with_underscore_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_starting_with_underscore_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0007146000000375352,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:63: in test_blueprint_with_valid_module_name_and_name_starting_with_underscore_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_ending_with_underscore_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_name_ending_with_underscore_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005673000000570028,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:68: in test_blueprint_with_valid_module_name_and_name_ending_with_underscore_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_special_characters_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_special_characters_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005496000001130597,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:73: in test_blueprint_with_valid_module_name_and_special_characters_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_blueprint_with_valid_module_name_and_only_digits_fails": {
+      "nodeid": "test_gen_02.py::test_blueprint_with_valid_module_name_and_only_digits_fails",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005594000001565291,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:78: in test_blueprint_with_valid_module_name_and_only_digits_fails\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    }
+  }
+}

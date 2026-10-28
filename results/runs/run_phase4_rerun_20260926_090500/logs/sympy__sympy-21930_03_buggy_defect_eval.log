@@ -1,0 +1,42 @@
+COMMAND: execute_suite Mode=SUITE_IN_ORDER on buggy (2 files)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_o_mowxgf
+EXIT_CODE: 1
+DURATION_SECONDS: 9.1779
+======================================== STDOUT ========================================
+{
+  "buggy_outcomes": {
+    "test_gen_01.py::test_annihilate_boson_dagger": "PASSED",
+    "test_gen_01.py::test_annihilate_boson_state_property": "PASSED",
+    "test_gen_01.py::test_annihilate_boson_is_symbolic": "PASSED",
+    "test_gen_01.py::test_annihilate_boson_apply_operator": "ASSERTION_FAILED",
+    "test_gen_01.py::test_create_boson_dagger": "PASSED",
+    "test_gen_01.py::test_create_boson_state_property": "PASSED",
+    "test_gen_01.py::test_create_boson_is_symbolic": "PASSED",
+    "test_gen_01.py::test_create_boson_apply_operator": "ASSERTION_FAILED",
+    "test_gen_01.py::test_fock_state_ket_occupation": "ASSERTION_FAILED",
+    "test_gen_01.py::test_apply_operators": "PASSED",
+    "test_gen_01.py::test_inner_product": "PASSED",
+    "test_gen_01.py::test_matrix_rep": "PASSED",
+    "test_gen_01.py::test_contraction": "PASSED",
+    "test_gen_01.py::test_wicks": "PASSED",
+    "test_gen_01.py::test_no": "PASSED",
+    "test_gen_01.py::test_evaluate_deltas": "PASSED",
+    "test_gen_01.py::test_substitute_dummies": "PASSED",
+    "test_gen_01.py::test_permutation_operator": "PASSED",
+    "test_gen_01.py::test_simplify_index_permutations": "PASSED",
+    "test_gen_02.py::test_dagger_number": "ASSERTION_FAILED",
+    "test_gen_02.py::test_dagger_annihilate_boson": "PASSED",
+    "test_gen_02.py::test_dagger_create_boson": "PASSED",
+    "test_gen_02.py::test_dagger_expression": "PASSED",
+    "test_gen_02.py::test_antisymmetric_tensor_sorting": "EXCEPTION",
+    "test_gen_02.py::test_antisymmetric_tensor_latex": "EXCEPTION",
+    "test_gen_02.py::test_annihilate_boson_state": "PASSED",
+    "test_gen_02.py::test_annihilate_boson_is_symbolic": "ASSERTION_FAILED",
+    "test_gen_02.py::test_annihilate_boson_apply": "ASSERTION_FAILED",
+    "test_gen_02.py::test_create_boson_apply": "ASSERTION_FAILED",
+    "test_gen_02.py::test_create_boson_is_symbolic": "ASSERTION_FAILED"
+  },
+  "defect_detecting_test_keys": []
+}
+======================================== STDERR ========================================
+(empty)

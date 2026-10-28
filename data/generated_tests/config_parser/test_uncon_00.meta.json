@@ -1,0 +1,24 @@
+[
+  {
+    "model": "qwen3:8b",
+    "template": "unconstrained",
+    "temperature": 1.0,
+    "source_file": "data\\sample_project\\config_parser.py",
+    "generation_time_seconds": 93.34,
+    "raw_response_length": 0,
+    "test_code_length": 0,
+    "test_code": "",
+    "timestamp": "2026-09-19T23:50:31.474709"
+  },
+  {
+    "model": "qwen3:8b",
+    "template": "unconstrained",
+    "temperature": 1.0,
+    "source_file": "data\\sample_project\\config_parser.py",
+    "generation_time_seconds": 87.71,
+    "raw_response_length": 0,
+    "test_code_length": 0,
+    "test_code": "",
+    "timestamp": "2026-09-19T23:51:59.187084"
+  }
+]

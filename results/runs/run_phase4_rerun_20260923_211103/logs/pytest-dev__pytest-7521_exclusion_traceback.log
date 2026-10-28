@@ -1,0 +1,27 @@
+INSTANCE: pytest-dev__pytest-7521
+ERROR: Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 148, in _get_module_details
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "C:\Users\ASUS\AppData\Local\Temp\swebench_wt_1fauohwo\src\pytest\__init__.py", line 7, in <module>
+    from _pytest.assertion import register_assert_rewrite
+  File "C:\Users\ASUS\AppData\Local\Temp\swebench_wt_1fauohwo\src\_pytest\assertion\__init__.py", line 10, in <module>
+    from _pytest.assertion import rewrite
+  File "C:\Users\ASUS\AppData\Local\Temp\swebench_wt_1fauohwo\src\_pytest\assertion\rewrite.py", line 29, in <module>
+    from _pytest._version import version
+ModuleNotFoundError: No module named '_pytest._version'
+TRACEBACK:
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\test_gen_00.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 189, in _run_module_as_main\n  File \"<frozen runpy>\", line 148, in _get_module_details\n  File \"<frozen runpy>\", line 112, in _get_module_details\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\pytest\\__init__.py\", line 7, in <module>\n    from _pytest.assertion import register_assert_rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\_pytest\\assertion\\__init__.py\", line 10, in <module>\n    from _pytest.assertion import rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\_pytest\\assertion\\rewrite.py\", line 29, in <module>\n    from _pytest._version import version\nModuleNotFoundError: No module named '_pytest._version'"
+  },
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\test_gen_01.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 189, in _run_module_as_main\n  File \"<frozen runpy>\", line 148, in _get_module_details\n  File \"<frozen runpy>\", line 112, in _get_module_details\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\pytest\\__init__.py\", line 7, in <module>\n    from _pytest.assertion import register_assert_rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\_pytest\\assertion\\__init__.py\", line 10, in <module>\n    from _pytest.assertion import rewrite\n  File \"C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_1fauohwo\\src\\_pytest\\assertion\\rewrite.py\", line 29, in <module>\n    from _pytest._version import version\nModuleNotFoundError: No module named '_pytest._version'"
+  }
+]

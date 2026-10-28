@@ -1,0 +1,129 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_request_with_unicode_method",
+    "test_gen_00.py::test_request_with_non_ascii_method",
+    "test_gen_00.py::test_request_with_empty_method",
+    "test_gen_00.py::test_request_with_non_string_method",
+    "test_gen_00.py::test_request_with_unicode_url",
+    "test_gen_00.py::test_request_with_non_ascii_url",
+    "test_gen_00.py::test_request_with_empty_url",
+    "test_gen_00.py::test_request_with_non_string_url",
+    "test_gen_00.py::test_request_with_valid_method_and_invalid_url",
+    "test_gen_00.py::test_request_with_invalid_method_and_valid_url",
+    "test_gen_01.py::test_session_request_with_unicode_method",
+    "test_gen_02.py::test_request_with_unicode_method",
+    "test_gen_02.py::test_request_with_non_ascii_method",
+    "test_gen_02.py::test_request_with_unicode_url",
+    "test_gen_02.py::test_request_with_non_ascii_url"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_request_with_unicode_method": {
+      "nodeid": "test_gen_00.py::test_request_with_unicode_method",
+      "outcome": "EXCEPTION",
+      "duration": 0.01599269999860553,
+      "error_type": "UnicodeEncodeError",
+      "error_message": "test_gen_00.py:8: in test_request_with_unicode_method\n    response = session.request(u'\\u0410\\u043b\\u044c\\u044e\\u0449\\u0435\\u0439', 'http://example.com')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:364: in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:467: in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\adapters.py:311: in send\n    resp = conn.urlopen(\nrequests\\packages\\urllib3\\connectionpool.py:469: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:285: in _make_request\n    conn.request(method, url, **httplib_request_kw)\nG:\\Python311\\Lib\\http\\client.py:1303: in request\n    self._send_request(method, url, body, headers, encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1314: in _send_request\n    self.putrequest(method, url, **skips)\n"
+    },
+    "test_gen_00.py::test_request_with_non_ascii_method": {
+      "nodeid": "test_gen_00.py::test_request_with_non_ascii_method",
+      "outcome": "EXCEPTION",
+      "duration": 0.0007790000017848797,
+      "error_type": "UnicodeEncodeError",
+      "error_message": "test_gen_00.py:15: in test_request_with_non_ascii_method\n    response = session.request(u'\\u0422\\u0435\\u043b\\u044e', 'http://example.com')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:364: in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:467: in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\adapters.py:311: in send\n    resp = conn.urlopen(\nrequests\\packages\\urllib3\\connectionpool.py:469: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:285: in _make_request\n    conn.request(method, url, **httplib_request_kw)\nG:\\Python311\\Lib\\http\\client.py:1303: in request\n    self._send_request(method, url, body, headers, encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1314: in _send_request\n    self.putrequest(method, url, **skips)\nG:\\Python311\\Lib\\http\\client.py:1"
+    },
+    "test_gen_00.py::test_request_with_empty_method": {
+      "nodeid": "test_gen_00.py::test_request_with_empty_method",
+      "outcome": "EXCEPTION",
+      "duration": 0.36630330000116373,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:22: in test_request_with_empty_method\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_00.py::test_request_with_non_string_method": {
+      "nodeid": "test_gen_00.py::test_request_with_non_string_method",
+      "outcome": "EXCEPTION",
+      "duration": 0.2993978000013158,
+      "error_type": "TypeError",
+      "error_message": "test_gen_00.py:29: in test_request_with_non_string_method\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE TypeError"
+    },
+    "test_gen_00.py::test_request_with_unicode_url": {
+      "nodeid": "test_gen_00.py::test_request_with_unicode_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.3054680000022927,
+      "error_type": "TypeError",
+      "error_message": "requests\\packages\\urllib3\\connectionpool.py:313: in _make_request\n    httplib_response = conn.getresponse(buffering=True)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: HTTPConnection.getresponse() got an unexpected keyword argument 'buffering'\n\nDuring handling of the above exception, another exception occurred:\nrequests\\packages\\urllib3\\connectionpool.py:469: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:315: in _make_request\n    httplib_response = conn.getresponse()\n                       ^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\http\\client.py:1395: in getresponse\n    response.begin()\nG:\\Python311\\Lib\\http\\client.py:325: in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\http\\client.py:294: in _read_status\n    raise RemoteDisconnected(\"Remote end closed connection without\"\nE   http.client.RemoteDisconnected: Remote end clo"
+    },
+    "test_gen_00.py::test_request_with_non_ascii_url": {
+      "nodeid": "test_gen_00.py::test_request_with_non_ascii_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.795321800000238,
+      "error_type": "TypeError",
+      "error_message": "requests\\packages\\urllib3\\connectionpool.py:313: in _make_request\n    httplib_response = conn.getresponse(buffering=True)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: HTTPConnection.getresponse() got an unexpected keyword argument 'buffering'\n\nDuring handling of the above exception, another exception occurred:\nrequests\\packages\\urllib3\\connectionpool.py:469: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:315: in _make_request\n    httplib_response = conn.getresponse()\n                       ^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\http\\client.py:1395: in getresponse\n    response.begin()\nG:\\Python311\\Lib\\http\\client.py:325: in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\http\\client.py:294: in _read_status\n    raise RemoteDisconnected(\"Remote end closed connection without\"\nE   http.client.RemoteDisconnected: Remote end clo"
+    },
+    "test_gen_00.py::test_request_with_empty_url": {
+      "nodeid": "test_gen_00.py::test_request_with_empty_url",
+      "outcome": "PASSED",
+      "duration": 0.0005176000013307203,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_00.py::test_request_with_non_string_url": {
+      "nodeid": "test_gen_00.py::test_request_with_non_string_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.00044489999709185213,
+      "error_type": "EXCEPTION",
+      "error_message": "test_gen_00.py:58: in test_request_with_non_string_url\n    session.request('GET', 123)\nrequests\\sessions.py:327: in request\n    prep = self.prepare_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nrequests\\sessions.py:256: in prepare_request\n    p.prepare(\nrequests\\models.py:283: in prepare\n    self.prepare_url(url, params)\nrequests\\models.py:327: in prepare_url\n    raise MissingSchema(\"Invalid URL {0!r}: No schema supplied. \"\nE   requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhaps you meant http://123?"
+    },
+    "test_gen_00.py::test_request_with_valid_method_and_invalid_url": {
+      "nodeid": "test_gen_00.py::test_request_with_valid_method_and_invalid_url",
+      "outcome": "EXCEPTION",
+      "duration": 2.7031532999972114,
+      "error_type": "MaxRetryError",
+      "error_message": "requests\\packages\\urllib3\\connectionpool.py:469: in urlopen\n    httplib_response = self._make_request(conn, method, url,\nrequests\\packages\\urllib3\\connectionpool.py:285: in _make_request\n    conn.request(method, url, **httplib_request_kw)\nG:\\Python311\\Lib\\http\\client.py:1303: in request\n    self._send_request(method, url, body, headers, encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1349: in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1298: in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\nG:\\Python311\\Lib\\http\\client.py:1058: in _send_output\n    self.send(msg)\nG:\\Python311\\Lib\\http\\client.py:996: in send\n    self.connect()\nG:\\Python311\\Lib\\http\\client.py:962: in connect\n    self.sock = self._create_connection(\nG:\\Python311\\Lib\\socket.py:827: in create_connection\n    for res in getaddrinfo(host, port, 0, SOCK_STREAM):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nG:\\Python311\\Lib\\socket."
+    },
+    "test_gen_00.py::test_request_with_invalid_method_and_valid_url": {
+      "nodeid": "test_gen_00.py::test_request_with_invalid_method_and_valid_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.3845588000040152,
+      "error_type": "ValueError",
+      "error_message": "test_gen_00.py:71: in test_request_with_invalid_method_and_valid_url\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_01.py::test_session_request_with_unicode_method": {
+      "nodeid": "test_gen_01.py::test_session_request_with_unicode_method",
+      "outcome": "EXCEPTION",
+      "duration": 1.0232327999947302,
+      "error_type": "ValueError",
+      "error_message": "test_gen_01.py:13: in test_session_request_with_unicode_method\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    },
+    "test_gen_02.py::test_request_with_unicode_method": {
+      "nodeid": "test_gen_02.py::test_request_with_unicode_method",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.6118114999990212,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:14: in test_request_with_unicode_method\n    assert response.status_code == 200, \"Expected status code 200 for POST request\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError: Expected status code 200 for POST request"
+    },
+    "test_gen_02.py::test_request_with_non_ascii_method": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_method",
+      "outcome": "PASSED",
+      "duration": 0.0008607999989180826,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_request_with_unicode_url": {
+      "nodeid": "test_gen_02.py::test_request_with_unicode_url",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.7068063000006077,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:53: in test_request_with_unicode_url\n    assert response.status_code == 200, \"Expected status code 200 for GET request with unicode URL\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError: Expected status code 200 for GET request with unicode URL"
+    },
+    "test_gen_02.py::test_request_with_non_ascii_url": {
+      "nodeid": "test_gen_02.py::test_request_with_non_ascii_url",
+      "outcome": "EXCEPTION",
+      "duration": 0.3045715999978711,
+      "error_type": "ValueError",
+      "error_message": "test_gen_02.py:63: in test_request_with_non_ascii_url\n    with pytest.raises(ValueError):\nE   Failed: DID NOT RAISE ValueError"
+    }
+  }
+}

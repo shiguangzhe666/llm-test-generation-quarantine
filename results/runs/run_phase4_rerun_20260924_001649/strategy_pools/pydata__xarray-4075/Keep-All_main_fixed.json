@@ -1,0 +1,185 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::test_weighted_init_valid",
+    "test_gen_00.py::test_weighted_init_invalid_weights_type",
+    "test_gen_00.py::test_weighted_init_weights_with_nan",
+    "test_gen_00.py::test_weighted_reduce_skipna_true",
+    "test_gen_00.py::test_weighted_reduce_skipna_false",
+    "test_gen_00.py::test_weighted_sum_of_weights",
+    "test_gen_00.py::test_weighted_mean_zero_sum",
+    "test_gen_02.py::test_weighted_init_valid_dataarray",
+    "test_gen_02.py::test_weighted_init_valid_dataset",
+    "test_gen_02.py::test_weighted_init_invalid_weights_type",
+    "test_gen_02.py::test_weighted_init_weights_with_missing_values",
+    "test_gen_02.py::test_weighted_reduce_skipna_true",
+    "test_gen_02.py::test_weighted_reduce_skipna_false",
+    "test_gen_02.py::test_weighted_sum_of_weights_masking",
+    "test_gen_02.py::test_weighted_sum_of_weights_with_nan",
+    "test_gen_02.py::test_weighted_weighted_sum",
+    "test_gen_02.py::test_weighted_weighted_mean",
+    "test_gen_02.py::test_weighted_weighted_mean_zero_sum",
+    "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true",
+    "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false",
+    "test_gen_02.py::test_dataset_weighted_implementation",
+    "test_gen_02.py::test_dataset_weighted_implementation_no_attrs"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::test_weighted_init_valid": {
+      "nodeid": "test_gen_00.py::test_weighted_init_valid",
+      "outcome": "EXCEPTION",
+      "duration": 0.0008397000019613188,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:8: in test_weighted_init_valid\n    weighted = Weighted(da, weights)\n               ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_init_invalid_weights_type": {
+      "nodeid": "test_gen_00.py::test_weighted_init_invalid_weights_type",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004723999991256278,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:16: in test_weighted_init_invalid_weights_type\n    Weighted(da, weights)\n    ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_init_weights_with_nan": {
+      "nodeid": "test_gen_00.py::test_weighted_init_weights_with_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.00046800000200164504,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:22: in test_weighted_init_weights_with_nan\n    Weighted(da, weights)\n    ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_reduce_skipna_true": {
+      "nodeid": "test_gen_00.py::test_weighted_reduce_skipna_true",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003452000019024126,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:27: in test_weighted_reduce_skipna_true\n    result = Weighted._reduce(da, weights, dim=None, skipna=True)\n             ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_reduce_skipna_false": {
+      "nodeid": "test_gen_00.py::test_weighted_reduce_skipna_false",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003476999991107732,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:34: in test_weighted_reduce_skipna_false\n    result = Weighted._reduce(da, weights, dim=None, skipna=False)\n             ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_sum_of_weights": {
+      "nodeid": "test_gen_00.py::test_weighted_sum_of_weights",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003240000005462207,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:41: in test_weighted_sum_of_weights\n    weighted = Weighted(da, weights)\n               ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_00.py::test_weighted_mean_zero_sum": {
+      "nodeid": "test_gen_00.py::test_weighted_mean_zero_sum",
+      "outcome": "EXCEPTION",
+      "duration": 0.00031539999690721743,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:49: in test_weighted_mean_zero_sum\n    weighted = Weighted(da, weights)\n               ^^^^^^^^\nE   NameError: name 'Weighted' is not defined"
+    },
+    "test_gen_02.py::test_weighted_init_valid_dataarray": {
+      "nodeid": "test_gen_02.py::test_weighted_init_valid_dataarray",
+      "outcome": "PASSED",
+      "duration": 0.0005111999998916872,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_weighted_init_valid_dataset": {
+      "nodeid": "test_gen_02.py::test_weighted_init_valid_dataset",
+      "outcome": "EXCEPTION",
+      "duration": 0.00046240000301622786,
+      "error_type": "MissingDimensionsError",
+      "error_message": "test_gen_02.py:18: in test_weighted_init_valid_dataset\n    ds = Dataset({\"a\": np.random.rand(3, 4)})\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:542: in __init__\n    variables, coord_names, dims, indexes, _ = merge_data_and_coords(\nxarray\\core\\merge.py:466: in merge_data_and_coords\n    return merge_core(\nxarray\\core\\merge.py:594: in merge_core\n    collected = collect_variables_and_indexes(aligned)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\merge.py:277: in collect_variables_and_indexes\n    variable = as_variable(variable, name=name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\variable.py:120: in as_variable\n    raise MissingDimensionsError(\nE   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead."
+    },
+    "test_gen_02.py::test_weighted_init_invalid_weights_type": {
+      "nodeid": "test_gen_02.py::test_weighted_init_invalid_weights_type",
+      "outcome": "PASSED",
+      "duration": 0.00041790000250330195,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_weighted_init_weights_with_missing_values": {
+      "nodeid": "test_gen_02.py::test_weighted_init_weights_with_missing_values",
+      "outcome": "PASSED",
+      "duration": 0.0005359999995562248,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_weighted_reduce_skipna_true": {
+      "nodeid": "test_gen_02.py::test_weighted_reduce_skipna_true",
+      "outcome": "PASSED",
+      "duration": 0.0011970000014116522,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_weighted_reduce_skipna_false": {
+      "nodeid": "test_gen_02.py::test_weighted_reduce_skipna_false",
+      "outcome": "PASSED",
+      "duration": 0.0007921000033093151,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_weighted_sum_of_weights_masking": {
+      "nodeid": "test_gen_02.py::test_weighted_sum_of_weights_masking",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003254000039305538,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:53: in test_weighted_sum_of_weights_masking\n    result = Weighted._sum_of_weights(da, dim=\"dim0\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Weighted._sum_of_weights() missing 1 required positional argument: 'da'"
+    },
+    "test_gen_02.py::test_weighted_sum_of_weights_with_nan": {
+      "nodeid": "test_gen_02.py::test_weighted_sum_of_weights_with_nan",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003208999987691641,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:60: in test_weighted_sum_of_weights_with_nan\n    result = Weighted._sum_of_weights(da, dim=\"dim0\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Weighted._sum_of_weights() missing 1 required positional argument: 'da'"
+    },
+    "test_gen_02.py::test_weighted_weighted_sum": {
+      "nodeid": "test_gen_02.py::test_weighted_weighted_sum",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003853999987768475,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:67: in test_weighted_weighted_sum\n    result = Weighted._weighted_sum(da, dim=\"dim0\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Weighted._weighted_sum() missing 1 required positional argument: 'da'"
+    },
+    "test_gen_02.py::test_weighted_weighted_mean": {
+      "nodeid": "test_gen_02.py::test_weighted_weighted_mean",
+      "outcome": "EXCEPTION",
+      "duration": 0.00036809999801334925,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:74: in test_weighted_weighted_mean\n    result = Weighted._weighted_mean(da, dim=\"dim0\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Weighted._weighted_mean() missing 1 required positional argument: 'da'"
+    },
+    "test_gen_02.py::test_weighted_weighted_mean_zero_sum": {
+      "nodeid": "test_gen_02.py::test_weighted_weighted_mean_zero_sum",
+      "outcome": "EXCEPTION",
+      "duration": 0.0003401000030862633,
+      "error_type": "TypeError",
+      "error_message": "test_gen_02.py:81: in test_weighted_weighted_mean_zero_sum\n    result = Weighted._weighted_mean(da, dim=\"dim0\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: Weighted._weighted_mean() missing 1 required positional argument: 'da'"
+    },
+    "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true": {
+      "nodeid": "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_true",
+      "outcome": "PASSED",
+      "duration": 0.0008794999957899563,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false": {
+      "nodeid": "test_gen_02.py::test_dataarray_weighted_implementation_keep_attrs_false",
+      "outcome": "PASSED",
+      "duration": 0.000718599996616831,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::test_dataset_weighted_implementation": {
+      "nodeid": "test_gen_02.py::test_dataset_weighted_implementation",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004206000012345612,
+      "error_type": "MissingDimensionsError",
+      "error_message": "test_gen_02.py:98: in test_dataset_weighted_implementation\n    ds = Dataset({\"a\": np.random.rand(3, 4)}, attrs={\"attr1\": \"value1\"})\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:542: in __init__\n    variables, coord_names, dims, indexes, _ = merge_data_and_coords(\nxarray\\core\\merge.py:466: in merge_data_and_coords\n    return merge_core(\nxarray\\core\\merge.py:594: in merge_core\n    collected = collect_variables_and_indexes(aligned)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\merge.py:277: in collect_variables_and_indexes\n    variable = as_variable(variable, name=name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\variable.py:120: in as_variable\n    raise MissingDimensionsError(\nE   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead."
+    },
+    "test_gen_02.py::test_dataset_weighted_implementation_no_attrs": {
+      "nodeid": "test_gen_02.py::test_dataset_weighted_implementation_no_attrs",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004967999993823469,
+      "error_type": "MissingDimensionsError",
+      "error_message": "test_gen_02.py:104: in test_dataset_weighted_implementation_no_attrs\n    ds = Dataset({\"a\": np.random.rand(3, 4)})\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\dataset.py:542: in __init__\n    variables, coord_names, dims, indexes, _ = merge_data_and_coords(\nxarray\\core\\merge.py:466: in merge_data_and_coords\n    return merge_core(\nxarray\\core\\merge.py:594: in merge_core\n    collected = collect_variables_and_indexes(aligned)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\merge.py:277: in collect_variables_and_indexes\n    variable = as_variable(variable, name=name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nxarray\\core\\variable.py:120: in as_variable\n    raise MissingDimensionsError(\nE   xarray.core.variable.MissingDimensionsError: cannot set variable 'a' with 2-dimensional data without explicit dimension names. Pass a tuple of (dims, data) instead."
+    }
+  }
+}

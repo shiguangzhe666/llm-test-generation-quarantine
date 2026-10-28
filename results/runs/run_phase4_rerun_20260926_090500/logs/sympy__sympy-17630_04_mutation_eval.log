@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on sympy/matrices/expressions/matexpr.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_qg_yk0c7
+EXIT_CODE: 0
+DURATION_SECONDS: 32.6218
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

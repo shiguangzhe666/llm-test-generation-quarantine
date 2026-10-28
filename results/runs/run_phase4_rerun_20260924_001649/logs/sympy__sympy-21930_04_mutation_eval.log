@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on sympy/physics/secondquant.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_c4prmgj0
+EXIT_CODE: 0
+DURATION_SECONDS: 142.7439
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

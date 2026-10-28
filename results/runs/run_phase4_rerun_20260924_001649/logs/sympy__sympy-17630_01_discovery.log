@@ -1,0 +1,15 @@
+COMMAND: discover_test_nodeids across 3 files
+CWD: F:\论文\llm-test-stability\data\repos\sympy__sympy
+EXIT_CODE: 0
+DURATION_SECONDS: 8.8793
+======================================== STDOUT ========================================
+Discovered 9 nodeids: ['test_gen_00.py::test_matrix_symbol', 'test_gen_00.py::test_matrix_element_derivative', 'test_gen_00.py::test_matrix_eq', 'test_gen_00.py::test_get_postprocessor', 'test_gen_01.py::test_matrixsymbol', 'test_gen_01.py::test_matrixelement', 'test_gen_01.py::test_substitution', 'test_gen_01.py::test_callable', 'test_gen_01.py::test_derivative']
+======================================== STDERR ========================================
+[
+  {
+    "nodeid": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_v132rzwt\\test_gen_02.py",
+    "outcome": "IMPORT_ERROR",
+    "error_type": "IMPORT_ERROR",
+    "error_message": "=================================== ERRORS ====================================\n_______________________ ERROR collecting test_gen_02.py _______________________\nImportError while importing test module 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_v132rzwt\\test_gen_02.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nG:\\Python311\\Lib\\importlib\\__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_gen_02.py:3: in <module>\n    from sympy.core import Basic, Expr, S, Symbol, Tuple, Dummy, KroneckerDelta, Derivative, MatMul, MatAdd, MatrixExpr\nE   ImportError: cannot import name 'KroneckerDelta' from 'sympy.core' (C:\\Users\\ASUS\\AppData\\Local\\Temp\\swebench_wt_v132rzwt\\sympy\\core\\__init__.py)\n============================== warnings summary ===============================\nG:\\Python311\\Lib\\site-packages\\mpmath\\ctx_mp.py:35\n  G:\\Python311\\Lib\\site-packa"
+  }
+]

@@ -1,0 +1,128 @@
+COMMAND: pytest 2 tests (strategy=Random-Filtering, pool=mainline, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui
+EXIT_CODE: 1
+DURATION_SECONDS: 1.0277
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 2 items
+
+test_gen_00.py::test_request_with_non_ascii_method FAILED                [ 50%]
+test_gen_01.py::test_session_request_with_unicode_method FAILED          [100%]
+
+================================== FAILURES ===================================
+_____________________ test_request_with_non_ascii_method ______________________
+test_gen_00.py:15: in test_request_with_non_ascii_method
+    response = session.request(u'\u0422\u0435\u043b\u044e', 'http://example.com')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:361: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:464: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:311: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:469: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:285: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1314: in _send_request
+    self.putrequest(method, url, **skips)
+G:\Python311\Lib\http\client.py:1152: in putrequest
+    self._output(self._encode_request(request))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:1232: in _encode_request
+    return request.encode('ascii')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+__________________ test_session_request_with_unicode_method ___________________
+test_gen_01.py:13: in test_session_request_with_unicode_method
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:383
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\packages\urllib3\connectionpool.py:383: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:651
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\packages\urllib3\connectionpool.py:651: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:36
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\packages\urllib3\poolmanager.py:36: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:681
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\models.py:681: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:48
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:48: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:59
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:59: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:70
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:70: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:81
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:81: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:92
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:92: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:103
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:103: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:114
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\api.py:114: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:366
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:366: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:376
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:376: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:386
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:386: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:396
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:396: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:406
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:406: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:416
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:416: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:426
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_pszy7gui\requests\sessions.py:426: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_request_with_non_ascii_method - UnicodeEncodeErro...
+FAILED test_gen_01.py::test_session_request_with_unicode_method - Failed: DID...
+======================= 2 failed, 19 warnings in 0.79s ========================
+
+======================================== STDERR ========================================
+(empty)

@@ -1,0 +1,191 @@
+COMMAND: pytest 25 tests (strategy=Discard-All-Flaky, pool=mainline, codebase=fixed)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_ggx93oo3
+EXIT_CODE: 1
+DURATION_SECONDS: 0.3928
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 25 items
+
+test_gen_00.py::test_replace_nan_with_values FAILED                      [  4%]
+test_gen_00.py::test_replace_nan_no_values FAILED                        [  8%]
+test_gen_00.py::test_replace_nan_int FAILED                              [ 12%]
+test_gen_00.py::test_maybe_null_out_min_count FAILED                     [ 16%]
+test_gen_00.py::test_maybe_null_out_axis_none FAILED                     [ 20%]
+test_gen_00.py::test_nanmin_all_nan FAILED                               [ 24%]
+test_gen_00.py::test_nanmin_with_values FAILED                           [ 28%]
+test_gen_00.py::test_nanmax_all_nan FAILED                               [ 32%]
+test_gen_00.py::test_nanmax_with_values FAILED                           [ 36%]
+test_gen_00.py::test_nansum_min_count FAILED                             [ 40%]
+test_gen_01.py::test_placeholder_pydata_xarray_4356 PASSED               [ 44%]
+test_gen_02.py::test_replace_nan_with_nans FAILED                        [ 48%]
+test_gen_02.py::test_replace_nan_no_nans FAILED                          [ 52%]
+test_gen_02.py::test_replace_nan_object_type FAILED                      [ 56%]
+test_gen_02.py::test_maybe_null_out_min_count FAILED                     [ 60%]
+test_gen_02.py::test_maybe_null_out_no_min_count FAILED                  [ 64%]
+test_gen_02.py::test_nan_min_object_array FAILED                         [ 68%]
+test_gen_02.py::test_nan_max_object_array FAILED                         [ 72%]
+test_gen_02.py::test_nan_min_all_nan FAILED                              [ 76%]
+test_gen_02.py::test_nanmin_numeric_array FAILED                         [ 80%]
+test_gen_02.py::test_nanmin_object_array FAILED                          [ 84%]
+test_gen_02.py::test_nanmin_all_nan FAILED                               [ 88%]
+test_gen_02.py::test_nanmax_numeric_array FAILED                         [ 92%]
+test_gen_02.py::test_nanmax_object_array FAILED                          [ 96%]
+test_gen_02.py::test_nanmax_all_nan FAILED                               [100%]
+
+================================== FAILURES ===================================
+________________________ test_replace_nan_with_values _________________________
+test_gen_00.py:12: in test_replace_nan_with_values
+    result, mask = _replace_nan(arr, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+_________________________ test_replace_nan_no_values __________________________
+test_gen_00.py:21: in test_replace_nan_no_values
+    result, mask = _replace_nan(arr, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+____________________________ test_replace_nan_int _____________________________
+test_gen_00.py:28: in test_replace_nan_int
+    result, mask = _replace_nan(arr, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+________________________ test_maybe_null_out_min_count ________________________
+test_gen_00.py:39: in test_maybe_null_out_min_count
+    modified_result = _maybe_null_out(result, axis, mask, min_count)
+                      ^^^^^^^^^^^^^^^
+E   NameError: name '_maybe_null_out' is not defined
+________________________ test_maybe_null_out_axis_none ________________________
+test_gen_00.py:47: in test_maybe_null_out_axis_none
+    modified_result = _maybe_null_out(result, axis, mask, min_count)
+                      ^^^^^^^^^^^^^^^
+E   NameError: name '_maybe_null_out' is not defined
+_____________________________ test_nanmin_all_nan _____________________________
+test_gen_00.py:53: in test_nanmin_all_nan
+    nanmin(arr)
+    ^^^^^^
+E   NameError: name 'nanmin' is not defined
+___________________________ test_nanmin_with_values ___________________________
+test_gen_00.py:57: in test_nanmin_with_values
+    result = nanmin(arr)
+             ^^^^^^
+E   NameError: name 'nanmin' is not defined
+_____________________________ test_nanmax_all_nan _____________________________
+test_gen_00.py:63: in test_nanmax_all_nan
+    nanmax(arr)
+    ^^^^^^
+E   NameError: name 'nanmax' is not defined
+___________________________ test_nanmax_with_values ___________________________
+test_gen_00.py:67: in test_nanmax_with_values
+    result = nanmax(arr)
+             ^^^^^^
+E   NameError: name 'nanmax' is not defined
+____________________________ test_nansum_min_count ____________________________
+test_gen_00.py:72: in test_nansum_min_count
+    result = n
+             ^
+E   NameError: name 'n' is not defined
+_________________________ test_replace_nan_with_nans __________________________
+test_gen_02.py:7: in test_replace_nan_with_nans
+    result, mask = _replace_nan(a, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+__________________________ test_replace_nan_no_nans ___________________________
+test_gen_02.py:14: in test_replace_nan_no_nans
+    result, mask = _replace_nan(a, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+________________________ test_replace_nan_object_type _________________________
+test_gen_02.py:21: in test_replace_nan_object_type
+    result, mask = _replace_nan(a, val)
+                   ^^^^^^^^^^^^
+E   NameError: name '_replace_nan' is not defined
+________________________ test_maybe_null_out_min_count ________________________
+test_gen_02.py:34: in test_maybe_null_out_min_count
+    assert np.array_equal(_maybe_null_out(result, mask, axis, min_count), expected_result)
+                          ^^^^^^^^^^^^^^^
+E   NameError: name '_maybe_null_out' is not defined
+______________________ test_maybe_null_out_no_min_count _______________________
+test_gen_02.py:42: in test_maybe_null_out_no_min_count
+    assert np.array_equal(_maybe_null_out(result, mask, axis, min_count), result)
+                          ^^^^^^^^^^^^^^^
+E   NameError: name '_maybe_null_out' is not defined
+__________________________ test_nan_min_object_array __________________________
+test_gen_02.py:46: in test_nan_min_object_array
+    result = _nan_minmax_object(a, 'min')
+             ^^^^^^^^^^^^^^^^^^
+E   NameError: name '_nan_minmax_object' is not defined
+__________________________ test_nan_max_object_array __________________________
+test_gen_02.py:51: in test_nan_max_object_array
+    result = _nan_minmax_object(a, 'max')
+             ^^^^^^^^^^^^^^^^^^
+E   NameError: name '_nan_minmax_object' is not defined
+____________________________ test_nan_min_all_nan _____________________________
+test_gen_02.py:57: in test_nan_min_all_nan
+    _nan_minmax_object(a, 'min')
+    ^^^^^^^^^^^^^^^^^^
+E   NameError: name '_nan_minmax_object' is not defined
+__________________________ test_nanmin_numeric_array __________________________
+test_gen_02.py:61: in test_nanmin_numeric_array
+    result = nanmin(a)
+             ^^^^^^
+E   NameError: name 'nanmin' is not defined
+__________________________ test_nanmin_object_array ___________________________
+test_gen_02.py:66: in test_nanmin_object_array
+    result = nanmin(a)
+             ^^^^^^
+E   NameError: name 'nanmin' is not defined
+_____________________________ test_nanmin_all_nan _____________________________
+test_gen_02.py:72: in test_nanmin_all_nan
+    nanmin(a)
+    ^^^^^^
+E   NameError: name 'nanmin' is not defined
+__________________________ test_nanmax_numeric_array __________________________
+test_gen_02.py:76: in test_nanmax_numeric_array
+    result = nanmax(a)
+             ^^^^^^
+E   NameError: name 'nanmax' is not defined
+__________________________ test_nanmax_object_array ___________________________
+test_gen_02.py:81: in test_nanmax_object_array
+    result = nanmax(a)
+             ^^^^^^
+E   NameError: name 'nanmax' is not defined
+_____________________________ test_nanmax_all_nan _____________________________
+test_gen_02.py:87: in test_nanmax_all_nan
+    nanmax(a)
+    ^^^^^^
+E   NameError: name 'nanmax' is not defined
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464
+  G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464: PytestConfigWarning: Unknown config option: env
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_replace_nan_with_values - NameError: name '_repla...
+FAILED test_gen_00.py::test_replace_nan_no_values - NameError: name '_replace...
+FAILED test_gen_00.py::test_replace_nan_int - NameError: name '_replace_nan' ...
+FAILED test_gen_00.py::test_maybe_null_out_min_count - NameError: name '_mayb...
+FAILED test_gen_00.py::test_maybe_null_out_axis_none - NameError: name '_mayb...
+FAILED test_gen_00.py::test_nanmin_all_nan - NameError: name 'nanmin' is not ...
+FAILED test_gen_00.py::test_nanmin_with_values - NameError: name 'nanmin' is ...
+FAILED test_gen_00.py::test_nanmax_all_nan - NameError: name 'nanmax' is not ...
+FAILED test_gen_00.py::test_nanmax_with_values - NameError: name 'nanmax' is ...
+FAILED test_gen_00.py::test_nansum_min_count - NameError: name 'n' is not def...
+FAILED test_gen_02.py::test_replace_nan_with_nans - NameError: name '_replace...
+FAILED test_gen_02.py::test_replace_nan_no_nans - NameError: name '_replace_n...
+FAILED test_gen_02.py::test_replace_nan_object_type - NameError: name '_repla...
+FAILED test_gen_02.py::test_maybe_null_out_min_count - NameError: name '_mayb...
+FAILED test_gen_02.py::test_maybe_null_out_no_min_count - NameError: name '_m...
+FAILED test_gen_02.py::test_nan_min_object_array - NameError: name '_nan_minm...
+FAILED test_gen_02.py::test_nan_max_object_array - NameError: name '_nan_minm...
+FAILED test_gen_02.py::test_nan_min_all_nan - NameError: name '_nan_minmax_ob...
+FAILED test_gen_02.py::test_nanmin_numeric_array - NameError: name 'nanmin' i...
+FAILED test_gen_02.py::test_nanmin_object_array - NameError: name 'nanmin' is...
+FAILED test_gen_02.py::test_nanmin_all_nan - NameError: name 'nanmin' is not ...
+FAILED test_gen_02.py::test_nanmax_numeric_array - NameError: name 'nanmax' i...
+FAILED test_gen_02.py::test_nanmax_object_array - NameError: name 'nanmax' is...
+FAILED test_gen_02.py::test_nanmax_all_nan - NameError: name 'nanmax' is not ...
+=================== 24 failed, 1 passed, 1 warning in 0.11s ===================
+
+======================================== STDERR ========================================
+(empty)

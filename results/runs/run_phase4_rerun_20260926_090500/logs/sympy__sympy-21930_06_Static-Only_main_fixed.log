@@ -1,0 +1,127 @@
+COMMAND: pytest 30 tests (strategy=Static-Only, pool=mainline, codebase=fixed)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_1znphd5_
+EXIT_CODE: 1
+DURATION_SECONDS: 1.7392
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 30 items
+
+test_gen_01.py::test_annihilate_boson_dagger PASSED                      [  3%]
+test_gen_01.py::test_annihilate_boson_state_property PASSED              [  6%]
+test_gen_01.py::test_annihilate_boson_is_symbolic PASSED                 [ 10%]
+test_gen_01.py::test_annihilate_boson_apply_operator FAILED              [ 13%]
+test_gen_01.py::test_create_boson_dagger PASSED                          [ 16%]
+test_gen_01.py::test_create_boson_state_property PASSED                  [ 20%]
+test_gen_01.py::test_create_boson_is_symbolic PASSED                     [ 23%]
+test_gen_01.py::test_create_boson_apply_operator FAILED                  [ 26%]
+test_gen_01.py::test_fock_state_ket_occupation FAILED                    [ 30%]
+test_gen_01.py::test_apply_operators PASSED                              [ 33%]
+test_gen_01.py::test_inner_product PASSED                                [ 36%]
+test_gen_01.py::test_matrix_rep PASSED                                   [ 40%]
+test_gen_01.py::test_contraction PASSED                                  [ 43%]
+test_gen_01.py::test_wicks PASSED                                        [ 46%]
+test_gen_01.py::test_no PASSED                                           [ 50%]
+test_gen_01.py::test_evaluate_deltas PASSED                              [ 53%]
+test_gen_01.py::test_substitute_dummies PASSED                           [ 56%]
+test_gen_01.py::test_permutation_operator PASSED                         [ 60%]
+test_gen_01.py::test_simplify_index_permutations PASSED                  [ 63%]
+test_gen_02.py::test_dagger_number FAILED                                [ 66%]
+test_gen_02.py::test_dagger_annihilate_boson PASSED                      [ 70%]
+test_gen_02.py::test_dagger_create_boson PASSED                          [ 73%]
+test_gen_02.py::test_dagger_expression PASSED                            [ 76%]
+test_gen_02.py::test_antisymmetric_tensor_sorting FAILED                 [ 80%]
+test_gen_02.py::test_antisymmetric_tensor_latex FAILED                   [ 83%]
+test_gen_02.py::test_annihilate_boson_state PASSED                       [ 86%]
+test_gen_02.py::test_annihilate_boson_is_symbolic FAILED                 [ 90%]
+test_gen_02.py::test_annihilate_boson_apply FAILED                       [ 93%]
+test_gen_02.py::test_create_boson_apply FAILED                           [ 96%]
+test_gen_02.py::test_create_boson_is_symbolic FAILED                     [100%]
+
+================================== FAILURES ===================================
+____________________ test_annihilate_boson_apply_operator _____________________
+test_gen_01.py:26: in test_annihilate_boson_apply_operator
+    assert result == Symbol('sqrt(2)') * FockStateBosonKet((1,))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_create_boson_apply_operator _______________________
+test_gen_01.py:46: in test_create_boson_apply_operator
+    assert result == Symbol('sqrt(1)') * FockStateBosonKet((2,))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_______________________ test_fock_state_ket_occupation ________________________
+test_gen_01.py:50: in test_fock_state_ket_occupation
+    assert state.occupation == 1
+           ^^^^^^^^^^^^^^^^
+E   AttributeError: 'FockStateBosonKet' object has no attribute 'occupation'
+_____________________________ test_dagger_number ______________________________
+test_gen_02.py:10: in test_dagger_number
+    assert Dagger(5).doit() == -5
+           ^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_antisymmetric_tensor_sorting ______________________
+test_gen_02.py:27: in test_antisymmetric_tensor_sorting
+    a = AntiSymmetricTensor(0, 1, 2)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\physics\secondquant.py:177: in __new__
+    upper, signu = _sort_anticommuting_fermions(
+sympy\physics\secondquant.py:2247: in _sort_anticommuting_fermions
+    rng = list(range(len(string1) - 1))
+                     ^^^^^^^^^^^^
+E   TypeError: object of type 'int' has no len()
+_______________________ test_antisymmetric_tensor_latex _______________________
+test_gen_02.py:35: in test_antisymmetric_tensor_latex
+    a = AntiSymmetricTensor(0, 1, 2)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sympy\physics\secondquant.py:177: in __new__
+    upper, signu = _sort_anticommuting_fermions(
+sympy\physics\secondquant.py:2247: in _sort_anticommuting_fermions
+    rng = list(range(len(string1) - 1))
+                     ^^^^^^^^^^^^
+E   TypeError: object of type 'int' has no len()
+______________________ test_annihilate_boson_is_symbolic ______________________
+test_gen_02.py:44: in test_annihilate_boson_is_symbolic
+    assert b.is_symbolic() is True
+           ^^^^^^^^^^^^^^^
+E   TypeError: 'bool' object is not callable
+_________________________ test_annihilate_boson_apply _________________________
+test_gen_02.py:52: in test_annihilate_boson_apply
+    assert result == sqrt(x) * FockStateBosonKet((x - 1,))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+___________________________ test_create_boson_apply ___________________________
+test_gen_02.py:58: in test_create_boson_apply
+    assert result == sqrt(x) * FockStateBosonKet((x + 1,))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+________________________ test_create_boson_is_symbolic ________________________
+test_gen_02.py:62: in test_create_boson_is_symbolic
+    assert b.is_symbolic() is True
+           ^^^^^^^^^^^^^^^
+E   TypeError: 'bool' object is not callable
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35
+  G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated
+    warnings.warn(f"{name} is deprecated", DeprecationWarning)
+
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+  G:\Python311\Lib\site-packages\mpmath\rational.py:4: DeprecationWarning: the rational private module is deprecated
+    warnings.warn("the rational private module is deprecated",
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_01.py::test_annihilate_boson_apply_operator - AssertionError
+FAILED test_gen_01.py::test_create_boson_apply_operator - AssertionError
+FAILED test_gen_01.py::test_fock_state_ket_occupation - AttributeError: 'Fock...
+FAILED test_gen_02.py::test_dagger_number - AssertionError
+FAILED test_gen_02.py::test_antisymmetric_tensor_sorting - TypeError: object ...
+FAILED test_gen_02.py::test_antisymmetric_tensor_latex - TypeError: object of...
+FAILED test_gen_02.py::test_annihilate_boson_is_symbolic - TypeError: 'bool' ...
+FAILED test_gen_02.py::test_annihilate_boson_apply - AssertionError
+FAILED test_gen_02.py::test_create_boson_apply - AssertionError
+FAILED test_gen_02.py::test_create_boson_is_symbolic - TypeError: 'bool' obje...
+================== 10 failed, 20 passed, 4 warnings in 0.34s ==================
+
+======================================== STDERR ========================================
+(empty)

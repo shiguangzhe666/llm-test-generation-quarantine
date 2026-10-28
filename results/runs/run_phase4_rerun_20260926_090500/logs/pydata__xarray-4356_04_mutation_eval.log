@@ -1,0 +1,8 @@
+COMMAND: evaluate_mutation_score max=3 on xarray/core/nanops.py
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_vrbs2h8u
+EXIT_CODE: 0
+DURATION_SECONDS: 21.4962
+======================================== STDOUT ========================================
+Mutation score: 0.0% (0/3)
+======================================== STDERR ========================================
+(empty)

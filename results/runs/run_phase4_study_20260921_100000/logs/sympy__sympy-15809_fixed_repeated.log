@@ -1,0 +1,8 @@
+COMMAND: run_repeated N=5
+CWD: F:\论文\llm-test-stability\data\repos\sympy__sympy
+EXIT_CODE: 0
+DURATION_SECONDS: 56.4432
+======================================== STDOUT ========================================
+(empty)
+======================================== STDERR ========================================
+(empty)

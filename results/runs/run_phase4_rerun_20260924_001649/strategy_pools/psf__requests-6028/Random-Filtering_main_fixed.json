@@ -1,0 +1,153 @@
+{
+  "exitstatus": 1,
+  "runtime_order": [
+    "test_gen_00.py::TestDottedNetmask::test_dotted_netmask",
+    "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers",
+    "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+    "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address",
+    "test_gen_00.py::TestIterSlices::test_iter_slices",
+    "test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies",
+    "test_gen_00.py::TestStreamDecode::test_stream_decode",
+    "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved",
+    "test_gen_02.py::TestAddressInNetwork::test_address_in_network",
+    "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+    "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address",
+    "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr",
+    "test_gen_02.py::TestIterSlices::test_iter_slices",
+    "test_gen_02.py::TestRequoteUri::test_requote_uri",
+    "test_gen_02.py::TestSetEnviron::test_set_environ",
+    "test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env",
+    "test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies",
+    "test_gen_02.py::TestStreamDecode::test_stream_decode"
+  ],
+  "active_test": null,
+  "collection_errors": [],
+  "tests": {
+    "test_gen_00.py::TestDottedNetmask::test_dotted_netmask": {
+      "nodeid": "test_gen_00.py::TestDottedNetmask::test_dotted_netmask",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006333000019367319,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:83: in test_dotted_netmask\n    self.assertEqual(dotted_netmask(24), '255.255.255.0')\n                     ^^^^^^^^^^^^^^\nE   NameError: name 'dotted_netmask' is not defined"
+    },
+    "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers": {
+      "nodeid": "test_gen_00.py::TestEncodingFunctions::test_get_encoding_from_headers",
+      "outcome": "EXCEPTION",
+      "duration": 0.0005758000006608199,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:17: in test_get_encoding_from_headers\n    self.assertEqual(get_encoding_from_headers(headers), 'utf-8')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'get_encoding_from_headers' is not defined"
+    },
+    "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+      "nodeid": "test_gen_00.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+      "outcome": "EXCEPTION",
+      "duration": 0.000625100001343526,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:56: in test_get_unicode_from_response\n    self.assertEqual(get_unicode_from_response(r), 'hello')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'get_unicode_from_response' is not defined"
+    },
+    "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address": {
+      "nodeid": "test_gen_00.py::TestIsIpv4Address::test_is_ipv4_address",
+      "outcome": "EXCEPTION",
+      "duration": 0.00040919999810284935,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:88: in test_is_ipv4_address\n    self.assertTrue(is_ipv4_address('192.168.1.1'))\n                    ^^^^^^^^^^^^^^^\nE   NameError: name 'is_ipv4_address' is not defined"
+    },
+    "test_gen_00.py::TestIterSlices::test_iter_slices": {
+      "nodeid": "test_gen_00.py::TestIterSlices::test_iter_slices",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004616999976860825,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:47: in test_iter_slices\n    self.assertEqual(list(iter_slices('abcdef', 2)), ['ab', 'cd', 'ef'])\n                          ^^^^^^^^^^^\nE   NameError: name 'iter_slices' is not defined"
+    },
+    "test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies": {
+      "nodeid": "test_gen_00.py::TestShouldBypassProxies::test_should_bypass_proxies",
+      "outcome": "EXCEPTION",
+      "duration": 0.0008347999937541317,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:109: in test_should_bypass_proxies\n    self.assertTrue(should_bypass_proxies('http://example.com'))\n                    ^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'should_bypass_proxies' is not defined"
+    },
+    "test_gen_00.py::TestStreamDecode::test_stream_decode": {
+      "nodeid": "test_gen_00.py::TestStreamDecode::test_stream_decode",
+      "outcome": "EXCEPTION",
+      "duration": 0.0006366000052366871,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:37: in test_stream_decode\n    result = list(stream_decode_response_unicode(iterator, r))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   NameError: name 'stream_decode_response_unicode' is not defined"
+    },
+    "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved": {
+      "nodeid": "test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved",
+      "outcome": "EXCEPTION",
+      "duration": 0.0004591000033542514,
+      "error_type": "NameError",
+      "error_message": "test_gen_00.py:67: in test_unquote_unreserved\n    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')\n                     ^^^^^^^^^^^^^^^^^^\nE   NameError: name 'unquote_unreserved' is not defined"
+    },
+    "test_gen_02.py::TestAddressInNetwork::test_address_in_network": {
+      "nodeid": "test_gen_02.py::TestAddressInNetwork::test_address_in_network",
+      "outcome": "PASSED",
+      "duration": 0.00044609999895328656,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response": {
+      "nodeid": "test_gen_02.py::TestGetUnicodeFromResponse::test_get_unicode_from_response",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0013026000051468145,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:50: in test_get_unicode_from_response\n    self.assertEqual(get_unicode_from_response(r), 'Hello')\nE   AssertionError: b'Hello' != 'Hello'"
+    },
+    "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address": {
+      "nodeid": "test_gen_02.py::TestIsIpv4Address::test_is_ipv4_address",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0004362999970908277,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:80: in test_is_ipv4_address\n    self.assertFalse(is_ipv4_address('192.168.1'))\nE   AssertionError: True is not false"
+    },
+    "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr": {
+      "nodeid": "test_gen_02.py::TestIsValidCidr::test_is_valid_cidr",
+      "outcome": "PASSED",
+      "duration": 0.00041619999683462083,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestIterSlices::test_iter_slices": {
+      "nodeid": "test_gen_02.py::TestIterSlices::test_iter_slices",
+      "outcome": "PASSED",
+      "duration": 0.0004782999967574142,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestRequoteUri::test_requote_uri": {
+      "nodeid": "test_gen_02.py::TestRequoteUri::test_requote_uri",
+      "outcome": "PASSED",
+      "duration": 0.0004561000023386441,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestSetEnviron::test_set_environ": {
+      "nodeid": "test_gen_02.py::TestSetEnviron::test_set_environ",
+      "outcome": "PASSED",
+      "duration": 0.00038979999953880906,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env": {
+      "nodeid": "test_gen_02.py::TestShouldBypassProxies::test_no_proxy_env",
+      "outcome": "PASSED",
+      "duration": 0.000602299998718081,
+      "error_type": null,
+      "error_message": null
+    },
+    "test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies": {
+      "nodeid": "test_gen_02.py::TestShouldBypassProxies::test_should_bypass_proxies",
+      "outcome": "ASSERTION_FAILED",
+      "duration": 0.0005486000009113923,
+      "error_type": "AssertionError",
+      "error_message": "test_gen_02.py:102: in test_should_bypass_proxies\n    self.assertFalse(should_bypass_proxies('http://example.com', 'example.com'))\nE   AssertionError: True is not false"
+    },
+    "test_gen_02.py::TestStreamDecode::test_stream_decode": {
+      "nodeid": "test_gen_02.py::TestStreamDecode::test_stream_decode",
+      "outcome": "PASSED",
+      "duration": 0.0004954999967594631,
+      "error_type": null,
+      "error_message": null
+    }
+  }
+}

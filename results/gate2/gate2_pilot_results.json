@@ -1,0 +1,2028 @@
+{
+  "metadata": {
+    "gate": "Gate 2",
+    "model": "qwen3:8b",
+    "num_generations": 3,
+    "repeat_runs": 20,
+    "timestamp": "2026-09-20T14:46:01.656139"
+  },
+  "results": [
+    {
+      "instance_id": "psf__requests-1921",
+      "repo": "psf/requests",
+      "generations": [
+        {
+          "gen_id": 0,
+          "duration": 108.6,
+          "valid": true,
+          "num_tests": 9,
+          "code_len": 2456
+        },
+        {
+          "gen_id": 1,
+          "duration": 103.4,
+          "valid": true,
+          "num_tests": 7,
+          "code_len": 1666
+        },
+        {
+          "gen_id": 2,
+          "duration": 104.7,
+          "valid": true,
+          "num_tests": 7,
+          "code_len": 2025
+        }
+      ],
+      "total_generated": 23,
+      "valid_generated": 23,
+      "flakiness_summary": [
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_none_values",
+          "test_name": "test_merge_setting_with_none_values",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_only_none_values",
+          "test_name": "test_merge_setting_with_only_none_values",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_request_overriding_session",
+          "test_name": "test_merge_setting_with_request_overriding_session",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_session_overriding_request",
+          "test_name": "test_merge_setting_with_session_overriding_request",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_empty_settings",
+          "test_name": "test_merge_setting_with_empty_settings",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_non_dict_class",
+          "test_name": "test_merge_setting_with_non_dict_class",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_no_none_values",
+          "test_name": "test_merge_setting_with_no_none_values",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_mixed_values",
+          "test_name": "test_merge_setting_with_mixed_values",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_only_session_none",
+          "test_name": "test_merge_setting_with_only_session_none",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_both_none",
+          "test_name": "test_merge_setting_with_both_none",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_request_has_value",
+          "test_name": "test_merge_setting_request_has_value",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_session_has_value",
+          "test_name": "test_merge_setting_session_has_value",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_empty_dicts",
+          "test_name": "test_merge_setting_with_empty_dicts",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_mixed_values",
+          "test_name": "test_merge_setting_with_mixed_values",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_nested_none",
+          "test_name": "test_merge_setting_with_nested_none",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_non_dict_class",
+          "test_name": "test_merge_setting_with_non_dict_class",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_none_values",
+          "test_name": "test_merge_setting_with_none_values",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_both_none",
+          "test_name": "test_merge_setting_with_both_none",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_request_setting_only",
+          "test_name": "test_merge_setting_with_request_setting_only",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_session_setting_only",
+          "test_name": "test_merge_setting_with_session_setting_only",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_empty_settings",
+          "test_name": "test_merge_setting_with_empty_settings",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_mixed_none_and_non_none",
+          "test_name": "test_merge_setting_with_mixed_none_and_non_none",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_non_dict_class",
+          "test_name": "test_merge_setting_with_non_dict_class",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        }
+      ],
+      "n_stable_pass": 15,
+      "n_stable_fail": 8,
+      "n_flaky": 0,
+      "flakiness_rate": 0.0,
+      "bug_detection_list": [
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_empty_settings",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_mixed_values",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_no_none_values",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_non_dict_class",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_none_values",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_only_none_values",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_only_session_none",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_request_overriding_session",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_merge_setting_with_session_overriding_request",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_request_has_value",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_session_has_value",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_both_none",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_empty_dicts",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_mixed_values",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_nested_none",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_merge_setting_with_non_dict_class",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_both_none",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_empty_settings",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_mixed_none_and_non_none",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_non_dict_class",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_none_values",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_request_setting_only",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_merge_setting_with_session_setting_only",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        }
+      ],
+      "n_bug_detecting": 1,
+      "n_overlap": 0,
+      "overlap_keys": [],
+      "overlap_rate": 0.0
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7521",
+      "repo": "pytest-dev/pytest",
+      "generations": [
+        {
+          "gen_id": 0,
+          "duration": 81.6,
+          "valid": true,
+          "num_tests": 14,
+          "code_len": 2421
+        },
+        {
+          "gen_id": 1,
+          "duration": 85.1,
+          "valid": true,
+          "num_tests": 7,
+          "code_len": 1464
+        },
+        {
+          "gen_id": 2,
+          "duration": 66.1,
+          "valid": true,
+          "num_tests": 15,
+          "code_len": 4052
+        }
+      ],
+      "total_generated": 36,
+      "valid_generated": 36,
+      "flakiness_summary": [
+        {
+          "key": "test_gen_00.py::test_capture_preserves_newlines",
+          "test_name": "test_capture_preserves_newlines",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_empty_string",
+          "test_name": "test_capture_empty_string",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_carriage_return_only",
+          "test_name": "test_capture_carriage_return_only",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_line_feed_only",
+          "test_name": "test_capture_line_feed_only",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_carriage_return_and_line_feed",
+          "test_name": "test_capture_carriage_return_and_line_feed",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_mixed_newlines",
+          "test_name": "test_capture_mixed_newlines",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_multiple_carriage_returns",
+          "test_name": "test_capture_multiple_carriage_returns",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_multiple_line_feeds",
+          "test_name": "test_capture_multiple_line_feeds",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_combination_of_carriage_return_and_line_feed",
+          "test_name": "test_capture_combination_of_carriage_return_and_line_feed",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_preserves_newlines",
+          "test_name": "test_capture_sys_capture_preserves_newlines",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_empty_string",
+          "test_name": "test_capture_sys_capture_empty_string",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_carriage_return",
+          "test_name": "test_capture_sys_capture_carriage_return",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_line_feed",
+          "test_name": "test_capture_sys_capture_line_feed",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_carriage_return_and_line_feed",
+          "test_name": "test_capture_sys_capture_carriage_return_and_line_feed",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_preserves_newlines",
+          "test_name": "test_capture_preserves_newlines",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_empty_string",
+          "test_name": "test_capture_empty_string",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_with_carriage_return",
+          "test_name": "test_capture_with_carriage_return",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_with_crlf",
+          "test_name": "test_capture_with_crlf",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_mixed_newlines",
+          "test_name": "test_capture_mixed_newlines",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_large_data",
+          "test_name": "test_capture_large_data",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        },
+        {
+          "key": "test_gen_01.py::test_capture_multiple_newlines",
+          "test_name": "test_capture_multiple_newlines",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 0,
+          "fail": 20,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_fail"
+        }
+      ],
+      "n_stable_pass": 0,
+      "n_stable_fail": 21,
+      "n_flaky": 0,
+      "flakiness_rate": 0.0,
+      "bug_detection_list": [
+        {
+          "key": "test_gen_00.py::test_capture_carriage_return_and_line_feed",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_carriage_return_only",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_combination_of_carriage_return_and_line_feed",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_empty_string",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_line_feed_only",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_mixed_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_multiple_carriage_returns",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_multiple_line_feeds",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_preserves_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_carriage_return",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_carriage_return_and_line_feed",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_empty_string",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_line_feed",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_capture_sys_capture_preserves_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_empty_string",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_large_data",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_mixed_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_multiple_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_preserves_newlines",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_with_carriage_return",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_capture_with_crlf",
+          "fixed_verdict": "FAILED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": false,
+          "fails_on_buggy": true,
+          "is_bug_detecting": false
+        }
+      ],
+      "n_bug_detecting": 0,
+      "n_overlap": 0,
+      "overlap_keys": [],
+      "overlap_rate": 0.0
+    },
+    {
+      "instance_id": "sympy__sympy-15809",
+      "repo": "sympy/sympy",
+      "generations": [
+        {
+          "gen_id": 0,
+          "duration": 56.8,
+          "valid": true,
+          "num_tests": 12,
+          "code_len": 766
+        },
+        {
+          "gen_id": 1,
+          "duration": 63.2,
+          "valid": true,
+          "num_tests": 20,
+          "code_len": 1327
+        },
+        {
+          "gen_id": 2,
+          "duration": 59.6,
+          "valid": true,
+          "num_tests": 18,
+          "code_len": 1113
+        }
+      ],
+      "total_generated": 50,
+      "valid_generated": 50,
+      "flakiness_summary": [
+        {
+          "key": "test_gen_00.py::test_min_zero_args",
+          "test_name": "test_min_zero_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_zero_args",
+          "test_name": "test_max_zero_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_min_one_arg",
+          "test_name": "test_min_one_arg",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_one_arg",
+          "test_name": "test_max_one_arg",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_min_two_args",
+          "test_name": "test_min_two_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_two_args",
+          "test_name": "test_max_two_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_min_negative_numbers",
+          "test_name": "test_min_negative_numbers",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_negative_numbers",
+          "test_name": "test_max_negative_numbers",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_min_multiple_args",
+          "test_name": "test_min_multiple_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_multiple_args",
+          "test_name": "test_max_multiple_args",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_min_mixed_numbers",
+          "test_name": "test_min_mixed_numbers",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_00.py::test_max_mixed_numbers",
+          "test_name": "test_max_mixed_numbers",
+          "suite": "test_gen_00.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_zero_args",
+          "test_name": "test_min_zero_args",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_zero_args",
+          "test_name": "test_max_zero_args",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_one_arg",
+          "test_name": "test_min_one_arg",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_one_arg",
+          "test_name": "test_max_one_arg",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_multiple_args",
+          "test_name": "test_min_multiple_args",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_multiple_args",
+          "test_name": "test_max_multiple_args",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_mixed_numbers",
+          "test_name": "test_min_mixed_numbers",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_mixed_numbers",
+          "test_name": "test_max_mixed_numbers",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_symbolic",
+          "test_name": "test_min_symbolic",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_symbolic",
+          "test_name": "test_max_symbolic",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_neg_inf",
+          "test_name": "test_min_neg_inf",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_pos_inf",
+          "test_name": "test_max_pos_inf",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_with_inf",
+          "test_name": "test_min_with_inf",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_with_inf",
+          "test_name": "test_max_with_inf",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_neg_inf_2",
+          "test_name": "test_min_neg_inf_2",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_neg_inf_2",
+          "test_name": "test_max_neg_inf_2",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_boundary",
+          "test_name": "test_min_boundary",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_boundary",
+          "test_name": "test_max_boundary",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_min_with_symbols",
+          "test_name": "test_min_with_symbols",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_01.py::test_max_with_symbols",
+          "test_name": "test_max_with_symbols",
+          "suite": "test_gen_01.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_zero_args",
+          "test_name": "test_min_zero_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_zero_args",
+          "test_name": "test_max_zero_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_one_arg",
+          "test_name": "test_min_one_arg",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_one_arg",
+          "test_name": "test_max_one_arg",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_two_args",
+          "test_name": "test_min_two_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_two_args",
+          "test_name": "test_max_two_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_negative",
+          "test_name": "test_min_negative",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_negative",
+          "test_name": "test_max_negative",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_mixed",
+          "test_name": "test_min_mixed",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_mixed",
+          "test_name": "test_max_mixed",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_multiple_args",
+          "test_name": "test_min_multiple_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_multiple_args",
+          "test_name": "test_max_multiple_args",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_zero",
+          "test_name": "test_min_with_zero",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_zero",
+          "test_name": "test_max_with_zero",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_positive_and_negative",
+          "test_name": "test_min_with_positive_and_negative",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_positive_and_negative",
+          "test_name": "test_max_with_positive_and_negative",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_duplicate_values",
+          "test_name": "test_min_with_duplicate_values",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_duplicate_values",
+          "test_name": "test_max_with_duplicate_values",
+          "suite": "test_gen_02.py",
+          "total_runs": 20,
+          "pass": 20,
+          "fail": 0,
+          "error": 0,
+          "is_flaky": false,
+          "flakiness_rate": 0.0,
+          "category": "stable_pass"
+        }
+      ],
+      "n_stable_pass": 50,
+      "n_stable_fail": 0,
+      "n_flaky": 0,
+      "flakiness_rate": 0.0,
+      "bug_detection_list": [
+        {
+          "key": "test_gen_00.py::test_max_mixed_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_max_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_max_negative_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_max_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_max_two_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_max_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_00.py::test_min_mixed_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_min_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_min_negative_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_min_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_min_two_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_00.py::test_min_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_01.py::test_max_boundary",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_mixed_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_neg_inf_2",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_pos_inf",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_symbolic",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_with_inf",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_with_symbols",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_max_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_01.py::test_min_boundary",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_mixed_numbers",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_neg_inf",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_neg_inf_2",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_symbolic",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_with_inf",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_with_symbols",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_01.py::test_min_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_02.py::test_max_mixed",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_negative",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_two_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_duplicate_values",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_positive_and_negative",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_with_zero",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_max_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        },
+        {
+          "key": "test_gen_02.py::test_min_mixed",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_multiple_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_negative",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_one_arg",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_two_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_duplicate_values",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_positive_and_negative",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_with_zero",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "PASSED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": false,
+          "is_bug_detecting": false
+        },
+        {
+          "key": "test_gen_02.py::test_min_zero_args",
+          "fixed_verdict": "PASSED",
+          "buggy_verdict": "FAILED",
+          "passes_on_fixed": true,
+          "fails_on_buggy": true,
+          "is_bug_detecting": true
+        }
+      ],
+      "n_bug_detecting": 6,
+      "n_overlap": 0,
+      "overlap_keys": [],
+      "overlap_rate": 0.0
+    }
+  ],
+  "summary": {
+    "instances_ok": 3,
+    "total_instances": 3,
+    "total_generated": 109,
+    "total_valid": 109,
+    "total_tests": 94,
+    "total_flaky": 0,
+    "total_bug_detecting": 7,
+    "total_overlap": 0,
+    "f1_status": "PASS",
+    "f2_status": "PASS",
+    "f3_status": "PASS",
+    "overall_verdict": "PASS"
+  }
+}

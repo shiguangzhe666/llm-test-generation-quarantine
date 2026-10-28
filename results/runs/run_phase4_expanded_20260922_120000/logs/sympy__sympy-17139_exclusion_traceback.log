@@ -1,0 +1,75 @@
+EXCLUSION AUDIT LOG FOR: sympy__sympy-17139
+DOMAIN: Symbolic Mathematics
+TARGET MODULE: sympy/simplify/fu.py
+EXIT_CODE: 2
+================================================================================
+STDOUT:
+================================================================================
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- G:\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh
+configfile: pytest.ini
+plugins: anyio-4.14.2
+collecting ... collected 0 items / 3 errors
+
+=================================== ERRORS ====================================
+_______________________ ERROR collecting test_gen_00.py _______________________
+ImportError while importing test module 'C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\test_gen_00.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+G:\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_gen_00.py:1: in <module>
+    from sympy.simplify.fu import simplify
+E   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\sympy\simplify\fu.py)
+_______________________ ERROR collecting test_gen_01.py _______________________
+ImportError while importing test module 'C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\test_gen_01.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+G:\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_gen_01.py:2: in <module>
+    from sympy.simplify.fu import simplify
+E   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\sympy\simplify\fu.py)
+_______________________ ERROR collecting test_gen_02.py _______________________
+ImportError while importing test module 'C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\test_gen_02.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+G:\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_gen_02.py:2: in <module>
+    from sympy.simplify.fu import simplify
+E   ImportError: cannot import name 'simplify' from 'sympy.simplify.fu' (C:\Users\ASUS\AppData\Local\Temp\swebench_wt_fgd8utbh\sympy\simplify\fu.py)
+============================== warnings summary ===============================
+G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35
+  G:\Python311\Lib\site-packages\mpmath\ctx_mp.py:35: DeprecationWarning: mpnumeric is deprecated
+    warnings.warn(f"{name} is deprecated", DeprecationWarning)
+
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+G:\Python311\Lib\site-packages\mpmath\rational.py:4
+  G:\Python311\Lib\site-packages\mpmath\rational.py:4: DeprecationWarning: the rational private module is deprecated
+    warnings.warn("the rational private module is deprecated",
+
+G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464
+  G:\Python311\Lib\site-packages\_pytest\config\__init__.py:1464: PytestConfigWarning: Unknown config option: doctestplus
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR test_gen_00.py
+ERROR test_gen_01.py
+ERROR test_gen_02.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!
+==================== no tests collected, 3 errors in 0.23s ====================
+
+================================================================================
+STDERR:
+================================================================================
+(empty)
+================================================================================

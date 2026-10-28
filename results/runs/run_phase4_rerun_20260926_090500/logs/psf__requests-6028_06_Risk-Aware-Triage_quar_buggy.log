@@ -1,0 +1,46 @@
+COMMAND: pytest 5 tests (strategy=Risk-Aware-Triage, pool=quarantine, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_u_i8peio
+EXIT_CODE: 1
+DURATION_SECONDS: 0.3990
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 5 items
+
+test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved FAILED    [ 20%]
+test_gen_00.py::TestRequoteUri::test_requote_uri FAILED                  [ 40%]
+test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved FAILED    [ 60%]
+test_gen_02.py::TestRequoteUri::test_requote_uri PASSED                  [ 80%]
+test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies FAILED   [100%]
+
+================================== FAILURES ===================================
+________________ TestUnquoteUnreserved.test_unquote_unreserved ________________
+test_gen_00.py:67: in test_unquote_unreserved
+    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')
+                     ^^^^^^^^^^^^^^^^^^
+E   NameError: name 'unquote_unreserved' is not defined
+_______________________ TestRequoteUri.test_requote_uri _______________________
+test_gen_00.py:73: in test_requote_uri
+    self.assertEqual(requote_uri('http://example.com/path?query=1'), 'http://example.com/path?query=1')
+                     ^^^^^^^^^^^
+E   NameError: name 'requote_uri' is not defined
+________________ TestUnquoteUnreserved.test_unquote_unreserved ________________
+test_gen_02.py:57: in test_unquote_unreserved
+    self.assertEqual(unquote_unreserved('http%3A%2F%2Fexample.com'), 'http://example.com')
+E   AssertionError: 'http%3A%2F%2Fexample.com' != 'http://example.com'
+E   - http%3A%2F%2Fexample.com
+E   + http://example.com
+_______________ TestGetEnvironProxies.test_get_environ_proxies ________________
+test_gen_02.py:112: in test_get_environ_proxies
+    self.assertEqual(get_environ_proxies('http://proxy:8080'), {})
+E   AssertionError: {'http': 'http://proxy:8080', 'no': 'example.com'} != {}
+E   - {'http': 'http://proxy:8080', 'no': 'example.com'}
+E   + {}
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::TestUnquoteUnreserved::test_unquote_unreserved - NameE...
+FAILED test_gen_00.py::TestRequoteUri::test_requote_uri - NameError: name 're...
+FAILED test_gen_02.py::TestUnquoteUnreserved::test_unquote_unreserved - Asser...
+FAILED test_gen_02.py::TestGetEnvironProxies::test_get_environ_proxies - Asse...
+========================= 4 failed, 1 passed in 0.17s =========================
+
+======================================== STDERR ========================================
+(empty)

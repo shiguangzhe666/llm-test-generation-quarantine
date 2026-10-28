@@ -1,0 +1,244 @@
+COMMAND: pytest 22 tests (strategy=Risk-Aware-Triage, pool=quarantine, codebase=buggy)
+CWD: C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3
+EXIT_CODE: 1
+DURATION_SECONDS: 17.4218
+======================================== STDOUT ========================================
+============================= test session starts =============================
+collecting ... collected 22 items
+
+test_gen_00.py::test_session_request_with_utf8_encoding PASSED           [  4%]
+test_gen_00.py::test_session_request_with_empty_data FAILED              [  9%]
+test_gen_00.py::test_session_request_with_None_data FAILED               [ 13%]
+test_gen_00.py::test_session_request_with_non_utf8_encoding PASSED       [ 18%]
+test_gen_00.py::test_session_request_with_invalid_url PASSED             [ 22%]
+test_gen_00.py::test_session_request_with_non_string_method FAILED       [ 27%]
+test_gen_01.py::test_request_with_utf8_encoding FAILED                   [ 31%]
+test_gen_01.py::test_request_with_non_ascii_data FAILED                  [ 36%]
+test_gen_01.py::test_request_with_empty_data FAILED                      [ 40%]
+test_gen_01.py::test_request_with_null_data FAILED                       [ 45%]
+test_gen_01.py::test_request_with_custom_encoding FAILED                 [ 50%]
+test_gen_01.py::test_request_with_invalid_encoding FAILED                [ 54%]
+test_gen_01.py::test_request_with_missing_data FAILED                    [ 59%]
+test_gen_02.py::test_request_with_utf8_encoding FAILED                   [ 63%]
+test_gen_02.py::test_request_with_non_ascii_params PASSED                [ 68%]
+test_gen_02.py::test_request_with_non_ascii_url PASSED                   [ 72%]
+test_gen_02.py::test_request_with_empty_string_encoding PASSED           [ 77%]
+test_gen_02.py::test_request_with_none_encoding PASSED                   [ 81%]
+test_gen_02.py::test_request_with_invalid_encoding FAILED                [ 86%]
+test_gen_02.py::test_request_with_missing_content_type PASSED            [ 90%]
+test_gen_02.py::test_request_with_non_ascii_query_string PASSED          [ 95%]
+test_gen_02.py::test_request_with_non_ascii_path PASSED                  [100%]
+
+================================== FAILURES ===================================
+____________________ test_session_request_with_empty_data _____________________
+test_gen_00.py:24: in test_session_request_with_empty_data
+    assert response.status_code == 200  # Assuming the request is successful
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_____________________ test_session_request_with_None_data _____________________
+test_gen_00.py:34: in test_session_request_with_None_data
+    assert response.status_code == 200  # Assuming the request is successful
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________ test_session_request_with_non_string_method _________________
+test_gen_00.py:74: in test_session_request_with_non_string_method
+    with pytest.raises(TypeError):  # Assuming the request will raise a TypeError for non-string method
+E   Failed: DID NOT RAISE TypeError
+_______________________ test_request_with_utf8_encoding _______________________
+test_gen_01.py:15: in test_request_with_utf8_encoding
+    assert response.encoding == 'utf-8'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_request_with_non_ascii_data _______________________
+test_gen_01.py:24: in test_request_with_non_ascii_data
+    response = session.request(method, url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:457: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:569: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:352: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:514: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:308: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1348: in _send_request
+    body = _encode(body, 'body')
+           ^^^^^^^^^^^^^^^^^^^^^
+G:\Python311\Lib\http\client.py:166: in _encode
+    raise UnicodeEncodeError(
+E   UnicodeEncodeError: 'latin-1' codec can't encode characters in position 4-5: Body ('你好') is not valid Latin-1. Use body.encode('utf-8') if you want to send it encoded in UTF-8.
+________________________ test_request_with_empty_data _________________________
+test_gen_01.py:39: in test_request_with_empty_data
+    assert response.encoding == 'utf-8'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_________________________ test_request_with_null_data _________________________
+test_gen_01.py:50: in test_request_with_null_data
+    assert response.encoding == 'utf-8'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+______________________ test_request_with_custom_encoding ______________________
+test_gen_01.py:59: in test_request_with_custom_encoding
+    response = session.request(method, url, headers=headers, data=data, encoding='iso-8859-1')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Session.request() got an unexpected keyword argument 'encoding'
+_____________________ test_request_with_invalid_encoding ______________________
+test_gen_01.py:72: in test_request_with_invalid_encoding
+    response = session.request(method, url, headers=headers, data=data, encoding='invalid-encoding')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: Session.request() got an unexpected keyword argument 'encoding'
+_______________________ test_request_with_missing_data ________________________
+test_gen_01.py:83: in test_request_with_missing_data
+    assert response.encoding == 'utf-8'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError
+_______________________ test_request_with_utf8_encoding _______________________
+test_gen_02.py:13: in test_request_with_utf8_encoding
+    response = session.request(method, url, params=params, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:457: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\sessions.py:569: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests\adapters.py:352: in send
+    resp = conn.urlopen(
+requests\packages\urllib3\connectionpool.py:514: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+requests\packages\urllib3\connectionpool.py:308: in _make_request
+    conn.request(method, url, **httplib_request_kw)
+G:\Python311\Lib\http\client.py:1303: in request
+    self._send_request(method, url, body, headers, encode_chunked)
+G:\Python311\Lib\http\client.py:1344: in _send_request
+    self.putheader(hdr, value)
+G:\Python311\Lib\http\client.py:1276: in putheader
+    values[i] = one_value.encode('latin-1')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   UnicodeEncodeError: 'latin-1' codec can't encode characters in position 7-8: ordinal not in range(256)
+_____________________ test_request_with_invalid_encoding ______________________
+test_gen_02.py:63: in test_request_with_invalid_encoding
+    headers['Authorization'] = 'Bearer ' + '令牌'.encode('utf-16').decode('utf-8')  # Invalid encoding
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+============================== warnings summary ===============================
+requests\packages\urllib3\connectionpool.py:80
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\connectionpool.py:80: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:403
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\connectionpool.py:403: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\connectionpool.py:734
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\connectionpool.py:734: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\packages\urllib3\poolmanager.py:32
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\poolmanager.py:32: DeprecationWarning: invalid escape sequence '\*'
+    """
+
+requests\utils.py:12
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\utils.py:12: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+requests\models.py:777
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\models.py:777: DeprecationWarning: invalid escape sequence '\*'
+    """Returns the json-encoded content of a response, if any.
+
+requests\api.py:53
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:53: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\api.py:64
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:64: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\api.py:75
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:75: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\api.py:86
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:86: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\api.py:98
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:98: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\api.py:109
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:109: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\api.py:120
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\api.py:120: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+requests\sessions.py:462
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:462: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a GET request. Returns :class:`Response` object.
+
+requests\sessions.py:472
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:472: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a OPTIONS request. Returns :class:`Response` object.
+
+requests\sessions.py:482
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:482: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a HEAD request. Returns :class:`Response` object.
+
+requests\sessions.py:492
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:492: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a POST request. Returns :class:`Response` object.
+
+requests\sessions.py:503
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:503: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PUT request. Returns :class:`Response` object.
+
+requests\sessions.py:513
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:513: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a PATCH request. Returns :class:`Response` object.
+
+requests\sessions.py:523
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\sessions.py:523: DeprecationWarning: invalid escape sequence '\*'
+    """Sends a DELETE request. Returns :class:`Response` object.
+
+test_gen_00.py::test_session_request_with_utf8_encoding
+test_gen_00.py::test_session_request_with_empty_data
+test_gen_00.py::test_session_request_with_None_data
+test_gen_00.py::test_session_request_with_non_utf8_encoding
+test_gen_00.py::test_session_request_with_non_string_method
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\util\ssl_.py:105: DeprecationWarning: ssl.PROTOCOL_TLS is deprecated
+    context = SSLContext(ssl_version)
+
+test_gen_00.py::test_session_request_with_utf8_encoding
+test_gen_00.py::test_session_request_with_empty_data
+test_gen_00.py::test_session_request_with_None_data
+test_gen_00.py::test_session_request_with_non_utf8_encoding
+test_gen_00.py::test_session_request_with_non_string_method
+  C:\Users\ASUS\AppData\Local\Temp\swebench_wt_aebh7tt3\requests\packages\urllib3\connection.py:236: DeprecationWarning: ssl.match_hostname() is deprecated
+    match_hostname(self.sock.getpeercert(),
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_gen_00.py::test_session_request_with_empty_data - AssertionError
+FAILED test_gen_00.py::test_session_request_with_None_data - AssertionError
+FAILED test_gen_00.py::test_session_request_with_non_string_method - Failed: ...
+FAILED test_gen_01.py::test_request_with_utf8_encoding - AssertionError
+FAILED test_gen_01.py::test_request_with_non_ascii_data - UnicodeEncodeError:...
+FAILED test_gen_01.py::test_request_with_empty_data - AssertionError
+FAILED test_gen_01.py::test_request_with_null_data - AssertionError
+FAILED test_gen_01.py::test_request_with_custom_encoding - TypeError: Session...
+FAILED test_gen_01.py::test_request_with_invalid_encoding - TypeError: Sessio...
+FAILED test_gen_01.py::test_request_with_missing_data - AssertionError
+FAILED test_gen_02.py::test_request_with_utf8_encoding - UnicodeEncodeError: ...
+FAILED test_gen_02.py::test_request_with_invalid_encoding - UnicodeDecodeErro...
+================= 12 failed, 10 passed, 30 warnings in 17.19s =================
+
+======================================== STDERR ========================================
+(empty)

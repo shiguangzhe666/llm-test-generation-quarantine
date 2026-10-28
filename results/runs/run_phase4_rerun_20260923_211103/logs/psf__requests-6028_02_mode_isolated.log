@@ -1,0 +1,8 @@
+COMMAND: execute_suite Mode=SINGLE_TEST_ISOLATED
+CWD: F:\论文\llm-test-stability\data\repos\psf__requests
+EXIT_CODE: 0
+DURATION_SECONDS: 11.1637
+======================================== STDOUT ========================================
+(empty)
+======================================== STDERR ========================================
+(empty)

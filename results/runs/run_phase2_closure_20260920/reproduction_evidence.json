@@ -1,0 +1,161 @@
+{
+  "instance_id": "psf__requests-1921",
+  "base_commit": "3c88e520da24ae6f736929a750876e7654accc3d",
+  "patch_sha256": "33fc461de67706a7d3c91008799489d6d1e6b521bfc0131dd22c4959d00b9f08",
+  "test_patch_sha256": "a9542a0223dcb934125f74642468fb69c5cae8d5fa1602279a3745862db6252d",
+  "conftest_shim_sha256": "155d13bb4cfbbb3985ef8b6b6e8ecfca35e45ce2f2beaec7822031c885630bb9",
+  "buggy_verified": true,
+  "fixed_verified": true,
+  "reproduced": true,
+  "verdict_reasons": [
+    "Ground-truth defect reproduction confirmed: FAIL_TO_PASS failed via assertion on buggy and passed on fixed; PASS_TO_PASS clean on both."
+  ],
+  "buggy_details": {
+    "fail_to_pass": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 4.7291,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 3.6754,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_basicauth_with_netrc": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_basicauth_with_netrc",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 12.799,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_cookie_persists_via_api": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_cookie_persists_via_api",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 2.4694,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent",
+        "outcome": "ASSERTION_FAILED",
+        "is_passed": false,
+        "is_assertion_failure": true,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 0.8089,
+        "error_message": "test_requests.py:220: in test_headers_on_session_with_None_are_not_sent\n    assert 'Accept-Encoding' not in prep.headers\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError"
+      },
+      "test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 1.7245,
+        "error_message": null
+      }
+    },
+    "pass_to_pass": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 1.7673,
+        "error_message": null
+      }
+    },
+    "pass_to_pass_scope": {
+      "total_in_instance": 107,
+      "evaluated_in_run": 1,
+      "is_full_set": false
+    }
+  },
+  "fixed_details": {
+    "fail_to_pass": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 10.5624,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 3.1775,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_basicauth_with_netrc": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_basicauth_with_netrc",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 3.1638,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_cookie_persists_via_api": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_cookie_persists_via_api",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 1.7437,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 0.6675,
+        "error_message": null
+      },
+      "test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 2.0985,
+        "error_message": null
+      }
+    },
+    "pass_to_pass": {
+      "test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE": {
+        "nodeid": "test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE",
+        "outcome": "PASSED",
+        "is_passed": true,
+        "is_assertion_failure": false,
+        "is_infrastructure_failure": false,
+        "duration_seconds": 1.7366,
+        "error_message": null
+      }
+    },
+    "pass_to_pass_scope": {
+      "total_in_instance": 107,
+      "evaluated_in_run": 1,
+      "is_full_set": false
+    }
+  }
+}
