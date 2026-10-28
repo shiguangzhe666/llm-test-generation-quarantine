@@ -1,0 +1,3 @@
+# Preserve bytes exactly: the run manifest records SHA-256 over these files,
+# so git must not normalise line endings on checkout.
+* -text
