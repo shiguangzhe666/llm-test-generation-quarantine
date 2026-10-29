@@ -6,6 +6,9 @@ authors:
   - family-names: "Zhu"
     given-names: "Chaoyi"
     affiliation: "School of Information Science and Engineering, Qilu Normal University, Jinan, Shandong, China"
+  - family-names: "Yu"
+    given-names: "Yawen"
+    affiliation: "School of Information Science and Engineering, Qilu Normal University, Jinan, Shandong, China"
 version: "1.0.0"
 date-released: "2026-10-28"
 license: MIT
